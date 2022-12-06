@@ -7,17 +7,26 @@
 
 .section-header {
     color: #858B86;
+    font-size: 1.2em;
 }
 
 #home {
-    background: url("../images/backround_header.jpg") no-repeat center center fixed;
+    background-image: url("../images/backround_header.jpg");
+    background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 75vh;
 }
 
 #services {
+    padding: 8rem 10rem;
     background: #DEE8E0;
 
+}
+
+.service-icon {
+    width: 10em;
+    height: 5rem;
+    fill: #0D4A40;
 }
 
 #testimonials {
@@ -26,7 +35,10 @@
 }
 
 #about {
-    background: url("../images/background_about.jpg") ;
+    background: url("../images/background_about.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
 }
 
 #about h1 {
@@ -39,7 +51,7 @@
 
 .team-img {
     width: 310px;
-    height: 305px;
+    height: 290px;
     border-radius: 100%;
 }
 
