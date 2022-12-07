@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <nav class="navbar sticky-top navbar-expand-lg bg-light">
-    <div class="container-fluid ">
+    <div class="container">
         <a class="navbar-brand col" href="#">
             <img src="static/images/logo.png" alt="Logo" width="158" height="56"
                  class="d-inline-block align-text-top">
@@ -19,31 +19,33 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav col justify-content-start">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">services</a>
-                <a class="nav-link" href="#">Testimonials</a>
-                <a class="nav-link" href="#">About</a>
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                <a class="nav-link" href="#services">services</a>
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </div>
         </div>
-        <div>
-            <a class="btn btn-primary rounded-pill"
+        <div class="d-none d-lg-block">
+            <a class="btn btn-primary rounded-pill fw-bold"
                href="mailto:Tzipporipress@gmail.com?subject=Hi, let's talk about my sefer"
-               role="button">Get a Quote</a>
+               role="button"
+               style="background-color: #062520; font-size: medium">Get a Quote</a>
         </div>
     </div>
 </nav>
 
 <body>
 <div class="layout">
-    <div id="home">
-        <div>
-            <h1 class="">Self Publishing Redefined.</h1>
-            <sub>Your sefer published affordably, with help every step of the way</sub>
-            <a class="btn btn-primary" role="button">Publish Your Sefer</a>
+    <div id="home" class="vh-100">
+        <div class="row container-fluid">
+            <h1 class="p-0 w-auto" style="color: #062520; font-weight: bold;">Self Publishing <br> Redefined.</h1>
+            <p class="p-0">Your sefer published affordably, with help every step of the way</p>
+            <a class="btn btn-primary rounded-pill w-auto fw-bold" role="button" href="#contact"
+               style="background-color: #062520; font-size: medium">Publish Your Sefer</a>
         </div>
     </div>
-    <div id="services">
+    <div id="services" class="">
         <div class="row text-center gap-5">
             <h2 class="section-header">SERVICES</h2>
             <h1 class="">Professional Grade Publishing,<br> for a Fraction of the Cost.</h1>
@@ -78,7 +80,7 @@
             </div>
         </div>
     </div>
-    <div id="testimonials" class="vh-100">
+    <div id="testimonials" class="">
         <div class="text-center">
             <h2 class="section-header">TESTIMONIALS</h2>
             <!–– carousel -->
@@ -120,36 +122,41 @@
         </div>
     </div>
 
-    <div id="about">
-        <h2 class="section-header">ABOUT</h2>
-        <h1>What is Tzippori Press?</h1>
-        <p>Tzippori press is named for the legendary town of Tzippori, the birthplace of the Mishnah. Here at Tzippori,
-            we
-            believe that YOUR voice deserves to be heard. If you have quality ideas, we want the world to know.</p>
-        <h1>The Problem</h1>
-        <p>Traditional Jewish publishing can cost upwards of $25,000 for one book. Oftentimes, this price reflects the
-            brand
-            name of the company and not the quality or amount of work invested into the sefer. On the other hand, many
-            'do
-            it yourself' website leave room for all sorts of silly and unnecessary errors.</p>
-        <h1>Our Mission</h1>
-        <p>We view ourselves as a happy middle ground. High quality, professional feel while allowing you the freedom of
-            a
-            full self-publish. Our mission at Tzippori is to make quality publishing available to everyone (for a
-            fraction
-            of the price)! With direct experience in mainstream publishing houses of the Jewish world, Tzippori press
-            brings
-            you the highest caliber quality along with the peace of mind of knowing you're in good hands. Now that's
-            self-publishing, re-imagined!</p>
+    <div id="about" class="vh-100">
+        <div class="container-fluid row gap-3">
+            <h2 class="section-header">ABOUT</h2>
+            <div>
+                <h1>What is Tzippori Press?</h1>
+                <p>Tzippori press is named for the legendary town of Tzippori, the birthplace of the Mishnah. Here at
+                    Tzippori, we believe that YOUR voice deserves to be heard. If you have quality ideas, we want the
+                    world to know.</p>
+            </div>
+            <div>
+                <h1>The Problem</h1>
+                <p>Traditional Jewish publishing can cost upwards of $25,000 for one book. Oftentimes, this price
+                    reflects
+                    the brand name of the company and not the quality or amount of work invested into the sefer.
+                    On the other hand, many 'do it yourself' website leave room for all sorts of silly and unnecessary
+                    errors.</p>
+            </div>
+            <div>
+                <h1>Our Mission</h1>
+                <p>We view ourselves as a happy middle ground. High quality, professional feel while allowing you the
+                    freedom of a full self-publish. Our mission at Tzippori is to make quality publishing available
+                    to everyone (for a fraction of the price)! With direct experience in mainstream publishing houses of
+                    the Jewish world, Tzippori press brings you the highest caliber quality along with the peace of mind
+                    of knowing you're in good hands. Now that's self-publishing, re-imagined!</p>
+            </div>
+        </div>
     </div>
 
     <div id="our-team">
-        <div class="row">
+        <div class="row gap-3">
             <div class="row">
                 <h2 class="section-header">Our Team</h2>
                 <h1>Meet Our Team</h1>
             </div>
-            <div class="row">
+            <div class="row gap-4">
                 <div class="row col">
                     <img class="team-img" src="static/images/david.jpeg" alt="image">
                     <div class="col">
@@ -178,7 +185,7 @@
     </div>
 
     <div id="contact">
-        <div class="row">
+        <div class="row row-cols-md-2">
             <div class="contact-info col">
                 <h2 class="section-header">CONTACT</h2>
                 <h1 class="">Let’s Work Together</h1>
@@ -212,7 +219,7 @@
                             Leave us a message
                             <textarea class="form-control"></textarea>
                         </label>
-                        <button class="btn btn-primary rounded-pill w-auto">Submit</button>
+                        <button class="btn btn-primary rounded-pill w-auto fw-bold" style="background-color: white; color: #0D4A40;">Submit</button>
                     </form>
                 </div>
             </div>
