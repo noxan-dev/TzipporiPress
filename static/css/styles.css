@@ -40,8 +40,9 @@ html {
 }
 
 .service-icon {
-    width: 10em;
-    height: 5rem;
+    width: 125px;
+    height: 125px;
+    font-size: 10px;
 }
 
 #testimonials {
@@ -72,9 +73,17 @@ html {
 }
 
 .team-img {
-    width: 20rem;
-    height: 18rem;
+    width: 310px;
+    height: 305px;
     border-radius: 100%;
+}
+
+.team-name {
+    color: #0c4128;
+}
+
+.team-title {
+    font-size: 1rem;
 }
 
 #contact {
@@ -94,11 +103,18 @@ footer {
     .nav-container {
         position: fixed;
         top: 0;
-        padding: .5rem 10rem;
+        padding: .5rem 8rem;
+        margin-top: 1.5rem;
+        z-index: 9;
+    }
+
+    .nav-container.scrolled {
+        background-color: #fff !important;
+        transition: background-color 200ms linear;
     }
 
     .introduction {
-        padding: 10rem 0 0 10rem;
+        padding: 8rem 0 0 8rem;
     }
 
     .introduction h1 {
@@ -108,23 +124,23 @@ footer {
     }
 
     #services {
-        padding: 10rem 10rem;
+        padding: 8rem 8rem;
     }
 
     #testimonials {
-        padding: 10rem 10rem;
+        padding: 8rem 8rem;
     }
 
     #about {
-        padding: 10rem 10rem;
+        padding: 8rem 8rem;
     }
 
     #our-team {
-        padding: 10rem 10rem;
+        padding: 8rem 8rem;
     }
 
     #contact {
-        padding: 10rem 10rem;
+        padding: 8rem 8rem;
     }
 
     .about-statements {
