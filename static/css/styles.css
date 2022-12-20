@@ -17,6 +17,8 @@ html {
 #nav-home {
     background-image: url("../images/backround_header.jpg");
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 #home {

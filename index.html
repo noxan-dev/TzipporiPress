@@ -57,6 +57,7 @@
             </div>
         </div>
     </section>
+
     <div id="services" class="">
         <div class="row text-center g-3">
             <h2 class="section-header ">SERVICES</h2>
@@ -91,6 +92,7 @@
             </div>
         </div>
     </div>
+
     <div id="testimonials" class="">
         <div class="text-center">
             <h2 class="section-header">TESTIMONIALS</h2>
@@ -168,12 +170,14 @@
     </div>
 
     <div id="our-team">
-        <div class="row g-3">
-            <h2 class="section-header">Our Team</h2>
-            <h1>Meet Our Team</h1>
-            <div class="col">
-                <div class="row row-cols-1">
-                    <div class="row col-lg-6 col-md-auto pb-3 pb-lg-0">
+        <div class="container-fluid">
+            <div class="row g-4">
+                <div>
+                    <h2 class="section-header">Our Team</h2>
+                    <h1>Meet Our Team</h1>
+                </div>
+                <div class="container-fluid col-lg-6 col-md-auto pb-3">
+                    <div class="row">
                         <div class="col">
                             <img class="team-img" src="static/images/david.jpeg" alt="image">
                         </div>
@@ -185,14 +189,19 @@
                             <p>Brief bio goes here.....</p>
                         </div>
                     </div>
-                    <div class="row col-lg-6 col-md-auto pt-3 pt-lg-0">
-                        <img class="team-img" src="static/images/brooks.jpg" alt="image">
+                </div>
+                <div class="container-fluid col-lg-6 col-md-auto pt-3">
+                    <div class="row ">
+                        <div class="col">
+                            <img class="team-img" src="static/images/brooks.jpg" alt="image">
+                        </div>
                         <div class="col">
                             <h3 class="team-title">Typesetting & Design</h3>
                             <h1 class="team-name">Asher Brooks</h1>
                             <a class="linkedin-link" href="https://www.linkedin.com/in/aaron-a-brooks/"><img
                                     src="static/images/linkedin_no_circle.svg" alt="linkedin"></a>
-                            <p>Traditional Jewish publishing can cost upwards of $25,000 for one book. Oftentimes, this
+                            <p>Traditional Jewish publishing can cost upwards of $25,000 for one book. Oftentimes,
+                                this
                                 price
                                 reflects the brand name of</p>
                         </div>
@@ -203,8 +212,8 @@
     </div>
 
     <div id="contact">
-        <div class="row g-3">
-            <div class="contact-info row col-lg-6 col-md-auto ">
+        <div class="row g-4">
+            <div class="contact-info container-fluid row col-lg-6 col-md-auto pb-3">
                 <h2 class="section-header">CONTACT</h2>
                 <h1 class="">Let’s Work Together</h1>
                 <a href="mailto:Tzipporipress@gmail.com" class="text-decoration-none" style="color: white;">Tzipporipress@gmail.com</a>
@@ -219,18 +228,18 @@
                    href="https://www.linkedin.com/company/tzippori-press/about/"><img
                         src="static/images/linkedin_no_circle.svg" alt="linkedin"></a>
             </div>
-            <div class="contact-form col-lg-6 col-md-auto">
-                <div>
-                    <form class="row g-2">
+            <div class="contact-form container-fluid col-lg-6 col-md-auto pt-3">
+                <div class="">
+                    <form class="row g-2" action="https://formsubmit.co/Tzipporipress@gmail.com" method="post">
                         <label class="form-label col-6">
                             First Name
-                            <input type="text" name="first-name"
+                            <input type="text" name="name"
                                    class="form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-3 shadow-none ps-0 pb-3">
 
                         </label>
                         <label class="form-label col-6">
                             Last Name
-                            <input type="text" name="last-name"
+                            <input type="text" name="name"
                                    class="form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-3 shadow-none ps-0 pb-3">
 
                         </label>
@@ -240,13 +249,17 @@
                                    class="form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-3 shadow-none ps-0 pb-3">
 
                         </label>
+                        <input type="hidden" name="_subject" value="New submission!">
                         <label class="form-label">
                             Leave us a message
-                            <textarea
-                                    class="form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-3 shadow-none ps-0 pb-3"></textarea>
+                            <textarea name="message" rows="4" style="resize: none"
+                                      class="form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-3 shadow-none ps-0 pb-3"></textarea>
                         </label>
-                        <button class="btn text-dark rounded-pill w-auto fw-bold"
-                                style="background-color: white; color: #0D4A40;">Submit
+                        <label>
+                            <input type="text" name="_honey" style="display:none">
+                        </label>
+                        <button class="btn text-dark rounded-pill w-auto fw-bold px-5 py-2"
+                                style="background-color: white; color: #0D4A40;" type="submit">Submit
                         </button>
                     </form>
                 </div>
