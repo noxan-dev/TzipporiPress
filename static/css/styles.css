@@ -23,13 +23,16 @@ html {
 
 #home {
     width: 100%;
-    height: 90vh;
+    height: 78vh;
     line-height: 3rem;
     font-size: x-large;
 }
 
 .introduction {
     padding: 2rem 0 0 2rem;
+    animation: fadeUpAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .introduction h1 {
@@ -39,6 +42,10 @@ html {
 #services {
     background: #DEE8E0;
     padding: 2rem 2rem;
+}
+
+#services h1 {
+    color: #0c4128;
 }
 
 .service-icon {
@@ -51,6 +58,11 @@ html {
     background: #0D4A40;
     color: #FFFFFF;
     padding: 2rem 2rem;
+}
+
+.carousel-item p {
+    font-weight: bolder;
+    font-size: 1.2rem;
 }
 
 #carouselTestimonials {
@@ -77,6 +89,7 @@ html {
 .team-img {
     width: 310px;
     height: 305px;
+    object-fit: cover;
     border-radius: 100%;
 }
 
@@ -101,6 +114,17 @@ footer {
     padding: 1rem 0;
 }
 
+@keyframes fadeUpAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    75% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 @media screen and (min-width:800px) {
     .nav-container {
         position: fixed;
@@ -113,6 +137,10 @@ footer {
     .nav-container.scrolled {
         background-color: #fff !important;
         transition: background-color 200ms linear;
+    }
+
+    #home {
+        height: 90vh;
     }
 
     .introduction {
@@ -131,6 +159,10 @@ footer {
 
     #testimonials {
         padding: 8rem 8rem;
+    }
+
+    .carousel-item p {
+        font-size: 2rem;
     }
 
     #about {
