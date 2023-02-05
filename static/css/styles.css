@@ -10,12 +10,17 @@ html {
 }
 
 .section-header {
-    color: #858B86;
+    color: #69A573;
     font-size: 1.2em;
 }
 
+nav {
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+}
+
 #nav-home {
-    background-image: url("../images/backround_header.jpg");
+    background-image: url("../images/background_header.png");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -36,7 +41,13 @@ html {
 }
 
 .introduction h1 {
-    font-size: 3rem;
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 127px;
+    letter-spacing: -0.021em;
+    color: #0C3D35;
 }
 
 #services {
@@ -55,7 +66,7 @@ html {
 }
 
 #testimonials {
-    background: #0D4A40;
+    background: #CFDDD2;
     color: #FFFFFF;
     padding: 2rem 2rem;
 }
@@ -72,7 +83,7 @@ html {
 }
 
 #about {
-    background: url("../images/background_about.jpg");
+    background: #DEE8E0;
     background-size: cover;
     padding: 2rem 2rem;
 }
@@ -81,16 +92,22 @@ html {
     color: #0D4A40;
 }
 
+#about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 #our-team {
-    background: #DEE8E0;
+    background: #D0DFD4;
     padding: 2rem 2rem;
 }
 
 .team-img {
-    width: 310px;
-    height: 305px;
+    background: #D0DFD4;
+    width: 304px;
+    height: 304px;
     object-fit: cover;
-    border-radius: 100%;
 }
 
 .team-name {
@@ -102,15 +119,26 @@ html {
 }
 
 #contact {
-    background: #0D4A40;
-    color: #FFFFFF;
+    background: #E8F0E8;
     padding: 2rem 2rem;
-    caret-color: white;
+    caret-color: #0D4A40;
 }
 
-footer {
+
+#contact input::placeholder {
     text-align: center;
-    color: #0D4A40;
+    line-height: 50px;
+}
+
+.form-control {
+    border-color: #69A573;
+}
+
+
+footer {
+    background: #0D4A40;
+    text-align: center;
+    color: #69A573;
     padding: 1rem 0;
 }
 
@@ -125,12 +153,11 @@ footer {
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width: 800px) {
     .nav-container {
         position: fixed;
         top: 0;
-        padding: .5rem 8rem;
-        margin-top: 1.5rem;
+        padding: .5rem 3rem;
         z-index: 9;
     }
 
@@ -148,9 +175,11 @@ footer {
     }
 
     .introduction h1 {
-        color: #062520;
-        font-weight: bold;
-        font-size: 5.6rem;
+        color: #031B17;
+        font-weight: 700;
+        font-size: 8rem;
+        line-height: 150px;
+        letter-spacing: -0.021em;
     }
 
     #services {
