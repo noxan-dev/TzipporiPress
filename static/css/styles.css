@@ -3,15 +3,25 @@
     -moz-box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+h1 {
+    color: #0C3D35;
+}
+
 .section-header {
     color: #69A573;
     font-size: 1.2em;
+    padding-bottom: 2.5rem;
 }
 
 nav {
@@ -34,7 +44,6 @@ nav {
 
 #home {
     background: linear-gradient(180deg, rgba(234, 240, 235, 0) 0%, #EBF1EC 83.91%);
-
     width: 100%;
     height: 78vh;
     line-height: 3rem;
@@ -49,12 +58,10 @@ nav {
 }
 
 .introduction h1 {
-    font-family: 'Source Serif Pro';
     font-style: normal;
     font-weight: 700;
     /*font-size: 128px;*/
     letter-spacing: -0.021em;
-    color: #0C3D35;
 }
 
 .gradient {
@@ -67,17 +74,9 @@ nav {
     padding: 2rem 2rem;
 }
 
-#services h1 {
-    color: #0c4128;
-}
-
 #services h4 {
     color: #0C3D35;
     font-weight: 700;
-}
-
-.service-header {
-    gap: 47px;
 }
 
 .service-desc{
@@ -101,7 +100,6 @@ nav {
 
 #testimonials {
     background: #CFDDD2;
-    color: #FFFFFF;
     padding: 2rem 2rem;
 }
 
@@ -111,13 +109,13 @@ nav {
 }
 
 #carouselTestimonials {
-    background: #0D4A40;
+    background: #CFDDD2;
     height: auto;
     padding: 2rem 2rem;
 }
 
 #about {
-    background: #DEE8E0;
+    background: #EDF3EE;
     padding: 2rem 2rem;
 }
 
@@ -125,8 +123,8 @@ nav {
     place-content: center;
 }
 
-#about h1 {
-    color: #0D4A40;
+.about-header {
+    padding-bottom: 8rem;
 }
 
 #about img {
@@ -169,6 +167,12 @@ nav {
     caret-color: #0D4A40;
 }
 
+.contact-form form {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
 
 #contact input::placeholder {
     text-align: center;
@@ -179,12 +183,15 @@ nav {
     border-color: #69A573;
 }
 
-
 footer {
     background: #0D4A40;
     text-align: center;
     color: #69A573;
     padding: 1rem 0;
+}
+
+footer .footer-text {
+    color: #ECEDEE;
 }
 
 @keyframes fadeUpAnimation {
@@ -225,23 +232,26 @@ footer {
     }
 
     .introduction h1 {
-        color: #031B17;
         font-weight: 700;
         font-size: 8rem;
         line-height: 150px;
         letter-spacing: -0.021em;
     }
 
+    #services {
+        padding: 10rem 16.5rem;
+    }
+
+    #services h1 {
+        padding-bottom: 5rem;
+    }
+
     .service-items {
         gap: 6.313rem;
     }
 
-    #services {
-        padding: 8rem 16.5rem;
-    }
-
     #testimonials {
-        padding: 8rem 7.5rem;
+        padding: 10rem 7.5rem;
     }
 
     .carousel-item p {
@@ -249,15 +259,15 @@ footer {
     }
 
     #about {
-        padding: 8rem 16.313rem;
+        padding: 10rem 16.313rem;
     }
 
     #our-team {
-        padding: 8rem 7.5rem;
+        padding: 10rem 20.75rem;
     }
 
     #contact {
-        padding: 8rem 7.5rem;
+        padding: 10rem 43.313rem;
     }
 
     .about-statements {
