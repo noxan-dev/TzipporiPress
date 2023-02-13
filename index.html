@@ -86,7 +86,7 @@
         </div>
     </section>
 
-    <!--    <div class="gradiant"></div>-->
+    <!--    <div class="gradiant"><img src="static/images/gradiant.png" alt=""></div>-->
 
     <section id="services">
         <div class="row g-3">
@@ -227,8 +227,8 @@
     </section>
 
     <section id="our-team">
-        <div class="container-fluid">
-            <div class="team row g-4">
+        <div class="our-team">
+            <div class="team row g-md-4">
                 <div class="text-center">
                     <h2 class="section-header">Our Team</h2>
                     <h1>Meet the team</h1>
@@ -271,15 +271,15 @@
     </section>
 
     <section id="contact">
-        <div class="row g-4 text-center justify-content-center">
-            <div class="contact-header container-fluid">
+        <div class="contact">
+            <div class="contact-header">
                 <h2 class="section-header">Contact Form</h2>
                 <h1>Let’s Work Together</h1>
                 <p>Enter your email to begin your publishing journey!</p>
             </div>
-            <div class="contact-form container-fluid pt-3">
+            <div class="contact-form">
                 <div>
-                    <form class="row g-2" action="https://formsubmit.co/hello@tzipporipress.com" method="post">
+                    <form class="row" action="https://formsubmit.co/hello@tzipporipress.com" method="post">
                         <label class="form-label">
                             <input type="text" name="name"
                                    class="form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
@@ -294,9 +294,9 @@
                         </label>
                         <input type="hidden" name="_subject" value="New submission!">
                         <label class="form-label">
-                            <textarea name="message" rows="4" style="resize: auto;"
-                                      class="form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
-                                      placeholder="Message"></textarea>
+                            <input name="number"
+                                   class="form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
+                                   placeholder="Phone Number">
                         </label>
                         <label>
                             <input type="text" name="_honey" style="display:none">
@@ -309,6 +309,8 @@
                             </svg>
                         </button>
                     </form>
+                    <sub>By clicking “Get a Quote,” I agree to provide the contact information listed above for the
+                        purpose of receiving communications regarding publishing opportunities.</sub>
                 </div>
             </div>
         </div>

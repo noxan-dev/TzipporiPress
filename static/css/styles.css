@@ -68,14 +68,9 @@ nav {
     letter-spacing: -0.021em;
 }
 
-.gradient {
-    height: 407px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
-}
-
 #services {
     background: #EDF3EE;
-    padding: 2rem 2rem;
+    padding: 2rem;
 }
 
 #services h4 {
@@ -83,7 +78,7 @@ nav {
     font-weight: 700;
 }
 
-.service-desc{
+.service-desc {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -93,7 +88,7 @@ nav {
     color: #0C3D35;
 }
 
-.service-desc span{
+.service-desc span {
     font-weight: 700;
 }
 
@@ -104,7 +99,7 @@ nav {
 
 #testimonials {
     background: #CFDDD2;
-    padding: 2rem 2rem;
+    padding: 2rem;
 }
 
 .carousel-item p {
@@ -115,12 +110,12 @@ nav {
 #carouselTestimonials {
     background: #CFDDD2;
     height: auto;
-    padding: 2rem 2rem;
+    padding: 2rem;
 }
 
 #about {
     background: #EDF3EE;
-    padding: 2rem 2rem;
+    padding: 2rem;
 }
 
 .about {
@@ -163,7 +158,7 @@ nav {
 
 #our-team {
     background: #D0DFD4;
-    padding: 2rem 2rem;
+    padding: 2rem;
 }
 
 .team {
@@ -172,6 +167,7 @@ nav {
 }
 
 .team-img {
+
 }
 
 .david-img .brooks-img {
@@ -191,22 +187,44 @@ nav {
 
 #contact {
     background: #E8F0E8;
-    padding: 2rem 2rem;
     caret-color: #0D4A40;
 }
 
-.contact-form form {
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+.contact {
+    padding: 2rem;
 }
 
+.contact-header {
+    text-align: center;
+}
+
+.contact-header p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.017em;
+    color: #0C3D35;
+}
+
+.contact-form form {
+    gap: 1rem;
+}
 
 .contact-form input::placeholder {
     text-align: center;
     line-height: 50px;
     color: #69A573;
-;
+}
+
+.contact sub {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.017em;
+    color: #0C3D35;
 }
 
 .form-control {
@@ -215,7 +233,6 @@ nav {
 
 footer {
     background: #0D4A40;
-    text-align: center;
     color: #69A573;
     padding: 1rem 0;
 }
@@ -300,12 +317,12 @@ footer .footer-text {
         gap: 12.5rem;
     }
 
-    #our-team {
+    .team {
         padding: 10rem 20.75rem;
     }
 
-    #contact {
-        padding: 10rem 43.313rem;
+    .contact {
+        padding: 10rem 40rem;
     }
 
     /*.about-statements {*/
