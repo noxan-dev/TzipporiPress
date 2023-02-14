@@ -18,8 +18,8 @@ h1 {
     color: #0C3D35;
     font-style: normal;
     font-weight: 700;
-    font-size: 64px;
-    line-height: 80px;
+    font-size: 2rem;
+    line-height: 2.5rem;
     letter-spacing: -0.02em;
 }
 
@@ -29,8 +29,12 @@ h1 {
     padding-bottom: 2.5rem;
 }
 
+.header {
+    padding-bottom: 5rem;
+}
+
 nav {
-    height: 100px;
+    height: 6.25rem;
     border-bottom-color: white;
     background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);
@@ -82,8 +86,8 @@ nav {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 35px;
+    font-size: 1.375rem;
+    line-height: 2.188rem;
     letter-spacing: -0.017em;
     color: #0C3D35;
 }
@@ -93,8 +97,8 @@ nav {
 }
 
 .service-icon {
-    width: 100px;
-    gap: 47px;
+    width: 6.25rem;
+    gap: 3rem;
 }
 
 #testimonials {
@@ -140,8 +144,8 @@ nav {
     color: #0C3D35;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 45px;
+    font-size: 2.25rem;
+    line-height: 2.8rem;
     align-items: center;
     letter-spacing: -0.02em;
 }
@@ -150,8 +154,8 @@ nav {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 35px;
+    font-size: 1.375rem;
+    line-height: 2.188rem;
     letter-spacing: -0.017em;
     color: #0C3D35;
 }
@@ -161,20 +165,46 @@ nav {
     padding: 2rem;
 }
 
+#our-team sub {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    letter-spacing: -0.017em;
+    color: #69A573;
+}
+
+#our-team p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    letter-spacing: -0.017em;
+    color: #0C3D35;
+}
+
 .team {
-    width: fit-content;
-    gap: 47px;
+    gap: 3rem;
+}
+
+.team-header {
+    padding-bottom: 10rem;
 }
 
 .team-img {
-
+    width: fit-content;
 }
 
-.david-img .brooks-img {
-    background: #D0DFD4;
-    width: 304px;
-    height: 304px;
+.team-img img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
+}
+
+.brooks, .david {
+    gap: 3rem;
 }
 
 .team-name {
@@ -195,6 +225,7 @@ nav {
 }
 
 .contact-header {
+    padding-bottom: 7.5rem;
     text-align: center;
 }
 
@@ -202,8 +233,8 @@ nav {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 1.25rem;
+    line-height: 2rem;
     letter-spacing: -0.017em;
     color: #0C3D35;
 }
@@ -214,7 +245,7 @@ nav {
 
 .contact-form input::placeholder {
     text-align: center;
-    line-height: 50px;
+    line-height: 3.125rem;
     color: #69A573;
 }
 
@@ -222,7 +253,7 @@ nav {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 1.125rem;
     letter-spacing: -0.017em;
     color: #0C3D35;
 }
@@ -257,12 +288,19 @@ footer .footer-text {
 }
 
 @media screen and (min-width: 800px) {
+    h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 5rem
+    }
+
     .nav-container {
         position: fixed;
         top: 0;
         padding: .5rem 7.5rem;
         z-index: 9;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .nav-container.scrolled {
@@ -271,7 +309,11 @@ footer .footer-text {
     }
 
     .navbar-nav {
-        gap: 20px;
+        gap: 1.25rem;
+    }
+
+    .header {
+        padding-bottom: 10rem;
     }
 
     #home {
@@ -285,12 +327,12 @@ footer .footer-text {
     .introduction h1 {
         font-weight: 700;
         font-size: 8rem;
-        line-height: 150px;
+        line-height: 9.375rem;
         letter-spacing: -0.021em;
     }
 
     #services {
-        padding: 10rem 16.5rem;
+        padding: 8rem 16.5rem;
     }
 
     #services h1 {
@@ -302,7 +344,7 @@ footer .footer-text {
     }
 
     #testimonials {
-        padding: 10rem 7.5rem;
+        padding: 8rem 7.5rem;
     }
 
     .carousel-item p {
@@ -310,7 +352,7 @@ footer .footer-text {
     }
 
     #about {
-        padding: 10rem 16.313rem;
+        padding: 8rem 16.313rem;
     }
 
     .about-statements {
@@ -318,11 +360,21 @@ footer .footer-text {
     }
 
     .team {
-        padding: 10rem 20.75rem;
+        padding: 8rem 20.75rem;
+    }
+
+    .brooks, .david {
+        gap: 7.875rem;
+    }
+
+    .team-img img {
+        max-width: fit-content;
+        height: auto;
+        object-fit: cover;
     }
 
     .contact {
-        padding: 10rem 40rem;
+        padding: 8rem 40rem;
     }
 
     /*.about-statements {*/
