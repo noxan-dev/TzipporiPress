@@ -70,18 +70,8 @@ nav {
     animation-fill-mode: forwards;
 }
 
-.introduction h1 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
-    text-align: center;
-    letter-spacing: -0.021em;
-}
-
 #services {
     background: #EDF3EE;
-    padding: 2rem;
 }
 
 #services h4 {
@@ -101,11 +91,6 @@ nav {
 
 .service-desc span {
     font-weight: 700;
-}
-
-.service-icon {
-    width: 6.25rem;
-    gap: 3rem;
 }
 
 #testimonials {
@@ -227,10 +212,6 @@ nav {
     caret-color: #0D4A40;
 }
 
-.contact {
-    padding: 2rem;
-}
-
 .contact-header {
     padding-bottom: 7.5rem;
     text-align: center;
@@ -298,7 +279,14 @@ footer .footer-text {
     }
 }
 
-@media screen and (min-width: 800px) {
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+    /* CSS */
     h1 {
         font-style: normal;
         font-weight: 700;
@@ -345,21 +333,26 @@ footer .footer-text {
     }
 
     #services {
-        padding: 8rem 16.5rem 10rem;
+        padding: 8rem 12rem 10rem;
     }
 
     #services h1 {
         padding-bottom: 5rem;
     }
 
+    .service-icon {
+        width: 6rem;
+        height: auto;
+        gap: 2rem;
+    }
+
     .service-items {
-        gap: 6.313rem;
+        gap: 6rem;
     }
 
     /*#testimonials {*/
     /*    padding: 8rem 7.5rem;*/
     /*}*/
-
     .carousel-item p {
         font-size: 2rem;
     }
@@ -367,7 +360,6 @@ footer .footer-text {
     /*#about {*/
     /*    padding: 8rem 16.313rem;*/
     /*}*/
-
     .about-statements {
         gap: 12.5rem;
     }
@@ -386,11 +378,222 @@ footer .footer-text {
         object-fit: cover;
     }
 
-    /*.contact {*/
-    /*    padding: 8rem 40rem;*/
+    .contact {
+        padding: 8rem 30rem;
+    }
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* CSS */
+    h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 5rem
+    }
+
+    .nav-container {
+        position: fixed;
+        top: 0;
+        padding: .5rem 7.5rem;
+        z-index: 9;
+        gap: 1.25rem;
+    }
+
+    .nav-container.scrolled {
+        background-color: #fff !important;
+        transition: background-color 200ms linear;
+    }
+
+    .navbar-nav {
+        gap: 1.25rem;
+    }
+
+    .header {
+        padding-bottom: 10rem;
+    }
+
+    #home {
+        height: 95vh;
+    }
+
+    .introduction {
+        place-content: start;
+        padding: 8rem 0 0 19.5rem;
+    }
+
+    .introduction h1 {
+        font-weight: 700;
+        font-size: 8rem;
+        line-height: 9.375rem;
+        text-align: left;
+        letter-spacing: -0.021em;
+    }
+
+    #services {
+        padding: 8rem 8rem 10rem;
+    }
+
+    #services h1 {
+        padding-bottom: 5rem;
+    }
+
+    .service-items {
+        gap: 6.313rem;
+    }
+
+    .service-icon {
+        width: 5.8rem;
+        height: auto;
+        gap: 2rem;
+    }
+
+    /*#testimonials {*/
+    /*    padding: 8rem 7.5rem;*/
     /*}*/
+    .carousel-item p {
+        font-size: 2rem;
+    }
+
+    /*#about {*/
+    /*    padding: 8rem 16.313rem;*/
+    /*}*/
+    .about-statements {
+        gap: 12.5rem;
+    }
+
+    /*.team {*/
+    /*    padding: 100px 200px;*/
+    /*}*/
+
+    .brooks, .david {
+        gap: 7.875rem;
+    }
+
+    .team-img img {
+        max-width: fit-content;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .contact {
+        padding: 8rem 20rem;
+    }
 
     /*.about-statements {*/
     /*    max-width: 50%;*/
     /*}*/
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* CSS */
+    #services {
+        padding: 2rem;
+    }
+
+    .service-icon {
+        width: 6rem;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .contact {
+        padding: 8rem 12rem;
+    }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    /* CSS */
+    #services {
+        padding: 3rem;
+    }
+
+    .service-icon {
+        width: 6rem;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .contact {
+        padding: 8rem 12rem;
+    }
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* CSS */
+    #services {
+        padding: 2rem;
+    }
+
+    .service-icon {
+        width: 6rem;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .contact {
+        padding: 8rem 8rem;
+    }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /* CSS */
+    .introduction h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        letter-spacing: -0.021em;
+    }
+
+    #services {
+        padding: 3rem 2rem;
+    }
+
+    .service-icon {
+        width: 5.2rem;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .contact {
+        padding: 8rem 3rem;
+    }
+
 }
