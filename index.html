@@ -15,9 +15,11 @@
 </head>
 
 <body>
+
 <div class="layout">
-    <section id="nav-home">
-        <nav class="navbar navbar-scroll navbar-expand-lg">
+
+
+    <nav class="navbar navbar-scroll sticky-top navbar-expand-lg">
             <div class="nav-container py-3 container-fluid">
                 <a class="navbar-brand col" href="#">
                     <img src="static/images/logo.png" alt="Logo" width="158" height="56"
@@ -65,28 +67,26 @@
                 </div>
             </div>
         </nav>
-        <div id="home">
-            <div class="introduction row container-fluid">
-                <h1 class="p-0 w-auto">Self Publishing <br> Redefined.</h1>
-                <div>
-                    <a class="btn text-light rounded-pill w-auto" role="button" href="#contact"
-                       style="background-color: #69A573; padding: 10px 24px; gap: 9px;">Publish Your Sefer</a>
-                    <a href="#"
-                       style="color: #0D4A40; font-style: normal; font-weight: 500; font-size: 18px; line-height: 24px; letter-spacing: -0.014em">Why
-                        Tzippori?
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                  d="M6 8h5.293L5 14.293l1.414 1.414 6.293-6.293V15h2V6H6v2z"/>
-                        </svg>
-                    </a>
+
+    <section id="home">
+            <div class="home h-100">
+                <div class="introduction row container-fluid">
+                    <h1 class="p-0 w-auto">Self Publishing <br> Redefined.</h1>
+                    <div>
+                        <a class="btn text-light rounded-pill w-auto" role="button" href="#contact"
+                           style="background-color: #69A573; padding: 10px 24px; gap: 9px;">Publish Your Sefer</a>
+                        <a href="#" class="text-decoration-none"
+                           style="color: #0D4A40; font-family: 'Inter', sans-serif; font-style: normal; font-weight: 500; font-size: 18px; line-height: 24px; letter-spacing: -0.014em">Why
+                            Tzippori?
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 8h5.293L5 14.293l1.414 1.414 6.293-6.293V15h2V6H6v2z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-
             </div>
-        </div>
-    </section>
-
-    <!--    <div class="gradiant"><img src="static/images/gradiant.png" alt=""></div>-->
+        </section>
 
     <section id="services">
         <div class="row gy-3">
@@ -286,21 +286,21 @@
                     <form class="row" action="https://formsubmit.co/hello@tzipporipress.com" method="post">
                         <label class="form-label">
                             <input type="text" name="name"
-                                   class="form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
-                                   placeholder="Type your name">
+                                   class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
+                                   placeholder="Type your name" required>
 
                         </label>
                         <label class="form-label">
                             <input type="email" name="email"
-                                   class="form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
-                                   placeholder="Email">
+                                   class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
+                                   placeholder="Email" required>
 
                         </label>
                         <input type="hidden" name="_subject" value="New submission!">
                         <label class="form-label">
                             <input name="number"
-                                   class="form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
-                                   placeholder="Phone Number">
+                                   class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
+                                   placeholder="Phone Number" required>
                         </label>
                         <label>
                             <input type="text" name="_honey" style="display:none">
