@@ -1,6 +1,6 @@
 * {
-    box-sizing: border-box;
     -moz-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 
@@ -172,6 +172,7 @@ nav {
 
 .team-img {
     width: fit-content;
+    -moz-fit-content: fit-content;
 }
 
 .team-img img {
@@ -550,12 +551,17 @@ footer .footer-text {
     }
 
     #our-team {
-        text-align: center;
-
+        /*text-align: center;*/
+        padding: 8rem 6.5rem;
     }
 
     .team {
         justify-content: center;
+    }
+
+    .team-img {
+        width: 225px;
+        height: 216px;
     }
 
     .team-header {
@@ -563,15 +569,9 @@ footer .footer-text {
         padding-bottom: 6rem;
     }
 
-    /*.team-img {*/
-    /*    display: block;*/
-    /*    margin-left: auto;*/
-    /*    margin-right: auto;*/
-    /*}*/
     .brooks, .david {
-        gap: 5rem;
+        gap: 3rem;
     }
-
 
     .contact {
         padding: 8rem 12rem;
@@ -615,7 +615,6 @@ footer .footer-text {
     }
 
     #about {
-        text-align: center;
         padding: 8rem;
     }
 
@@ -624,7 +623,7 @@ footer .footer-text {
     }
 
     #our-team {
-        padding: 8rem;
+        padding: 8rem 6.5rem;
     }
 
     .team-header {
@@ -632,8 +631,13 @@ footer .footer-text {
         padding-bottom: 8rem;
     }
 
+    .team-img {
+        width: 225px;
+        height: 216px;
+    }
+
     .brooks, .david {
-        gap: 5rem;
+        gap: 3rem;
     }
 
     .contact {
@@ -707,6 +711,11 @@ footer .footer-text {
     .team-header {
         text-align: center;
         padding-bottom: 6rem;
+    }
+
+    .team-img {
+        width: 225px;
+        height: 216px;
     }
 
     .brooks, .david {
@@ -786,6 +795,11 @@ footer .footer-text {
     .team-header {
         text-align: center;
         padding-bottom: 3rem;
+    }
+
+    .team-img {
+        width: 225px;
+        height: 216px;
     }
 
     .brooks, .david {
