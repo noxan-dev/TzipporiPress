@@ -194,7 +194,6 @@ nav {
 }
 
 .contact-header {
-    padding-bottom: 7.5rem;
     text-align: center;
 }
 
@@ -241,8 +240,29 @@ footer {
     padding: 2rem;
 }
 
+.footer-logo img {
+    width: 287px;
+    height: 100px;
+}
+
 footer .footer-text {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: -0.009em;
     color: #ECEDEE;
+}
+
+.footer-index {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    color: #E8F0E8;
 }
 
 .footer-logo {
@@ -369,6 +389,10 @@ footer .footer-text {
         padding: 8rem 35rem;
     }
 
+    .contact-header {
+        padding-bottom: 7.5rem;
+    }
+
 }
 
 /*
@@ -480,6 +504,10 @@ footer .footer-text {
         padding: 8rem 20rem;
     }
 
+    .contact-header {
+        padding-bottom: 7.5rem;
+    }
+
 }
 
 /*
@@ -540,7 +568,6 @@ footer .footer-text {
     /*    margin-left: auto;*/
     /*    margin-right: auto;*/
     /*}*/
-
     .brooks, .david {
         gap: 5rem;
     }
@@ -548,6 +575,10 @@ footer .footer-text {
 
     .contact {
         padding: 8rem 12rem;
+    }
+
+    .contact-header {
+        padding-bottom: 7.5rem;
     }
 
 }
@@ -609,6 +640,10 @@ footer .footer-text {
         padding: 8rem 12rem;
     }
 
+    .contact-header {
+        padding-bottom: 5rem;
+    }
+
 }
 
 /*
@@ -619,7 +654,12 @@ footer .footer-text {
 @media (min-width: 481px) and (max-width: 767px) {
 
     /* CSS */
+    #home {
+        background-position: center;
+    }
+
     .introduction {
+        padding-top: 9rem;
         text-align: center;
         place-content: center;
     }
@@ -677,6 +717,15 @@ footer .footer-text {
         padding: 8rem 8rem;
     }
 
+    .contact-header {
+        padding-bottom: 4rem;
+    }
+
+    .footer-logo img {
+        width: 227px;
+        height: 77px;
+    }
+
 }
 
 /*
@@ -687,7 +736,12 @@ footer .footer-text {
 @media (min-width: 320px) and (max-width: 480px) {
 
     /* CSS */
+    #home {
+        background-position: center;
+    }
+
     .introduction {
+        padding-top: 9rem;
         text-align: center;
         place-content: center;
     }
@@ -740,6 +794,15 @@ footer .footer-text {
 
     .contact {
         padding: 8rem 2rem;
+    }
+
+    .contact-header {
+        padding-bottom: 4rem;
+    }
+
+    .footer-logo img {
+        width: 227px;
+        height: 77px;
     }
 
 }
