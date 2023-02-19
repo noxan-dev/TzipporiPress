@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Serif Pro', serif;
 }
 
 html {
@@ -243,8 +243,8 @@ footer {
 }
 
 .footer-logo img {
-    width: 287px;
-    height: 100px;
+    width: 17.938rem;
+    height: 6.25rem;
 }
 
 footer .footer-text {
