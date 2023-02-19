@@ -1,6 +1,6 @@
 * {
-    box-sizing: border-box;
     -moz-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 
@@ -29,10 +29,6 @@ h1 {
     padding-bottom: 2.5rem;
 }
 
-
-.header {
-    padding-bottom: 5rem;
-}
 
 nav {
     /*background-image: url("../images/background_header.png");*/
@@ -63,25 +59,14 @@ nav {
 }
 
 .introduction {
-    place-content: center;
     padding: 2rem 0 0 2rem;
     animation: fadeUpAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-.introduction h1 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
-    text-align: center;
-    letter-spacing: -0.021em;
-}
-
 #services {
     background: #EDF3EE;
-    padding: 2rem;
 }
 
 #services h4 {
@@ -103,11 +88,6 @@ nav {
     font-weight: 700;
 }
 
-.service-icon {
-    width: 6.25rem;
-    gap: 3rem;
-}
-
 #testimonials {
     background: #CFDDD2;
     padding: 2rem;
@@ -126,7 +106,6 @@ nav {
 
 #about {
     background: #EDF3EE;
-    padding: 2rem;
 }
 
 .about {
@@ -141,10 +120,6 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.about-statements {
-    gap: 6rem;
 }
 
 .about-statements h2 {
@@ -169,7 +144,6 @@ nav {
 
 #our-team {
     background: #D0DFD4;
-    padding: 2rem;
 }
 
 #our-team sub {
@@ -193,25 +167,18 @@ nav {
 }
 
 .team {
-    gap: 3rem;
-}
-
-.team-header {
-    padding-bottom: 10rem;
+    gap: 5rem;
 }
 
 .team-img {
     width: fit-content;
+    -moz-fit-content: fit-content;
 }
 
 .team-img img {
     width: 100%;
     height: auto;
     object-fit: cover;
-}
-
-.brooks, .david {
-    gap: 3rem;
 }
 
 .team-name {
@@ -227,12 +194,7 @@ nav {
     caret-color: #0D4A40;
 }
 
-.contact {
-    padding: 2rem;
-}
-
 .contact-header {
-    padding-bottom: 7.5rem;
     text-align: center;
 }
 
@@ -276,11 +238,31 @@ nav {
 footer {
     background: #0D4A40;
     color: #69A573;
-    padding: 2rem;
+}
+
+.footer-logo img {
+    width: 287px;
+    height: 100px;
 }
 
 footer .footer-text {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: -0.009em;
     color: #ECEDEE;
+}
+
+.footer-index {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    color: #E8F0E8;
 }
 
 .footer-logo {
@@ -298,7 +280,14 @@ footer .footer-text {
     }
 }
 
-@media screen and (min-width: 800px) {
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+    /* CSS */
     h1 {
         font-style: normal;
         font-weight: 700;
@@ -307,8 +296,6 @@ footer .footer-text {
     }
 
     .nav-container {
-        position: fixed;
-        top: 0;
         padding: .5rem 7.5rem;
         z-index: 9;
         gap: 1.25rem;
@@ -345,36 +332,46 @@ footer .footer-text {
     }
 
     #services {
-        padding: 8rem 16.5rem 10rem;
+        padding: 8rem 12rem 10rem;
     }
 
     #services h1 {
         padding-bottom: 5rem;
     }
 
+    .service-icon {
+        width: 6rem;
+        height: auto;
+        gap: 2rem;
+    }
+
     .service-items {
-        gap: 6.313rem;
+        gap: 6rem;
     }
 
     /*#testimonials {*/
     /*    padding: 8rem 7.5rem;*/
     /*}*/
-
     .carousel-item p {
         font-size: 2rem;
     }
 
-    /*#about {*/
-    /*    padding: 8rem 16.313rem;*/
-    /*}*/
+    #about {
+        padding: 8rem 16.313rem;
+    }
 
     .about-statements {
         gap: 12.5rem;
     }
 
-    /*.team {*/
-    /*    padding: 100px 200px;*/
-    /*}*/
+    #our-team {
+        padding: 8rem 16.313rem;
+    }
+
+    .team-header {
+        text-align: center;
+        padding-bottom: 10rem;
+    }
 
     .brooks, .david {
         gap: 7.875rem;
@@ -386,11 +383,476 @@ footer .footer-text {
         object-fit: cover;
     }
 
-    /*.contact {*/
-    /*    padding: 8rem 40rem;*/
-    /*}*/
+    .contact {
+        padding: 8rem 35rem;
+    }
 
-    /*.about-statements {*/
-    /*    max-width: 50%;*/
+    .contact-header {
+        padding-bottom: 7.5rem;
+    }
+
+    .footer-contact {
+        justify-self: end;
+    }
+
+    .credits {
+        justify-self: end;
+    }
+
+    footer {
+        padding: 6.313rem 7.563rem;
+    }
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* CSS */
+    h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 5rem
+    }
+
+    .nav-container {
+        padding: .5rem 7.5rem;
+        z-index: 9;
+        gap: 1.25rem;
+    }
+
+    .nav-container.scrolled {
+        background-color: #fff !important;
+        transition: background-color 200ms linear;
+    }
+
+    .navbar-nav {
+        gap: 1.25rem;
+    }
+
+    .header {
+        padding-bottom: 10rem;
+    }
+
+    #home {
+        height: 95vh;
+    }
+
+    .introduction {
+        place-content: start;
+        padding: 8rem 0 0 14rem;
+    }
+
+    .introduction h1 {
+        font-weight: 700;
+        font-size: 6rem;
+        line-height: 9.375rem;
+        text-align: left;
+        letter-spacing: -0.021em;
+    }
+
+    #services {
+        padding: 8rem 8rem 10rem;
+    }
+
+    #services h1 {
+        padding-bottom: 5rem;
+    }
+
+    .service-items {
+        gap: 6.313rem;
+    }
+
+    .service-icon {
+        width: 5.8rem;
+        height: auto;
+        gap: 2rem;
+    }
+
+    /*#testimonials {*/
+    /*    padding: 8rem 7.5rem;*/
     /*}*/
+    .carousel-item p {
+        font-size: 2rem;
+    }
+
+    #about {
+        padding: 8rem;
+    }
+
+    .about-statements {
+        gap: 12.5rem;
+    }
+
+    #our-team {
+        padding: 8rem 12rem;
+    }
+
+    .team-header {
+        text-align: center;
+        padding-bottom: 10rem;
+    }
+
+    .brooks, .david {
+        gap: 5rem;
+    }
+
+    .team-img img {
+        max-width: fit-content;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .contact {
+        padding: 8rem 20rem;
+    }
+
+    .contact-header {
+        padding-bottom: 7.5rem;
+    }
+
+    footer {
+        padding: 6.313rem 7.563rem;
+    }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* CSS */
+    .introduction {
+        text-align: center;
+        place-content: center;
+    }
+
+    .introduction h1 {
+        font-weight: 700;
+        font-size: 6rem;
+        line-height: 9.375rem;
+        text-align: center;
+        letter-spacing: -0.021em;
+    }
+
+    #services {
+        padding: 4rem;
+    }
+
+    .service-icon {
+        width: 6rem;
+        height: auto;
+        gap: 2rem;
+    }
+
+    #about {
+        padding: 8rem;
+    }
+
+    .about-statements {
+        gap: 6rem;
+    }
+
+    #our-team {
+        /*text-align: center;*/
+        padding: 8rem 6.5rem;
+    }
+
+    .team {
+        justify-content: center;
+    }
+
+    .team-img {
+        width: 225px;
+        height: 216px;
+    }
+
+    .team-header {
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+
+    .brooks, .david {
+        gap: 3rem;
+    }
+
+    .contact {
+        padding: 8rem 12rem;
+    }
+
+    .contact-header {
+        padding-bottom: 7.5rem;
+    }
+
+    footer {
+        padding: 6rem 4.25rem 3.563rem;
+    }
+
+    .footer-contact {
+        justify-content: end;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    /* CSS */
+    .introduction {
+        text-align: center;
+        place-content: center;
+    }
+
+    .introduction h1 {
+        font-weight: 700;
+        font-size: 6rem;
+        line-height: 9.375rem;
+        text-align: center;
+        letter-spacing: -0.021em;
+    }
+
+    #services {
+        padding: 4rem;
+    }
+
+    .service-icon {
+        width: 6rem;
+        height: auto;
+        gap: 2rem;
+    }
+
+    #about {
+        padding: 8rem;
+    }
+
+    .about-statements {
+        gap: 6rem;
+    }
+
+    #our-team {
+        padding: 8rem 6.5rem;
+    }
+
+    .team-header {
+        text-align: center;
+        padding-bottom: 8rem;
+    }
+
+    .team-img {
+        width: 225px;
+        height: 216px;
+    }
+
+    .brooks, .david {
+        gap: 3rem;
+    }
+
+    .contact {
+        padding: 8rem 12rem;
+    }
+
+    .contact-header {
+        padding-bottom: 5rem;
+    }
+
+    footer {
+        padding: 6rem 4.25rem 3.563rem;
+    }
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* CSS */
+    #home {
+        background-position: center;
+    }
+
+    .introduction {
+        padding-top: 9rem;
+        text-align: center;
+        place-content: center;
+    }
+
+    .introduction h1 {
+        font-weight: 700;
+        font-size: 5rem;
+        line-height: 7rem;
+        text-align: center;
+        letter-spacing: -0.021em;
+    }
+
+    #services {
+        padding: 4rem;
+    }
+
+    .service-icon {
+        width: 6rem;
+        height: auto;
+        gap: 2rem;
+    }
+
+    #about {
+        text-align: center;
+        padding: 5rem;
+    }
+
+    .about-header {
+        padding-bottom: 5rem;
+    }
+
+    .about-header {
+        padding-bottom: 5rem;
+    }
+
+    .about-statements {
+        gap: 3rem;
+    }
+
+    #our-team {
+        text-align: center;
+        padding: 5rem;
+    }
+
+    .team-header {
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+
+    .team-img {
+        width: 225px;
+        height: 216px;
+    }
+
+    .brooks, .david {
+        gap: 4rem;
+    }
+
+    .contact {
+        padding: 8rem 8rem;
+    }
+
+    .contact-header {
+        padding-bottom: 4rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 7.188rem 4.25rem 3.563rem;
+    }
+
+    .footer-logo img {
+        width: 227px;
+        height: 77px;
+    }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /* CSS */
+    #home {
+        background-position: center;
+    }
+
+    .introduction {
+        padding-top: 9rem;
+        text-align: center;
+        place-content: center;
+    }
+
+    .introduction h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        letter-spacing: -0.021em;
+    }
+
+    #services {
+        padding: 3rem 2rem;
+    }
+
+    .service-icon {
+        width: 5.2rem;
+        height: auto;
+        gap: 2rem;
+    }
+
+    #about {
+        text-align: center;
+        padding: 5rem 2rem;
+    }
+
+    .about-header {
+        padding-bottom: 5rem;
+    }
+
+    .about-statements {
+        gap: 3rem;
+    }
+
+    #our-team {
+        text-align: center;
+        padding: 5rem 2rem;
+    }
+
+    .team-header {
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    .team-img {
+        width: 225px;
+        height: 216px;
+    }
+
+    .brooks, .david {
+        gap: 3rem;
+    }
+
+    .contact {
+        padding: 8rem 2rem;
+    }
+
+    .contact-header {
+        padding-bottom: 4rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 7.188rem 4.25rem 3.563rem;
+    }
+
+    .footer-logo img {
+        width: 227px;
+        height: 77px;
+    }
+
+    .footer-contact-content {
+        justify-content: center;
+    }
+
 }
