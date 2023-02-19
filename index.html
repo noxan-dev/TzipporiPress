@@ -68,21 +68,33 @@
     </nav>
 
     <section id="home">
-        <div class="home">
-            <div class="introduction row container-fluid">
-                <div class="col row">
-                    <h1 class="p-0">Self Publishing <br> Redefined.</h1>
-                    <div class="row row-cols-2 g-3 align-items-center justify-content-center justify-content-lg-start">
-                        <a class="btn text-light rounded-pill w-auto" role="button" href="#contact"
-                           style="background-color: #69A573; padding: 10px 24px; gap: 9px;">Publish Your Sefer</a>
-                        <a href="#" class="text-decoration-none w-auto"
-                           style="color: #0D4A40; font-family: 'Inter', sans-serif; font-style: normal; font-weight: 500; font-size: 18px; line-height: 24px; letter-spacing: -0.014em">Why
-                            Tzippori?
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                 class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M6 8h5.293L5 14.293l1.414 1.414 6.293-6.293V15h2V6H6v2z"/>
-                            </svg>
-                        </a>
+        <div class="home container-fluid">
+            <div class="introduction row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>Self Publishing <br> Redefined.</h1>
+                        </div>
+                        <div class="col-12">
+                            <div class="row gy-2 align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-12 col-lg-6 w-auto">
+                                    <a class="btn text-light rounded-pill w-auto" role="button" href="#contact"
+                                       style="background-color: #69A573; padding: 10px 24px; gap: 9px;">Publish Your
+                                        Sefer</a>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <a href="#" class="text-decoration-none w-auto"
+                                       style="color: #0D4A40; font-family: 'Inter', sans-serif; font-style: normal; font-weight: 500; font-size: 18px; line-height: 24px; letter-spacing: -0.014em">Why
+                                        Tzippori?
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                  d="M6 8h5.293L5 14.293l1.414 1.414 6.293-6.293V15h2V6H6v2z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,7 +103,7 @@
 
     <section id="services">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row gy-3 gy-lg-0">
                 <div class="col-auto col-md-12 col-lg-12">
                     <div class="service-header header text-center">
                         <h2 class="section-header">Our Services</h2>
@@ -302,46 +314,51 @@
     </section>
 
     <section id="contact">
-        <div class="contact">
-            <div class="contact-header">
-                <h2 class="section-header">Contact Form</h2>
-                <h1>Let’s Work Together</h1>
-                <p>Enter your email to begin your publishing journey!</p>
-            </div>
-            <div class="contact-form">
-                <div>
-                    <form class="row" action="https://formsubmit.co/hello@tzipporipress.com" method="post">
-                        <label class="form-label">
-                            <input type="text" name="name"
-                                   class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
-                                   placeholder="Type your name" required>
+        <div class="contact container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-header">
+                        <h2 class="section-header">Contact Form</h2>
+                        <h1>Let’s Work Together</h1>
+                        <p>Enter your email to begin your publishing journey!</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="contact-form">
+                        <form class="row" action="https://formsubmit.co/hello@tzipporipress.com" method="post">
+                            <label class="form-label">
+                                <input type="text" name="name"
+                                       class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
+                                       placeholder="Type your name" required>
 
-                        </label>
-                        <label class="form-label">
-                            <input type="email" name="email"
-                                   class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
-                                   placeholder="Email" required>
+                            </label>
+                            <label class="form-label">
+                                <input type="email" name="email"
+                                       class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
+                                       placeholder="Email" required>
 
-                        </label>
-                        <input type="hidden" name="_subject" value="New submission!">
-                        <label class="form-label">
-                            <input name="number"
-                                   class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
-                                   placeholder="Phone Number" required>
-                        </label>
-                        <label>
-                            <input type="text" name="_honey" style="display:none">
-                        </label>
-                        <button class="btn rounded-pill px-5 py-2"
-                                style="background-color: #69A573; color: white;" type="submit">Get a Quote
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                 class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M6 8h5.293L5 14.293l1.414 1.414 6.293-6.293V15h2V6H6v2z"/>
-                            </svg>
-                        </button>
-                    </form>
-                    <sub>By clicking “Get a Quote,” I agree to provide the contact information listed above for the
-                        purpose of receiving communications regarding publishing opportunities.</sub>
+                            </label>
+                            <input type="hidden" name="_subject" value="New submission!">
+                            <label class="form-label">
+                                <input name="number"
+                                       class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
+                                       placeholder="Phone Number" required>
+                            </label>
+                            <label>
+                                <input type="text" name="_honey" style="display:none">
+                            </label>
+                            <button class="btn rounded-pill px-5 py-2"
+                                    style="background-color: #69A573; color: white;" type="submit">Get a Quote
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M6 8h5.293L5 14.293l1.414 1.414 6.293-6.293V15h2V6H6v2z"/>
+                                </svg>
+                            </button>
+                        </form>
+                        <sub>By clicking “Get a Quote,” I agree to provide the contact information listed above for the
+                            purpose of receiving communications regarding publishing opportunities.</sub>
+                    </div>
                 </div>
             </div>
         </div>
@@ -353,60 +370,74 @@
 </body>
 <footer>
     <div class="footer container-fluid">
-        <div class="row">
-            <div class="footer-logo col">
+        <div class="row pb-4">
+            <div class="footer-logo col-12 col-lg-6 order-1 order-lg-0">
                 <img src="static/images/logo.png" alt="Logo"
                      class="">
             </div>
-            <div class="footer-contact col row">
-                <div class="col">
-                    <div class="row">
-                        <div class="col">
-                            <h4 class="footer-text">Contact Us</h4>
-                            <div class="row">
-                                <div class="col">
-                                    <p><a href="mailto:hello@tzipporipress.com" class="text-decoration-none"
-                                          style="color: #69A573;"><i class="bi bi-envelope-fill"></i>
-                                        hello@tzipporipress.com</a></p>
-                                    <p><i class="bi bi-telephone-fill"></i> US Tel: +1 908 992 2134</p>
-                                    <p><i class="bi bi-telephone-fill"></i> IL Tel: +972 53 277 5522</p>
+            <div class="footer-contact col-12 col-lg-6 order-0 order-lg-1 pb-3">
+                <div class="footer-contact-content row gy-4">
+                    <div class="contact-content col-12 col-md-4 col-lg-4">
+                        <div class="row gy-2">
+                            <h4 class="footer-text col-12">Contact Us</h4>
+                            <div class="col-12">
+                                <div class="row gy-3">
+                                    <div class="col-12">
+                                        <a href="mailto:hello@tzipporipress.com" class="text-decoration-none"
+                                           style="color: #69A573;">
+                                            <i class="bi bi-envelope-fill"></i> hello@tzipporipress.com</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a href="tel:+1 908 992 2134" class="text-decoration-none"
+                                           style="color: #69A573;"><i class="bi bi-telephone-fill"></i> US Tel: +1 908
+                                            992 2134</a>
+                                    </div>
+                                    <div class="col-12"><a href="tel:+972 53 277 5522" class="text-decoration-none"
+                                                           style="color: #69A573;"><i class="bi bi-telephone-fill"></i>
+                                        IL Tel: +972 53
+                                        277 5522</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="row">
-                        <h4 class="footer-text">Our Socials</h4>
-                        <div class="row ">
-                            <div class="col gy-2">
-                                <p><a class="whatsapp-link col-lg-6 col-md-auto w-auto text-decoration-none"
-                                      href="https://api.whatsapp.com/send/?phone=9089922134" style="color: #69A573;"><i
-                                        class="bi bi-whatsapp"></i> Whatsapp</a>
-                                </p>
-                                <p><a class="linkedin-link col-lg-6 col-md-auto w-auto text-decoration-none"
-                                      href="https://www.linkedin.com/company/tzippori-press/about/"
-                                      style="color: #69A573;"><i class="bi bi-linkedin"></i> Linkedin</a>
-                                </p>
+                    <div class="social-content col-12 col-md-4 col-lg-4">
+                        <div class="row gy-2">
+                            <h4 class="footer-text col-12">Our Socials</h4>
+                            <div class="col-12">
+                                <div class="row gy-3">
+                                    <div class="col-12"><a class="whatsapp-link text-decoration-none"
+                                                           href="https://api.whatsapp.com/send/?phone=9089922134"
+                                                           style="color: #69A573;"><i class="bi bi-whatsapp"></i>
+                                        Whatsapp</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="linkedin-link text-decoration-none"
+                                           href="https://www.linkedin.com/company/tzippori-press/about/"
+                                           style="color: #69A573;"><i class="bi bi-linkedin"></i> Linkedin</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="row">
-                        <div class="col">
-                            <h4 class="footer-text">Legal</h4>
-                            <div class="row">
-                                <div class="col gy-2">
-                                    <p><a href="#" class="text-decoration-none" style="color: #69A573;"><i
-                                            class="bi bi-shield-fill-exclamation"></i> Privacy</a>
-                                    </p>
-                                    <p><a href="#" class="text-decoration-none" style="color: #69A573;"><i
-                                            class="bi bi-journal-plus"></i> Terms</a>
-                                    </p>
-                                    <p><a href="#" class="text-decoration-none" style="color: #69A573;"><i
-                                            class="bi bi-gear-fill"></i> Preference</a>
-                                    </p>
+                    <div class="legal-content col-12 col-md-4 col-lg-4">
+                        <div class="row gy-2">
+                            <h4 class="footer-text col-12">Legal</h4>
+                            <div class="col-12">
+                                <div class="row gy-3">
+                                    <div class="col-12">
+                                        <a href="#" class="col-12 text-decoration-none"
+                                           style="color: #69A573;"><i class="bi bi-shield-fill-exclamation"></i> Privacy</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a href="#" class="text-decoration-none"
+                                           style="color: #69A573;"><i class="bi bi-journal-plus"></i> Terms</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a href="#" class="text-decoration-none" style="color: #69A573;"><i
+                                                class="bi bi-gear-fill"></i> Preference</a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -415,11 +446,12 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col-12 col-lg-6">
                 <p class="footer-index">ⓒ 2023 Tzippori Press. All rights reserved.</p>
-                <p><span class="footer-index">Made by</span> Chaim Malek, <span
-                        class="footer-index">Designed by</span> Theorist Agency
-                </p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <p class="credits"><span class="footer-index">Made by</span> Chaim Malek, <span class="footer-index">Designed by</span>
+                    Theorist Agency</p>
             </div>
         </div>
     </div>

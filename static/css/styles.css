@@ -238,7 +238,6 @@ nav {
 footer {
     background: #0D4A40;
     color: #69A573;
-    padding: 2rem;
 }
 
 .footer-logo img {
@@ -297,8 +296,6 @@ footer .footer-text {
     }
 
     .nav-container {
-        position: fixed;
-        top: 0;
         padding: .5rem 7.5rem;
         z-index: 9;
         gap: 1.25rem;
@@ -394,6 +391,18 @@ footer .footer-text {
         padding-bottom: 7.5rem;
     }
 
+    .footer-contact {
+        justify-self: end;
+    }
+
+    .credits {
+        justify-self: end;
+    }
+
+    footer {
+        padding: 6.313rem 7.563rem;
+    }
+
 }
 
 /*
@@ -412,8 +421,6 @@ footer .footer-text {
     }
 
     .nav-container {
-        position: fixed;
-        top: 0;
         padding: .5rem 7.5rem;
         z-index: 9;
         gap: 1.25rem;
@@ -509,6 +516,10 @@ footer .footer-text {
         padding-bottom: 7.5rem;
     }
 
+    footer {
+        padding: 6.313rem 7.563rem;
+    }
+
 }
 
 /*
@@ -581,6 +592,13 @@ footer .footer-text {
         padding-bottom: 7.5rem;
     }
 
+    footer {
+        padding: 6rem 4.25rem 3.563rem;
+    }
+
+    .footer-contact {
+        justify-content: end;
+    }
 }
 
 /*
@@ -646,6 +664,10 @@ footer .footer-text {
 
     .contact-header {
         padding-bottom: 5rem;
+    }
+
+    footer {
+        padding: 6rem 4.25rem 3.563rem;
     }
 
 }
@@ -728,6 +750,11 @@ footer .footer-text {
 
     .contact-header {
         padding-bottom: 4rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 7.188rem 4.25rem 3.563rem;
     }
 
     .footer-logo img {
@@ -814,9 +841,18 @@ footer .footer-text {
         padding-bottom: 4rem;
     }
 
+    footer {
+        text-align: center;
+        padding: 7.188rem 4.25rem 3.563rem;
+    }
+
     .footer-logo img {
         width: 227px;
         height: 77px;
+    }
+
+    .footer-contact-content {
+        justify-content: center;
     }
 
 }
