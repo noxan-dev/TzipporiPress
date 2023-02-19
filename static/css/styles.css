@@ -182,6 +182,8 @@ nav {
 }
 
 .team-name {
+    font-style: normal;
+    font-weight: 700;
     color: #0c4128;
 }
 
@@ -320,7 +322,7 @@ footer .footer-text {
 
     .introduction {
         place-content: start;
-        padding: 8rem 0 0 19.5rem;
+        padding: 8rem 16.438rem 0 19.5rem;
     }
 
     .introduction h1 {
@@ -368,13 +370,19 @@ footer .footer-text {
         padding: 8rem 16.313rem;
     }
 
+    .team {
+        gap: 9.75rem;
+    }
+
     .team-header {
         text-align: center;
         padding-bottom: 10rem;
     }
 
-    .brooks, .david {
-        gap: 7.875rem;
+    .team-name {
+        font-size: 36px;
+        line-height: 41px;
+        letter-spacing: -0.272px;
     }
 
     .team-img img {
@@ -493,13 +501,19 @@ footer .footer-text {
         padding: 8rem 12rem;
     }
 
+    .team {
+        gap: 9.75rem;
+    }
+
     .team-header {
         text-align: center;
         padding-bottom: 10rem;
     }
 
-    .brooks, .david {
-        gap: 5rem;
+    .team-name {
+        font-size: 36px;
+        line-height: 41px;
+        letter-spacing: -0.272px;
     }
 
     .team-img img {
@@ -567,7 +581,7 @@ footer .footer-text {
     }
 
     .team {
-        justify-content: center;
+        gap: 9rem;
     }
 
     .team-img {
@@ -575,13 +589,15 @@ footer .footer-text {
         height: 216px;
     }
 
+    .team-name {
+        font-size: 36px;
+        line-height: 41px;
+        letter-spacing: -0.272px;
+    }
+
     .team-header {
         text-align: center;
         padding-bottom: 6rem;
-    }
-
-    .brooks, .david {
-        gap: 3rem;
     }
 
     .contact {
@@ -654,8 +670,8 @@ footer .footer-text {
         height: 216px;
     }
 
-    .brooks, .david {
-        gap: 3rem;
+    .team {
+        gap: 7rem;
     }
 
     .contact {
@@ -727,7 +743,7 @@ footer .footer-text {
 
     #our-team {
         text-align: center;
-        padding: 5rem;
+        padding: 4rem 2rem 4.5rem;
     }
 
     .team-header {
@@ -740,8 +756,19 @@ footer .footer-text {
         height: 216px;
     }
 
-    .brooks, .david {
-        gap: 4rem;
+    .team {
+        gap: 7rem;
+    }
+
+    .team-name {
+        font-size: 24px;
+        line-height: 30px;
+        align-items: center;
+        letter-spacing: -0.02em;
+    }
+
+    #our-team p {
+        font-size: 1rem;
     }
 
     .contact {
@@ -814,9 +841,9 @@ footer .footer-text {
         gap: 3rem;
     }
 
-    #our-team {
+     #our-team {
         text-align: center;
-        padding: 5rem 2rem;
+        padding: 4rem 2rem 4.5rem;
     }
 
     .team-header {
@@ -829,8 +856,19 @@ footer .footer-text {
         height: 216px;
     }
 
-    .brooks, .david {
-        gap: 3rem;
+    .team-name {
+        font-size: 24px;
+        line-height: 30px;
+        align-items: center;
+        letter-spacing: -0.02em;
+    }
+
+    .team {
+        gap: 7rem;
+    }
+
+    #our-team p {
+        font-size: 1rem;
     }
 
     .contact {
