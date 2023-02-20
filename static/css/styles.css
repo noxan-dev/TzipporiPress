@@ -3,7 +3,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 body {
@@ -31,8 +30,6 @@ h1 {
 
 
 nav {
-    /*background-image: url("../images/background_header.png");*/
-    background-size: cover;
     height: 6rem;
     background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);
@@ -52,6 +49,7 @@ nav {
     background-image: linear-gradient(180deg, rgba(234, 240, 235, 0) 82%, #EDF3EE 90%), url("../images/background_header.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 78vh;
     line-height: 3rem;
@@ -59,7 +57,6 @@ nav {
 }
 
 .introduction {
-    padding: 2rem 0 0 2rem;
     animation: fadeUpAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -333,6 +330,10 @@ footer .footer-text {
         letter-spacing: -0.021em;
     }
 
+    .intro-btn {
+        width: auto;
+    }
+
     #services {
         padding: 8rem 12rem 10rem;
     }
@@ -429,7 +430,7 @@ footer .footer-text {
     }
 
     .nav-container {
-        padding: .5rem 7.5rem;
+        padding: .5rem 4.5rem;
         z-index: 9;
         gap: 1.25rem;
     }
@@ -462,6 +463,10 @@ footer .footer-text {
         line-height: 9.375rem;
         text-align: left;
         letter-spacing: -0.021em;
+    }
+
+    .intro-btn {
+        width: auto;
     }
 
     #services {
@@ -544,18 +549,24 @@ footer .footer-text {
 @media (min-width: 768px) and (max-width: 1024px) {
 
     /* CSS */
+    #home {
+        overflow: hidden;
+        position: relative;
+    }
+
     .introduction {
+        position: absolute;
+        top: 9rem;
         text-align: center;
-        place-content: center;
     }
 
     .introduction h1 {
         font-weight: 700;
         font-size: 6rem;
         line-height: 9.375rem;
-        text-align: center;
         letter-spacing: -0.021em;
     }
+
 
     #services {
         padding: 4rem;
@@ -625,7 +636,14 @@ footer .footer-text {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
     /* CSS */
+    #home {
+        overflow: hidden;
+        position: relative;
+    }
+
     .introduction {
+        position: absolute;
+        top: 9rem;
         text-align: center;
         place-content: center;
     }
@@ -696,12 +714,24 @@ footer .footer-text {
 @media (min-width: 481px) and (max-width: 767px) {
 
     /* CSS */
+    .nav-container {
+        padding: .5rem 1.8rem;
+        z-index: 9;
+        gap: 1.25rem;
+    }
+
+    .navbar-nav {
+        gap: 1.25rem;
+    }
+
     #home {
-        background-position: center;
+        overflow: hidden;
+        position: relative;
     }
 
     .introduction {
-        padding-top: 9rem;
+        position: absolute;
+        top: 9rem;
         text-align: center;
         place-content: center;
     }
@@ -799,14 +829,25 @@ footer .footer-text {
 @media (min-width: 320px) and (max-width: 480px) {
 
     /* CSS */
+    .nav-container {
+        padding: .5rem 1.8rem;
+        z-index: 9;
+        gap: 1.25rem;
+    }
+
+    .navbar-nav {
+        gap: 1.25rem;
+    }
+
     #home {
-        background-position: center;
+        overflow: hidden;
+        position: relative;
     }
 
     .introduction {
-        padding-top: 9rem;
+        position: absolute;
+        top: 9rem;
         text-align: center;
-        place-content: center;
     }
 
     .introduction h1 {
@@ -814,7 +855,6 @@ footer .footer-text {
         font-weight: 700;
         font-size: 48px;
         line-height: 56px;
-        text-align: center;
         letter-spacing: -0.021em;
     }
 
@@ -841,7 +881,7 @@ footer .footer-text {
         gap: 3rem;
     }
 
-     #our-team {
+    #our-team {
         text-align: center;
         padding: 4rem 2rem 4.5rem;
     }
@@ -891,6 +931,11 @@ footer .footer-text {
 
     .footer-contact-content {
         justify-content: center;
+    }
+
+    .icon {
+        width: 1.25rem;
+        height: 1.25rem;
     }
 
 }
