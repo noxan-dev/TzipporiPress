@@ -7,6 +7,9 @@
 
 body {
     font-family: 'Source Serif Pro', serif;
+    background-image: url("../images/background_header.png");
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 html {
@@ -71,7 +74,7 @@ nav {
     font-weight: 700;
 }
 
-.service-desc {
+.service-desc, .about-statements p {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -129,21 +132,11 @@ nav {
     letter-spacing: -0.02em;
 }
 
-.about-statements p {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.375rem;
-    line-height: 2.188rem;
-    letter-spacing: -0.017em;
-    color: #0C3D35;
-}
-
 #our-team {
     background: #D0DFD4;
 }
 
-#our-team sub {
+#our-team sub, #our-team p, .contact-header p {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -154,12 +147,6 @@ nav {
 }
 
 #our-team p {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    letter-spacing: -0.017em;
     color: #0C3D35;
 }
 
@@ -198,12 +185,6 @@ nav {
 }
 
 .contact-header p {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    letter-spacing: -0.017em;
     color: #0C3D35;
 }
 
@@ -239,13 +220,21 @@ footer {
     color: #69A573;
 }
 
+.contact-us-row, .social-row, .legal-row {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.014em;
+}
+
 .footer-logo img {
     width: 17.938rem;
     height: 6.25rem;
 }
 
-footer .footer-text {
-
+footer .footer-text-header {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -409,7 +398,11 @@ footer .footer-text {
     }
 
     footer {
-        padding: 6.313rem 7.563rem;
+        padding: 6.313rem 6.813rem 6.313rem 7.5rem;
+    }
+
+    .footer-row-1 {
+        margin-bottom: 9.688rem;
     }
 
 }
@@ -536,7 +529,11 @@ footer .footer-text {
     }
 
     footer {
-        padding: 6.313rem 7.563rem;
+        padding: 6.313rem 6.813rem 6.313rem 7.5rem;
+    }
+
+    .footer-row-1 {
+        margin-bottom: 9.688rem;
     }
 
 }
@@ -620,7 +617,17 @@ footer .footer-text {
     }
 
     footer {
-        padding: 6rem 4.25rem 3.563rem;
+        padding: 4.8rem 4rem 4.8rem 5rem;
+    }
+
+    .footer-row-1 {
+        gap: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    .footer-logo img {
+        width: 227px;
+        height: 77px;
     }
 
     .footer-contact {
@@ -698,10 +705,6 @@ footer .footer-text {
 
     .contact-header {
         padding-bottom: 5rem;
-    }
-
-    footer {
-        padding: 6rem 4.25rem 3.563rem;
     }
 
 }
@@ -811,7 +814,16 @@ footer .footer-text {
 
     footer {
         text-align: center;
-        padding: 7.188rem 4.25rem 3.563rem;
+        padding: 7.188rem 2.75rem 3.563rem;
+    }
+
+    .footer-row-1 {
+        gap: 6.25rem;
+        margin-bottom: 2.75rem;
+    }
+
+    .footer-contact-row {
+        gap: 6.25rem;
     }
 
     .footer-logo img {
@@ -921,7 +933,16 @@ footer .footer-text {
 
     footer {
         text-align: center;
-        padding: 7.188rem 4.25rem 3.563rem;
+        padding: 7.188rem 2.75rem 3.563rem;
+    }
+
+    .footer-row-1 {
+        gap: 6.25rem;
+        margin-bottom: 2.75rem;
+    }
+
+    .footer-contact-row {
+        gap: 6.25rem;
     }
 
     .footer-logo img {
@@ -929,8 +950,8 @@ footer .footer-text {
         height: 77px;
     }
 
-    .footer-contact-content {
-        justify-content: center;
+    .contact-us-row, .social-row, .legal-row {
+        font-size: 14px;
     }
 
     .icon {
