@@ -7,9 +7,6 @@
 
 body {
     font-family: 'Source Serif Pro', serif;
-    /*background-image: url("../images/background_header.png");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: top;*/
 }
 
 html {
@@ -31,19 +28,19 @@ h1 {
     padding-bottom: 2.5rem;
 }
 
-
 nav {
     height: 6rem;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
+    background: rgba(255,255,255,0.15) !important;
+    backdrop-filter: blur(5px) saturate(125%);
+    -webkit-backdrop-filter: blur(5px) saturate(125%);
 }
 
 .nav-link {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
     letter-spacing: -0.014em;
     color: #0D4A40;
 }
@@ -226,8 +223,8 @@ footer {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     letter-spacing: -0.014em;
 }
 
@@ -239,8 +236,8 @@ footer {
 footer .footer-text-header {
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 20px;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
     letter-spacing: -0.009em;
     color: #ECEDEE;
 }
@@ -249,8 +246,8 @@ footer .footer-text-header {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     letter-spacing: -0.011em;
     color: #E8F0E8;
 }
@@ -289,11 +286,6 @@ footer .footer-text-header {
         padding: .5rem 7.5rem;
         z-index: 9;
         gap: 1.25rem;
-    }
-
-    .nav-container.scrolled {
-        background-color: #fff !important;
-        transition: background-color 200ms linear;
     }
 
     .navbar-nav {
@@ -374,9 +366,9 @@ footer .footer-text-header {
     }
 
     .team-name {
-        font-size: 36px;
-        line-height: 41px;
-        letter-spacing: -0.272px;
+        font-size: 2.25rem;
+        line-height: 2.563rem;
+        letter-spacing: -0.017rem;
     }
 
     .team-img img {
@@ -519,9 +511,9 @@ footer .footer-text-header {
     }
 
     .team-name {
-        font-size: 36px;
-        line-height: 41px;
-        letter-spacing: -0.272px;
+        font-size: 2.25rem;
+        line-height: 2.563rem;
+        letter-spacing: -0.017rem;
     }
 
     .team-img img {
@@ -612,14 +604,14 @@ footer .footer-text-header {
     }
 
     .team-img {
-        width: 225px;
-        height: 216px;
+        width: 14rem;
+        height: 13.5rem;
     }
 
     .team-name {
-        font-size: 36px;
-        line-height: 41px;
-        letter-spacing: -0.272px;
+        font-size: 2.25rem;
+        line-height: 2.563rem;
+        letter-spacing: -0.017rem;
     }
 
     .team-header {
@@ -644,8 +636,8 @@ footer .footer-text-header {
     }
 
     .footer-logo img {
-        width: 227px;
-        height: 77px;
+        width: 14.188rem;
+        height: 4.813rem;
     }
 }
 
@@ -700,8 +692,8 @@ footer .footer-text-header {
     }
 
     .team-img {
-        width: 225px;
-        height: 216px;
+        width: 14rem;
+        height: 13.5rem;
     }
 
     .team {
@@ -789,8 +781,8 @@ footer .footer-text-header {
     }
 
     .team-img {
-        width: 225px;
-        height: 216px;
+        width: 14rem;
+        height: 13.5rem;
     }
 
     .team {
@@ -798,8 +790,8 @@ footer .footer-text-header {
     }
 
     .team-name {
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
         align-items: center;
         letter-spacing: -0.02em;
     }
@@ -831,8 +823,8 @@ footer .footer-text-header {
     }
 
     .footer-logo img {
-        width: 227px;
-        height: 77px;
+        width: 14.188rem;
+        height: 4.813rem;
     }
 
     .icon {
@@ -869,8 +861,8 @@ footer .footer-text-header {
     .introduction h1 {
         font-style: normal;
         font-weight: 700;
-        font-size: 48px;
-        line-height: 56px;
+        font-size: 3rem;
+        line-height: 3.5rem;
         letter-spacing: -0.021em;
     }
 
@@ -908,13 +900,13 @@ footer .footer-text-header {
     }
 
     .team-img {
-        width: 225px;
-        height: 216px;
+        width: 14rem;
+        height: 13.5rem;
     }
 
     .team-name {
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
         align-items: center;
         letter-spacing: -0.02em;
     }
@@ -950,12 +942,12 @@ footer .footer-text-header {
     }
 
     .footer-logo img {
-        width: 227px;
-        height: 77px;
+        width: 14.188rem;
+        height: 4.813rem;
     }
 
     .contact-us-row, .social-row, .legal-row {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .icon {
