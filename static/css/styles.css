@@ -479,7 +479,10 @@ footer .footer-text-header {
 
     .footer-row-1 {
         margin-bottom: 9.688rem;
-        /*gap: 42.25rem;*/
+    }
+
+    .footer-contact-row {
+        column-gap: 6rem;
     }
 }
 
@@ -615,6 +618,10 @@ footer .footer-text-header {
         margin-bottom: 9.688rem;
     }
 
+    .footer-contact-row {
+        column-gap: 3rem;
+    }
+
 }
 
 /*
@@ -741,6 +748,10 @@ footer .footer-text-header {
     .footer-logo img {
         width: 14.188rem;
         height: 4.813rem;
+    }
+
+    .footer-contact-row {
+        column-gap: 2rem;
     }
 }
 
@@ -949,9 +960,9 @@ footer .footer-text-header {
         margin-bottom: 2.75rem;
     }
 
-    .footer-contact-row {
-        gap: 6.25rem;
-        max-width: fit-content;
+     .footer-contact-row {
+        row-gap: 3rem;
+        column-gap: 2.8rem;
     }
 
     .footer-logo img {
@@ -1093,7 +1104,7 @@ footer .footer-text-header {
     }
 
     .footer-contact-row {
-        gap: 6.25rem;
+        row-gap: 6.25rem;
     }
 
     .footer-logo img {
