@@ -160,9 +160,20 @@ nav {
 
 .carousel .carousel-indicators button.active {
     opacity: 1;
-    background-image: url("../images/testimonial_1.png");
     width: 60px;
     height: 60px;
+}
+
+.carousel .carousel-indicators button.active.slide-0 {
+    background-image: url("../images/testimonial_1.png");
+}
+
+.carousel .carousel-indicators button.active.slide-1 {
+    background-image: url("../images/placeholder.webp");
+}
+
+.carousel .carousel-indicators button.active.slide-2 {
+    background-image: url("../images/placeholder.webp");
 }
 
 .carousel-inner {
