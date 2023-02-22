@@ -30,9 +30,14 @@ h1 {
 
 nav {
     height: 6rem;
-    background: rgba(255,255,255,0.15) !important;
+    background: rgba(255, 255, 255, 0.15) !important;
     backdrop-filter: blur(5px) saturate(125%);
     -webkit-backdrop-filter: blur(5px) saturate(125%);
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
 }
 
 .nav-link {
@@ -47,14 +52,14 @@ nav {
 
 #home {
     position: relative;
-    background-image: linear-gradient(180deg, rgba(234, 240, 235, 0) 82%, #EDF3EE 90%), url("../images/background_header.png");
+    background: linear-gradient(180deg, rgba(234, 240, 235, 0) 82%, #EDF3EE 90%), url("../images/background_header.png"), no-repeat, center, fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     width: 100%;
-    height: 78vh;
+    height: 80svh;
     line-height: 3rem;
-    font-size: x-large;
     overflow: hidden;
 }
 
@@ -89,12 +94,79 @@ nav {
 
 #testimonials {
     background: #CFDDD2;
-    padding: 2rem;
+    padding: 11.5rem 20.688rem 16.688rem 20.688rem;
 }
 
-.carousel-item p {
-    font-weight: bolder;
-    font-size: 1.2rem;
+.testimonial-row {
+    gap: 12rem;
+}
+
+#testimonials p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    letter-spacing: -0.017em;
+    color: #0D4A40;
+}
+
+#testimonials p span {
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 120px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #69A573;
+}
+
+#testimonials h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #0D4A40;
+}
+
+#testimonials sub {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.238195px;
+    color: #69A573;
+}
+
+.carousel {
+    width: 100%;
+    height: 150%;
+}
+
+.carousel .carousel-indicators button {
+    background-size: cover;
+    width: 27px;
+    height: 27px;
+    margin-right: 15px;
+    border-radius: 100%;
+    opacity: 0.25;
+    background-color: #69A573;
+
+}
+
+.carousel .carousel-indicators button.active {
+    opacity: 1;
+    background-image: url("../images/testimonial_1.png");
+    width: 60px;
+    height: 60px;
+}
+
+.carousel-inner {
+    padding-bottom: 6rem;
 }
 
 #carouselTestimonials {
@@ -297,7 +369,7 @@ footer .footer-text-header {
     }
 
     #home {
-        height: 95vh;
+        height: 95svh;
     }
 
     .introduction {
@@ -337,13 +409,6 @@ footer .footer-text-header {
         gap: 6rem;
     }
 
-    /*#testimonials {*/
-    /*    padding: 8rem 7.5rem;*/
-    /*}*/
-    .carousel-item p {
-        font-size: 2rem;
-    }
-
     #about {
         padding: 8rem 16.313rem;
     }
@@ -381,6 +446,10 @@ footer .footer-text-header {
         padding: 8rem 35rem;
     }
 
+    /*.contact-form {*/
+    /*    max-width: 534px;*/
+    /*    height: 2px;*/
+    /*}*/
     .contact-header {
         padding-bottom: 7.5rem;
     }
@@ -429,11 +498,6 @@ footer .footer-text-header {
         line-height: 1.5rem;
     }
 
-    .nav-container.scrolled {
-        background-color: #fff !important;
-        transition: background-color 200ms linear;
-    }
-
     .navbar-nav {
         gap: 1.25rem;
     }
@@ -443,7 +507,7 @@ footer .footer-text-header {
     }
 
     #home {
-        height: 95vh;
+        height: 95svh;
     }
 
     .introduction {
@@ -482,11 +546,13 @@ footer .footer-text-header {
         gap: 2rem;
     }
 
-    /*#testimonials {*/
-    /*    padding: 8rem 7.5rem;*/
-    /*}*/
-    .carousel-item p {
-        font-size: 2rem;
+    #testimonials {
+        background: #CFDDD2;
+        padding: 11.5rem 8rem 12rem 8rem;
+    }
+
+    .testimonial-row {
+        gap: 5rem;
     }
 
     #about {
@@ -548,7 +614,7 @@ footer .footer-text-header {
 @media (min-width: 768px) and (max-width: 1024px) {
 
     /* CSS */
-     .nav-container {
+    .nav-container {
         padding: .5rem 4.5rem;
         gap: 1.25rem;
     }
@@ -584,6 +650,32 @@ footer .footer-text-header {
         width: 6rem;
         height: auto;
         gap: 2rem;
+    }
+
+    #testimonials {
+        background: #CFDDD2;
+        padding: 4.25rem 3rem 6.125rem 3rem;
+        text-align: center;
+    }
+
+    .testimonial-row {
+        gap: 5rem;
+    }
+
+    #testimonials p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    #testimonials h4 {
+        font-size: 24px;
+        line-height: 30px;
+        align-items: center;
+    }
+
+    #testimonials sub {
+        font-size: 15px;
+        color: #69A573;
     }
 
     #about {
@@ -728,6 +820,12 @@ footer .footer-text-header {
         gap: 1.25rem;
     }
 
+    #home {
+        height: 100vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
     .introduction {
         position: absolute;
         top: 9rem;
@@ -751,6 +849,28 @@ footer .footer-text-header {
         width: 6rem;
         height: auto;
         gap: 2rem;
+    }
+
+    #testimonials {
+        background: #CFDDD2;
+        padding: 4.25rem 1.375rem 6.125rem 1.375rem;
+        text-align: center;
+    }
+
+    #testimonials p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    #testimonials h4 {
+        font-size: 24px;
+        line-height: 30px;
+        align-items: center;
+    }
+
+    #testimonials sub {
+        font-size: 15px;
+        color: #69A573;
     }
 
     #about {
@@ -820,6 +940,7 @@ footer .footer-text-header {
 
     .footer-contact-row {
         gap: 6.25rem;
+        max-width: fit-content;
     }
 
     .footer-logo img {
@@ -875,6 +996,29 @@ footer .footer-text-header {
         height: auto;
         gap: 2rem;
     }
+
+    #testimonials {
+        background: #CFDDD2;
+        padding: 4.25rem 1.375rem 6.125rem 1.375rem;
+        text-align: center;
+    }
+
+    #testimonials p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    #testimonials h4 {
+        font-size: 24px;
+        line-height: 30px;
+        align-items: center;
+    }
+
+    #testimonials sub {
+        font-size: 15px;
+        color: #69A573;
+    }
+
 
     #about {
         text-align: center;
