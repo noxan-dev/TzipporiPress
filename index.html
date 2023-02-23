@@ -7,12 +7,12 @@
     <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
-    <link rel="manifest" href="static/favicon/site.webmanifest">
+    <link rel="manifest" href="static/favicon/manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="static/css/bootstrap.css">
+          rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="static/css/icon.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -25,7 +25,7 @@
     <nav class="navbar navbar-scroll sticky-top navbar-expand-lg border-bottom border-light">
         <div class="nav-container py-3 container-fluid">
             <a class="navbar-brand col" href="#">
-                <img src="static/images/logo.png" alt="Logo" width="158" height="56"
+                <img src="static/images/logo.webp" alt="Logo" width="158" height="56"
                      class="d-inline-block align-text-top">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -260,7 +260,7 @@
                                         the world to know.</p>
                                 </div>
                                 <div class="order-0 order-lg-1 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                    <img src="static/images/image_1.png" alt="">
+                                    <img src="static/images/image_1.webp" alt="">
                                 </div>
                             </div>
                         </div>
@@ -275,9 +275,9 @@
                                         work invested
                                         into the sefer. On the other hand, many 'do it yourself' websites leave room for
                                         all sorts of silly and unnecessary errors.</p>
-                                </div>
+                                </div>F
                                 <div class="order-0 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                    <img src="static/images/image_2.png" alt="">
+                                    <img src="static/images/image_2.webp" alt="">
                                 </div>
                             </div>
                         </div>
@@ -297,7 +297,7 @@
                                         you're in good hands. Now that's self-publishing, re-imagined!</p>
                                 </div>
                                 <div class="order-0 order-lg-1 col-sm-12 col-lg-6">
-                                    <img src="static/images/image_3.png" alt="">
+                                    <img src="static/images/image_3.webp" alt="">
                                 </div>
                             </div>
                         </div>
@@ -319,7 +319,7 @@
                         <div class="david col-12">
                             <div class="row gap-4">
                                 <div class="col-sm-12 col-lg-6 team-img d-block d-lg-inline mx-auto mx-lg-0">
-                                    <img class="david-img" src="static/images/david.png" alt="image">
+                                    <img class="david-img" src="static/images/david.webp" alt="image">
                                 </div>
                                 <div class="col-sm-12 col-lg-6">
                                     <div class="row gy-4">
@@ -345,7 +345,7 @@
                         <div class="brooks col-12">
                             <div class="row gap-4">
                                 <div class="col-auto col-md-12 col-lg-6 col-xl-6 team-img d-block mx-auto mx-lg-0">
-                                    <img class="brooks-img" src="static/images/brooks.png" alt="image">
+                                    <img class="brooks-img" src="static/images/brooks.webp" alt="image">
                                 </div>
                                 <div class="col-auto col-md-12 col-lg-6 col-xl-6">
                                     <div class="row gy-4">
@@ -415,7 +415,7 @@
         </div>
     </section>
 
-    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
     <script src="static/js/index.js"></script>
 </div>
 </body>
@@ -424,11 +424,11 @@
         <div class="footer-grid container-fluid">
             <div class="footer-row-1 row">
                 <div class="footer-logo col-12 col-lg-4 order-1 order-lg-0 p-0">
-                    <img src="static/images/logo.png" alt="Logo">
+                    <img src="static/images/logo.webp" alt="Logo">
                 </div>
                 <div class="footer-contact col-12 col-lg-8 order-0 order-lg-1 pb-3">
                     <div class="footer-contact-row row justify-content-center justify-content-lg-end">
-                        <div class="contact-content col-12 col-lg-4" style="max-width: max-content">
+                        <div class="contact-content col-12 col-lg-4" >
                             <div class="contact-us-row">
                                 <h4 class="footer-text-header mb-4">Contact Us</h4>
                                 <div class="mb-2">
@@ -448,7 +448,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="social-content col-12 col-lg-4" style="max-width: max-content">
+                        <div class="social-content col-12 col-lg-4" >
                             <div class="social-row">
                                 <h4 class="footer-text-header mb-4">Our Socials</h4>
                                 <div class="mb-2">
@@ -465,7 +465,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="legal-content col-12 col-lg-4" style="max-width: max-content">
+                        <div class="legal-content col-12 col-lg-4">
                             <div class="legal-row">
                                 <h4 class="footer-text-header mb-4">Legal</h4>
                                 <div class="mb-2">
