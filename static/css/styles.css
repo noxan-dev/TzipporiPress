@@ -454,7 +454,7 @@ footer .footer-text-header {
     #about, .statement-1, .statement-2, .statement-3 {
         scroll-snap-align: start;
         scroll-snap-stop: normal;
-        scroll-margin: 6rem;
+        scroll-margin: 10.223642172523961svh;
     }
 }
 
@@ -540,7 +540,7 @@ footer .footer-text-header {
     }
 
     .statement-1, .statement-2, .statement-3 {
-        padding-bottom: 272px;
+        padding-bottom: 17rem;
     }
 
     #our-team {
@@ -676,8 +676,12 @@ footer .footer-text-header {
         padding: 8rem
     }
 
-    .statement-1, .statement-2, .statement-3 {
-        padding-bottom: 272px;
+    .statement-1, .statement-2 {
+        padding-bottom: 17rem;
+    }
+
+    .statement-3 {
+        padding-bottom: 10rem;
     }
 
     #our-team {
@@ -798,8 +802,12 @@ footer .footer-text-header {
         padding: 8rem
     }
 
-    .statement-1, .statement-2, .statement-3 {
-        padding-bottom: 6rem;
+    .statement-1, .statement-2 {
+        padding-bottom: 8rem;
+    }
+
+    .statement-3 {
+        padding-bottom: 5rem;
     }
 
     .about-statements p, #our-team p {
@@ -943,16 +951,12 @@ footer .footer-text-header {
         padding: 5rem
     }
 
-    .about-header {
-        padding-bottom: 5rem
+    .statement-1, .statement-2 {
+        padding-bottom: 8rem;
     }
 
-    .about-header {
-        padding-bottom: 5rem
-    }
-
-    .statement-1, .statement-2, .statement-3 {
-        padding-bottom: 3rem;
+    .statement-3 {
+        padding-bottom: 5rem;
     }
 
     .about-statements p, #our-team p {
@@ -1108,12 +1112,12 @@ footer .footer-text-header {
         padding: 5rem 2rem
     }
 
-    .about-header {
-        padding-bottom: 5rem
+    .statement-1, .statement-2 {
+        padding-bottom: 8rem;
     }
 
-    .statement-1, .statement-2, .statement-3 {
-        padding-bottom: 3rem;
+    .statement-3 {
+        padding-bottom: 5rem;
     }
 
     .about-statements p, #our-team p {
