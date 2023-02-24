@@ -10,7 +10,7 @@ body {
 }
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -446,6 +446,17 @@ footer .footer-text-header {
     filter: brightness(0) invert(1)
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-snap-type: y proximity;
+        scroll-padding: 6rem;
+    }
+
+     #about, .statement-1, .statement-2, .statement-3 {
+        scroll-snap-align: start;
+    }
+}
+
 @keyframes fadeUpAnimation {
     0% {
         opacity: 0;
@@ -527,8 +538,8 @@ footer .footer-text-header {
         padding: 8rem 16.313rem
     }
 
-    .about-statements {
-        gap: 12.5rem
+    .statement-1, .statement-2, .statement-3 {
+        padding-bottom: 272px;
     }
 
     #our-team {
@@ -664,8 +675,8 @@ footer .footer-text-header {
         padding: 8rem
     }
 
-    .about-statements {
-        gap: 12.5rem
+    .statement-1, .statement-2, .statement-3 {
+        padding-bottom: 272px;
     }
 
     #our-team {
@@ -786,8 +797,8 @@ footer .footer-text-header {
         padding: 8rem
     }
 
-    .about-statements {
-        gap: 6rem
+    .statement-1, .statement-2, .statement-3 {
+        padding-bottom: 6rem;
     }
 
     .about-statements p, #our-team p {
@@ -939,8 +950,8 @@ footer .footer-text-header {
         padding-bottom: 5rem
     }
 
-    .about-statements {
-        gap: 3rem
+    .statement-1, .statement-2, .statement-3 {
+        padding-bottom: 3rem;
     }
 
     .about-statements p, #our-team p {
@@ -1100,8 +1111,8 @@ footer .footer-text-header {
         padding-bottom: 5rem
     }
 
-    .about-statements {
-        gap: 3rem
+    .statement-1, .statement-2, .statement-3 {
+        padding-bottom: 3rem;
     }
 
     .about-statements p, #our-team p {
