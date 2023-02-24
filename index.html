@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap"
           rel="stylesheet" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="static/css/bootstrap.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="static/css/icon.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -22,49 +22,68 @@
 
 <div class="layout">
 
-    <nav class="navbar navbar-scroll sticky-top navbar-expand-lg border-bottom border-light">
-        <div class="nav-container py-3 container-fluid">
-            <a class="navbar-brand col" href="#">
+    <nav class="navbar fixed-top navbar-expand-lg border-bottom border-light blur">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
                 <img src="static/images/logo.webp" alt="Logo" width="158" height="56"
                      class="d-inline-block align-text-top">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler collapsed border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav col justify-content-start fw-bold justify-content-end">
-                    <a class="nav-link" href="#services">Our services</a>
-                    <a class="nav-link" href="#testimonials">Testimonials</a>
-                    <a class="nav-link" href="#about">About</a>
-                    <a class="nav-link" href="#our-team">Our Team</a>
-                    <a class="nav-link" href="#contact">Contact</a>
-                    <a class="btn rounded-pill d-block d-lg-none p-0 w-auto text-light"
-                       href="mailto:hello@tzipporipress.com?subject=Hi, let's talk about my sefer"
-                       role="button"
-                       style="background-color: #0D4A40; font-size: medium;">Get a Quote
-                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.83342 0C1.37319 0 1.00009 0.3731 1.00009 0.833333C1.00009 1.29357 1.37319 1.66667 1.83342 1.66667V0ZM10.1668 0.833333H11.0001C11.0001 0.3731 10.627 0 10.1668 0V0.833333ZM9.33342 9.16667C9.33342 9.6269 9.70652 10 10.1668 10C10.627 10 11.0001 9.6269 11.0001 9.16667H9.33342ZM0.410836 9.41075C0.0853855 9.73618 0.0853855 10.2638 0.410836 10.5893C0.736269 10.9147 1.2639 10.9147 1.58934 10.5893L0.410836 9.41075ZM1.83342 1.66667H10.1668V0H1.83342V1.66667ZM9.33342 0.833333V9.16667H11.0001V0.833333H9.33342ZM9.5775 0.244083L0.410836 9.41075L1.58934 10.5893L10.756 1.42258L9.5775 0.244083Z"
-                                  fill="white"/>
-                        </svg>
-                    </a>
+            <div class="offcanvas offcanvas-end sidenav" tabindex="-1" id="offcanvasNavbar"
+                 aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-            </div>
-            <div class="d-none d-lg-block">
-                <a class="btn rounded-pill text-light"
-                   href="mailto:hello@tzipporipress.com?subject=Hi, let's talk about my sefer"
-                   role="button"
-                   style="background-color: #0D4A40; padding: 10px 24px;">
-                    <div>
-                        Get a Quote
-                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.83342 0C1.37319 0 1.00009 0.3731 1.00009 0.833333C1.00009 1.29357 1.37319 1.66667 1.83342 1.66667V0ZM10.1668 0.833333H11.0001C11.0001 0.3731 10.627 0 10.1668 0V0.833333ZM9.33342 9.16667C9.33342 9.6269 9.70652 10 10.1668 10C10.627 10 11.0001 9.6269 11.0001 9.16667H9.33342ZM0.410836 9.41075C0.0853855 9.73618 0.0853855 10.2638 0.410836 10.5893C0.736269 10.9147 1.2639 10.9147 1.58934 10.5893L0.410836 9.41075ZM1.83342 1.66667H10.1668V0H1.83342V1.66667ZM9.33342 0.833333V9.16667H11.0001V0.833333H9.33342ZM9.5775 0.244083L0.410836 9.41075L1.58934 10.5893L10.756 1.42258L9.5775 0.244083Z"
-                                  fill="white"/>
-                        </svg>
+                <div class="offcanvas-body justify-content-end">
+                    <div class="navbar-nav align-items-center">
+                        <div class="nav-item" data-bs-dismiss="offcanvas">
+                            <a class="nav-link" href="#services">Our services</a>
+                        </div>
+                        <div class="nav-item" data-bs-dismiss="offcanvas">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </div>
+                        <div class="nav-item" data-bs-dismiss="offcanvas">
+                            <a class="nav-link" href="#about">About</a>
+                        </div>
+                        <div class="nav-item" data-bs-dismiss="offcanvas">
+                            <a class="nav-link" href="#our-team">Our Team</a>
+                        </div>
+                        <div class="nav-item" data-bs-dismiss="offcanvas">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </div>
+                        <div class="nav-item" data-bs-dismiss="offcanvas">
+                            <a class="btn d-block d-lg-none header-button text-light"
+                               href="mailto:hello@tzipporipress.com?subject=Hi, let's talk about my sefer"
+                               role="button">Get a Quote
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.83342 0C1.37319 0 1.00009 0.3731 1.00009 0.833333C1.00009 1.29357 1.37319 1.66667 1.83342 1.66667V0ZM10.1668 0.833333H11.0001C11.0001 0.3731 10.627 0 10.1668 0V0.833333ZM9.33342 9.16667C9.33342 9.6269 9.70652 10 10.1668 10C10.627 10 11.0001 9.6269 11.0001 9.16667H9.33342ZM0.410836 9.41075C0.0853855 9.73618 0.0853855 10.2638 0.410836 10.5893C0.736269 10.9147 1.2639 10.9147 1.58934 10.5893L0.410836 9.41075ZM1.83342 1.66667H10.1668V0H1.83342V1.66667ZM9.33342 0.833333V9.16667H11.0001V0.833333H9.33342ZM9.5775 0.244083L0.410836 9.41075L1.58934 10.5893L10.756 1.42258L9.5775 0.244083Z"
+                                          fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-
-                </a>
+                    <div class="d-none d-lg-block header-button">
+                        <a class="btn text-light"
+                           href="mailto:hello@tzipporipress.com?subject=Hi, let's talk about my sefer"
+                           role="button">
+                            <div>
+                                Get a Quote
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.83342 0C1.37319 0 1.00009 0.3731 1.00009 0.833333C1.00009 1.29357 1.37319 1.66667 1.83342 1.66667V0ZM10.1668 0.833333H11.0001C11.0001 0.3731 10.627 0 10.1668 0V0.833333ZM9.33342 9.16667C9.33342 9.6269 9.70652 10 10.1668 10C10.627 10 11.0001 9.6269 11.0001 9.16667H9.33342ZM0.410836 9.41075C0.0853855 9.73618 0.0853855 10.2638 0.410836 10.5893C0.736269 10.9147 1.2639 10.9147 1.58934 10.5893L0.410836 9.41075ZM1.83342 1.66667H10.1668V0H1.83342V1.66667ZM9.33342 0.833333V9.16667H11.0001V0.833333H9.33342ZM9.5775 0.244083L0.410836 9.41075L1.58934 10.5893L10.756 1.42258L9.5775 0.244083Z"
+                                          fill="white"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -79,10 +98,8 @@
                         </div>
                         <div class="col-12 justify-content-center">
                             <div class="row gy-2">
-                                <div class="intro-btn col-12 col-md-12 col-lg-12 col-xl-6 p-0">
-                                    <a class="btn text-light rounded-pill" role="button" href="#contact"
-                                       style="background-color: #69A573; padding: 0.625rem 1.5rem;">Publish Your
-                                        Sefer</a>
+                                <div class="intro-btn col-12 col-md-12 col-lg-12 col-xl-6 p-0 publish-button w-auto">
+                                    <a class="btn" role="button" href="#contact">Publish Your Sefer</a>
                                 </div>
                                 <div class="col-12 col-md-12 col-lg-12 col-xl-6">
                                     <a href="#" class="text-decoration-none"
@@ -113,37 +130,36 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="service-items row row-cols-md-12 row-cols-lg-3 row-cols-xl-4 justify-content-center">
+                    <div class="service-items row row-cols-md-12 row-cols-lg-4 justify-content-center">
                         <div class="item-1">
-                            <div class="service-header row align-items-center pb-4">
+                            <div class="service-header row align-items-center justify-content-center justify-content-lg-start pb-4">
                                 <div class="col-6 w-auto">
                                     <img class="service-icon" src="static/images/icon_1.svg" alt="image">
                                 </div>
-                                <h4 class="col-6">Manuscript<br>Editing</h4>
+                                <h4 class="col">Manuscript<br>Editing</h4>
                             </div>
                             <p class="service-desc">
-                                Our team of professional editors will work with you to ensure <span
-                                    class="">high quality</span> and <span class="">readability</span> for your
-                                masterpiece.
+                                Our team of professional editors will work with you to ensure <span>high quality</span>
+                                and <span>readability</span> for your masterpiece.
                             </p>
                         </div>
                         <div class="item-2">
-                            <div class="service-header row align-items-center pb-4">
+                            <div class="service-header row align-items-center justify-content-center justify-content-lg-start pb-4">
                                 <div class="col-6 w-auto">
                                     <img class="service-icon" src="static/images/icon_2.svg" alt="image">
                                 </div>
-                                <h4 class="col-6">Professional<br>Proofreads</h4>
+                                <h4 class="col">Professional<br>Proofreads</h4>
                             </div>
                             <p class="service-desc">
                                 Feel secure knowing your sefer has been <span>thoroughly reviewed</span> before it hits
                                 the shelves.</p>
                         </div>
                         <div class="item-3">
-                            <div class="service-header row align-items-center pb-4">
+                            <div class="service-header row align-items-center justify-content-center justify-content-lg-start pb-4">
                                 <div class="col-6 w-auto">
                                     <img class="service-icon" src="static/images/icon_3.svg" alt="image">
                                 </div>
-                                <h4 class="col-6">Typeset and <br>Cover Design</h4>
+                                <h4 class="col">Typeset and <br>Cover Design</h4>
                             </div>
                             <p class="service-desc">Your sefer will have an attractive typeset and interior layout,
                                 creating <span>shelf appeal</span> and <span>accessibility</span> to readers</p>
@@ -205,7 +221,7 @@
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="0"
                             aria-current="true"
-                            aria-label="Slide 1" class="active slide-0" ></button>
+                            aria-label="Slide 1" class="active slide-0"></button>
                     <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="1"
                             aria-label="Slide 2" class="slide-1"></button>
                     <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="2"
@@ -214,16 +230,18 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <p>
-                            <span>“</span><br>Tzippori Press took my manuscript and produced a clear and professional book. Rabbi David had
+                            <span>“</span><br>Tzippori Press took my manuscript and produced a clear and professional
+                            book. Rabbi David had
                             the keen insight to figure out my theme on each subject and present it to the reader in an
                             erudite manner. A superb job!
                         </p>
-                         <h4>Rabbi Chananya Berzon</h4>
+                        <h4>Rabbi Chananya Berzon</h4>
                         <span>Author of “Drashot on Parshot”</span>
                     </div>
                     <div class="carousel-item">
                         <p>
-                            <span>“</span><br>Tzippori Press took my manuscript and produced a clear and professional book. Rabbi David had
+                            <span>“</span><br>Tzippori Press took my manuscript and produced a clear and professional
+                            book. Rabbi David had
                             the keen insight to figure out my theme on each subject and present it to the reader in an
                             erudite manner. A superb job!
                         </p>
@@ -288,13 +306,15 @@
                                     <h2>Our Mission</h2>
                                     <p>We view ourselves as a happy middle ground. High quality, professional feel,
                                         while allowing you the freedom of a full self-publish.
-
+                                    </p>
+                                    <p>
                                         Our mission at Tzippori is to make quality publishing available to everyone (for
                                         a fraction
                                         of the price!) With direct experience in mainstream publishing houses of the
                                         Jewish world, Tzippori
                                         press brings you the highest caliber quality along with peace of mind knowing
-                                        you're in good hands. Now that's self-publishing, re-imagined!</p>
+                                        you're in good hands. Now that's self-publishing, re-imagined!
+                                    </p>
                                 </div>
                                 <div class="order-0 order-lg-1 col-sm-12 col-lg-6">
                                     <img src="static/images/image_3.webp" alt="">
@@ -400,7 +420,7 @@
                     <label>
                         <input type="text" name="_honey" style="display:none">
                     </label>
-                    <button class="btn rounded-pill px-5 py-2"
+                    <button class="btn header-button"
                             style="background-color: #69A573; color: white;" type="submit">Get a Quote
                         <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
@@ -428,37 +448,37 @@
                 </div>
                 <div class="footer-contact col-12 col-lg-8 order-0 order-lg-1 pb-3">
                     <div class="footer-contact-row row justify-content-center justify-content-lg-end">
-                        <div class="contact-content col-12 col-lg-4" >
+                        <div class="contact-content col-12 col-lg-4">
                             <div class="contact-us-row">
                                 <h4 class="footer-text-header mb-4">Contact Us</h4>
                                 <div class="mb-2">
-                                    <span class="icon mail"></span>
+                                    <span class="icon mail me-2"></span>
                                     <a href="mailto:hello@tzipporipress.com" class="text-decoration-none"
                                        style="color: #69A573;">hello@tzipporipress</a>
                                 </div>
                                 <div class="mb-2">
-                                    <span class="icon US-phone"></span>
+                                    <span class="icon US-phone me-2"></span>
                                     <a href="tel:+1 908 992 2134" class="text-decoration-none"
                                        style="color: #69A573;">+1 908 992 2134</a>
                                 </div>
                                 <div class="mb-2">
-                                    <span class="icon IL-phone"></span>
+                                    <span class="icon IL-phone me-2"></span>
                                     <a href="tel:+972 53 277 5522" class="text-decoration-none"
                                        style="color: #69A573;">+972 53 277 5522</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="social-content col-12 col-lg-4" >
+                        <div class="social-content col-12 col-lg-4">
                             <div class="social-row">
                                 <h4 class="footer-text-header mb-4">Our Socials</h4>
                                 <div class="mb-2">
-                                    <span class="icon linkedin"></span>
+                                    <span class="icon linkedin me-2"></span>
                                     <a class="linkedin-link text-decoration-none"
                                        href="https://www.linkedin.com/company/tzippori-press/about/"
                                        style="color: #69A573;">Linkedin</a>
                                 </div>
                                 <div class="mb-2">
-                                    <span class="icon whatsapp"></span>
+                                    <span class="icon whatsapp me-2"></span>
                                     <a class="whatsapp-link text-decoration-none"
                                        href="https://api.whatsapp.com/send/?phone=9089922134"
                                        style="color: #69A573;">Whatsapp</a>
@@ -469,18 +489,18 @@
                             <div class="legal-row">
                                 <h4 class="footer-text-header mb-4">Legal</h4>
                                 <div class="mb-2">
-                                    <span class="icon privacy"></span>
+                                    <span class="icon privacy me-2"></span>
                                     <a href="#" class="text-decoration-none"
                                        style="color: #69A573;">Privacy</a>
                                 </div>
                                 <div class="mb-2">
-                                    <span class="icon terms"></span>
+                                    <span class="icon terms me-2"></span>
                                     <a href="#" class="text-decoration-none"
                                        style="color: #69A573;">
                                         Terms</a>
                                 </div>
                                 <div class="mb-2">
-                                    <span class="icon settings"></span>
+                                    <span class="icon settings me-2"></span>
                                     <a href="#" class="text-decoration-none"
                                        style="color: #69A573;">Preference</a>
                                 </div>
