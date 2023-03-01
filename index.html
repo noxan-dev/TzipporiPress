@@ -22,7 +22,7 @@
 
 <div class="layout">
 
-    <nav class="navbar fixed-top navbar-expand-lg border-bottom border-light blur">
+    <nav class="navbar fixed-top navbar-expand-lg border-bottom border-light px-4">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="static/images/logo.webp" alt="Logo" width="158" height="56"
@@ -124,15 +124,13 @@
                 <h2 class="section-header">Our Services</h2>
                 <h1>Professional Grade Publishing,<br> for a Fraction of the Cost.</h1>
             </div>
-            <div>
+
                 <div class="container-fluid">
-                    <div class="service-items row row-cols-md-12 row-cols-lg-4 justify-content-center">
-                        <div class="item-1">
-                            <div class="service-header row align-items-center justify-content-center justify-content-lg-start pb-4">
-                                <div class="col-6 w-auto">
-                                    <img class="service-icon" src="static/images/icon_1.svg" alt="image">
-                                </div>
-                                <h4 class="col">Manuscript<br>Editing</h4>
+                    <div class="service-items row row-cols-md-12 row-cols-md-4 justify-content-center">
+                        <div class="item-1 ">
+                            <div class="service-header row row-cols-2 justify-content-center justify-content-lg-start pb-4">
+                                <img class="service-icon" src="static/images/icon_1.svg" alt="image">
+                                <h4>Manuscript<br>Editing</h4>
                             </div>
                             <p class="service-desc">
                                 Our team of professional editors will work with you to ensure
@@ -141,30 +139,26 @@
                             </p>
                         </div>
                         <div class="item-2">
-                            <div class="service-header row align-items-center justify-content-center justify-content-lg-start pb-4">
-                                <div class="col-6 w-auto">
-                                    <img class="service-icon" src="static/images/icon_2.svg" alt="image">
-                                </div>
-                                <h4 class="col">Professional<br>Proofreads</h4>
+                            <div class="service-header row row-cols-2 justify-content-center justify-content-lg-start pb-4">
+                                <img class="service-icon" src="static/images/icon_2.svg" alt="image">
+                                <h4>Professional<br>Proofreads</h4>
                             </div>
                             <p class="service-desc">
                                 Feel secure knowing your sefer has been <span>thoroughly reviewed</span> before it
-                                hits
-                                the shelves.</p>
+                                hits the shelves.</p>
                         </div>
-                        <div class="item-3">
-                            <div class="service-header row align-items-center justify-content-center justify-content-lg-start pb-4">
-                                <div class="col-6 w-auto">
-                                    <img class="service-icon" src="static/images/icon_3.svg" alt="image">
+                        <div class="item-3 ">
+                            <div class="service-header row row-cols-2 justify-content-center justify-content-lg-start pb-4">
+                                <img class="service-icon" src="static/images/icon_3.svg" alt="image">
+                                <div class="col">
+                                    <h4>Typeset and <br>Cover Design</h4>
                                 </div>
-                                <h4 class="col">Typeset and <br>Cover Design</h4>
                             </div>
                             <p class="service-desc">Your sefer will have an attractive typeset and interior layout,
                                 creating <span>shelf appeal</span> and <span>accessibility</span> to readers</p>
                         </div>
                     </div>
                 </div>
-            </div>
 
         </div>
     </section>
@@ -380,7 +374,7 @@
                 <p>Enter your email to begin your publishing journey!</p>
             </div>
             <div class="contact-form container-fluid">
-                <form class="row row-cols-1" action="https://formsubmit.co/hello@tzipporipress.com" method="post">
+                <form class="row row-cols-1" action="https://formsubmit.co/hello@tzipporipress.com" method="post" autocomplete="off">
                     <label class="form-label">
                         <input type="text" name="name"
                                class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
@@ -411,8 +405,11 @@
                         </svg>
                     </button>
                 </form>
-                <sub>By clicking “Get a Quote,” I agree to provide the contact information listed above for the
+
+                <div class="text-center pt-3">
+                    <sub>By clicking “Get a Quote,” I agree to provide the contact information listed above for the
                     purpose of receiving communications regarding publishing opportunities.</sub>
+                </div>
             </div>
         </div>
     </section>
