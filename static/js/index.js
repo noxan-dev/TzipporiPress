@@ -15,3 +15,10 @@ navLinks.forEach(link => { // The Array method `forEach` loops through
     document.getElementById("check").checked = false;
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const navIcon1 = document.getElementById("nav-icon");
+  navIcon1.addEventListener("click", function() {
+    navIcon1.classList.toggle("open");
+  });
+});
