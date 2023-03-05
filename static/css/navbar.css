@@ -7,6 +7,7 @@ nav {
     left: 0;
     height: 6rem;
     width: 100%;
+    border-bottom: #FFFFFF solid 1px;
     background: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px) saturate(125%);
     -webkit-backdrop-filter: blur(5px) saturate(125%);
@@ -33,7 +34,7 @@ a.activex, a:hover {
     transition: .5s;
 }
 
-.navbar-toggler {
+.checkbtn {
     font-size: 30px;
     color: white;
     line-height: 80px;
@@ -52,7 +53,7 @@ a.activex, a:hover {
         padding: 0 2rem;
     }
 
-    .navbar-toggler {
+    .checkbtn {
         display: block;
     }
 
@@ -61,7 +62,7 @@ a.activex, a:hover {
         row-gap: 3rem;
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 100svh;
         background: #CFDDD2;
         top: 80px;
         left: -100%;
@@ -71,6 +72,7 @@ a.activex, a:hover {
 
     nav .nav-items a {
         display: block;
+
     }
 
     a:hover, a.activex {
@@ -81,17 +83,53 @@ a.activex, a:hover {
     #check:checked ~ .nav-items {
         left: 0;
     }
+
+    body:has(#check:checked) {
+        overflow: hidden;
+    }
+
+    nav:has(#check:checked) {
+        transition: background-position 0.2s linear;
+        -webkit-transition: background-color 0.2s linear;
+        -moz-transition: background-color 0.2s linear;
+        -o-transition: background-color 0.2s linear;
+        background: linear-gradient(to right, #CFDDD2 50%, transparent 0) 0;
+        background-size: 200% 100%;
+        animation: makeItfadeIn 0.5s;
+    }
+
+    nav:has(#check:not(:checked)) {
+        transition: background-position 0.2s linear;
+        -webkit-transition: background-color 0.2s linear;
+        -moz-transition: background-color 0.2s linear;
+        -o-transition: background-color 0.2s linear;
+        background: linear-gradient(to right, #CFDDD2 50%, transparent 0) 100%;
+        background-size: 200% 100%;
+        animation: makeItfadeOut 0.5s;
+    }
+}
+
+@keyframes makeItfadeIn {
+    0% {
+        background-position: 100%;
+    }
+}
+
+@keyframes makeItfadeOut {
+    0% {
+        background-position: 0;
+    }
 }
 
 /* Define the shape and color of the hamburger lines */
-.navbar-toggler:focus,
-.navbar-toggler:active,
+.checkbtn:focus,
+.checkbtn:active,
 .navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
 }
 
-.navbar-toggler span {
+.checkbtn span {
     display: block;
     background-color: #4f4f4f;
     height: 3px;
@@ -107,7 +145,7 @@ a.activex, a:hover {
 }
 
 /* top line needs a little padding */
-.navbar-toggler span:nth-child(1) {
+.checkbtn span:nth-child(1) {
     margin-top: 0.3em;
 }
 
@@ -116,17 +154,17 @@ a.activex, a:hover {
  */
 
 /* top line rotates 45 degrees clockwise and moves up and in a bit to close the center of the X in the center of the button */
-.navbar-toggler:not(.collapsed) span:nth-child(1) {
+.checkbtn:not(.collapsed) span:nth-child(1) {
     transform: translate(15%, -33%) rotate(45deg);
 }
 
 /* center line goes transparent */
-.navbar-toggler:not(.collapsed) span:nth-child(2) {
+.checkbtn:not(.collapsed) span:nth-child(2) {
     opacity: 0;
 }
 
 /* bottom line rotates 45 degrees counter clockwise, in, and down a bit to close the center of the X in the center of the button  */
-.navbar-toggler:not(.collapsed) span:nth-child(3) {
+.checkbtn:not(.collapsed) span:nth-child(3) {
     transform: translate(15%, 33%) rotate(-45deg);
 }
 
@@ -135,16 +173,16 @@ a.activex, a:hover {
  */
 
 /* top line moves back to initial position and rotates back to 0 degrees */
-.navbar-toggler span:nth-child(1) {
+.checkbtn span:nth-child(1) {
     transform: translate(0%, 0%) rotate(0deg);
 }
 
 /* middle line goes back to regular color and opacity */
-.navbar-toggler span:nth-child(2) {
+.checkbtn span:nth-child(2) {
     opacity: 1;
 }
 
 /* bottom line goes back to initial position and rotates back to 0 degrees */
-.navbar-toggler span:nth-child(3) {
+.checkbtn span:nth-child(3) {
     transform: translate(0%, 0%) rotate(0deg);
 }
