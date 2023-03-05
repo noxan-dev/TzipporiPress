@@ -12,79 +12,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap"
           rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="static/css/navbar.css">
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="static/css/icon.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
-
 <body>
 
 <div class="layout">
-
-    <nav class="navbar fixed-top navbar-expand-lg border-bottom border-light px-4">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="static/images/logo.webp" alt="Logo" width="158" height="56"
-                     class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler collapsed border-0" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+    <nav>
+        <div class="logox">
+            <img src="static/images/logo.webp" width="158" height="56" alt=""/>
+        </div>
+        <input type="checkbox" id="check">
+        <div class="collapsed navbar-toggler">
+            <label for="check" class="checkbtn">
                 <span class="icon-bar top-bar"></span>
                 <span class="icon-bar middle-bar"></span>
                 <span class="icon-bar bottom-bar"></span>
-            </button>
-            <div class="offcanvas offcanvas-end sidenav" tabindex="-1" id="offcanvasNavbar"
-                 aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body justify-content-end">
-                    <div class="navbar-nav align-items-center">
-                        <div class="nav-item" data-bs-dismiss="offcanvas">
-                            <a class="nav-link" href="#services">Our services</a>
-                        </div>
-                        <div class="nav-item" data-bs-dismiss="offcanvas">
-                            <a class="nav-link" href="#testimonials">Testimonials</a>
-                        </div>
-                        <div class="nav-item" data-bs-dismiss="offcanvas">
-                            <a class="nav-link" href="#about">About</a>
-                        </div>
-                        <div class="nav-item" data-bs-dismiss="offcanvas">
-                            <a class="nav-link" href="#our-team">Our Team</a>
-                        </div>
-                        <div class="nav-item" data-bs-dismiss="offcanvas">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </div>
-                        <div class="nav-item" data-bs-dismiss="offcanvas">
-                            <a class="btn d-block d-lg-none header-button text-light"
-                               href="mailto:hello@tzipporipress.com?subject=Hi, let's talk about my sefer"
-                               role="button">Get a Quote
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.83342 0C1.37319 0 1.00009 0.3731 1.00009 0.833333C1.00009 1.29357 1.37319 1.66667 1.83342 1.66667V0ZM10.1668 0.833333H11.0001C11.0001 0.3731 10.627 0 10.1668 0V0.833333ZM9.33342 9.16667C9.33342 9.6269 9.70652 10 10.1668 10C10.627 10 11.0001 9.6269 11.0001 9.16667H9.33342ZM0.410836 9.41075C0.0853855 9.73618 0.0853855 10.2638 0.410836 10.5893C0.736269 10.9147 1.2639 10.9147 1.58934 10.5893L0.410836 9.41075ZM1.83342 1.66667H10.1668V0H1.83342V1.66667ZM9.33342 0.833333V9.16667H11.0001V0.833333H9.33342ZM9.5775 0.244083L0.410836 9.41075L1.58934 10.5893L10.756 1.42258L9.5775 0.244083Z"
-                                          fill="white"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="d-none d-lg-block header-button">
-                        <a class="btn text-light"
-                           href="mailto:hello@tzipporipress.com?subject=Hi, let's talk about my sefer"
-                           role="button">
-                            <div>
-                                Get a Quote
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.83342 0C1.37319 0 1.00009 0.3731 1.00009 0.833333C1.00009 1.29357 1.37319 1.66667 1.83342 1.66667V0ZM10.1668 0.833333H11.0001C11.0001 0.3731 10.627 0 10.1668 0V0.833333ZM9.33342 9.16667C9.33342 9.6269 9.70652 10 10.1668 10C10.627 10 11.0001 9.6269 11.0001 9.16667H9.33342ZM0.410836 9.41075C0.0853855 9.73618 0.0853855 10.2638 0.410836 10.5893C0.736269 10.9147 1.2639 10.9147 1.58934 10.5893L0.410836 9.41075ZM1.83342 1.66667H10.1668V0H1.83342V1.66667ZM9.33342 0.833333V9.16667H11.0001V0.833333H9.33342ZM9.5775 0.244083L0.410836 9.41075L1.58934 10.5893L10.756 1.42258L9.5775 0.244083Z"
-                                          fill="white"/>
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            </label>
+        </div>
+        <div class="nav-items">
+            <a class="nav-link" href="#services">Our services</a>
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#our-team">Our Team</a>
+            <a class="nav-link" href="#contact">Contact</a>
+            <a class="btn header-button text-light"
+               href="mailto:hello@tzipporipress.com?subject=Hi, let's talk about my sefer"
+               role="button">Get a Quote
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.83342 0C1.37319 0 1.00009 0.3731 1.00009 0.833333C1.00009 1.29357 1.37319 1.66667 1.83342 1.66667V0ZM10.1668 0.833333H11.0001C11.0001 0.3731 10.627 0 10.1668 0V0.833333ZM9.33342 9.16667C9.33342 9.6269 9.70652 10 10.1668 10C10.627 10 11.0001 9.6269 11.0001 9.16667H9.33342ZM0.410836 9.41075C0.0853855 9.73618 0.0853855 10.2638 0.410836 10.5893C0.736269 10.9147 1.2639 10.9147 1.58934 10.5893L0.410836 9.41075ZM1.83342 1.66667H10.1668V0H1.83342V1.66667ZM9.33342 0.833333V9.16667H11.0001V0.833333H9.33342ZM9.5775 0.244083L0.410836 9.41075L1.58934 10.5893L10.756 1.42258L9.5775 0.244083Z"
+                          fill="white"/>
+                </svg>
+            </a>
         </div>
     </nav>
 
@@ -124,41 +88,40 @@
                 <h2 class="section-header">Our Services</h2>
                 <h1>Professional Grade Publishing,<br> for a Fraction of the Cost.</h1>
             </div>
-
-                <div class="container-fluid">
-                    <div class="service-items row row-cols-md-12 row-cols-md-4 justify-content-center">
-                        <div class="item-1 ">
-                            <div class="service-header row row-cols-2 justify-content-center justify-content-lg-start pb-4">
-                                <img class="service-icon" src="static/images/icon_1.svg" alt="image">
-                                <h4>Manuscript<br>Editing</h4>
-                            </div>
-                            <p class="service-desc">
-                                Our team of professional editors will work with you to ensure
-                                <span>high quality</span>
-                                and <span>readability</span> for your masterpiece.
-                            </p>
+            <div class="container-fluid">
+                <div class="service-items row  row-cols-lg-4 justify-content-center">
+                    <div class="item-1">
+                        <div class="service-header row row-cols-2 justify-content-center justify-content-md-start pb-4">
+                            <img class="service-icon" src="static/images/icon_1.svg" alt="image">
+                            <h4>Manuscript<br>Editing</h4>
                         </div>
-                        <div class="item-2">
-                            <div class="service-header row row-cols-2 justify-content-center justify-content-lg-start pb-4">
-                                <img class="service-icon" src="static/images/icon_2.svg" alt="image">
-                                <h4>Professional<br>Proofreads</h4>
-                            </div>
-                            <p class="service-desc">
-                                Feel secure knowing your sefer has been <span>thoroughly reviewed</span> before it
-                                hits the shelves.</p>
+                        <p class="service-desc">
+                            Our team of professional editors will work with you to ensure
+                            <span>high quality</span>
+                            and <span>readability</span> for your masterpiece.
+                        </p>
+                    </div>
+                    <div class="item-2">
+                        <div class="service-header row row-cols-2 justify-content-center justify-content-md-start pb-4">
+                            <img class="service-icon" src="static/images/icon_2.svg" alt="image">
+                            <h4>Professional<br>Proofreads</h4>
                         </div>
-                        <div class="item-3 ">
-                            <div class="service-header row row-cols-2 justify-content-center justify-content-lg-start pb-4">
-                                <img class="service-icon" src="static/images/icon_3.svg" alt="image">
-                                <div class="col">
-                                    <h4>Typeset and <br>Cover Design</h4>
-                                </div>
+                        <p class="service-desc">
+                            Feel secure knowing your sefer has been <span>thoroughly reviewed</span> before it
+                            hits the shelves.</p>
+                    </div>
+                    <div class="item-3 ">
+                        <div class="service-header row row-cols-2 justify-content-center justify-content-md-start pb-4">
+                            <img class="service-icon" src="static/images/icon_3.svg" alt="image">
+                            <div class="col">
+                                <h4>Typeset and <br>Cover Design</h4>
                             </div>
-                            <p class="service-desc">Your sefer will have an attractive typeset and interior layout,
-                                creating <span>shelf appeal</span> and <span>accessibility</span> to readers</p>
                         </div>
+                        <p class="service-desc">Your sefer will have an attractive typeset and interior layout,
+                            creating <span>shelf appeal</span> and <span>accessibility</span> to readers</p>
                     </div>
                 </div>
+            </div>
 
         </div>
     </section>
@@ -374,7 +337,8 @@
                 <p>Enter your email to begin your publishing journey!</p>
             </div>
             <div class="contact-form container-fluid">
-                <form class="row row-cols-1" action="https://formsubmit.co/hello@tzipporipress.com" method="post" autocomplete="off">
+                <form class="row row-cols-1" action="https://formsubmit.co/hello@tzipporipress.com" method="post"
+                      autocomplete="off">
                     <label class="form-label">
                         <input type="text" name="name"
                                class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
@@ -408,7 +372,7 @@
 
                 <div class="text-center pt-3">
                     <sub>By clicking “Get a Quote,” I agree to provide the contact information listed above for the
-                    purpose of receiving communications regarding publishing opportunities.</sub>
+                        purpose of receiving communications regarding publishing opportunities.</sub>
                 </div>
             </div>
         </div>
