@@ -1,25 +1,24 @@
-// window.addEventListener('scroll', function () {
-//     document.querySelector('.nav-container').classList.toggle('scrolled', window.scrollY > document.querySelector('.nav-container').offsetHeight);
-// });
-//
-//
-// let animation = anime({
-//         targets: '#services .item-1',
-//         left: '20px',
-//         easing: 'easeInOutQuad',
-//         duration: 1000,
-//     });
+// Select element function
+const selectElement = (element) =>
+  document.querySelector(element);
+const getAllWithClass = (className) =>
+  document.getElementsByClassName(className);
 
-// const input = document.getElementsByClassName('input');
+const
+  body = selectElement('body'),
+  // Converts the returned collection to a proper Array
+  navLinks = Array.from(getAllWithClass("nav-link"));
 
-// for (let i = 0; i < input.length; i++) {
-//     input[i].addEventListener('invalid', function (event) {
-//         if (event.target.validity.valueMissing) {
-//             event.target.setCustomValidity('Add a name before submitting for a quote.');
-//         }
-//     })
-// }
-//
-// input.addEventListener('change', function (event) {
-//     event.target.setCustomValidity('');
-// })
+// Close menu on .nav-link click
+navLinks.forEach(link => { // The Array method `forEach` loops through
+  link.addEventListener('click', function() {
+    document.getElementById("check").checked = false;
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const navIcon1 = document.getElementById("nav-icon");
+  navIcon1.addEventListener("click", function() {
+    navIcon1.classList.toggle("open");
+  });
+});

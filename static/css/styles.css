@@ -1,13 +1,15 @@
-* {
+*,
+*::after,
+*::before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-
+    padding: 0
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    overflow-x: hidden;
 }
 
 html {
@@ -15,279 +17,392 @@ html {
 }
 
 h1 {
-    color: #0C3D35;
+    color: #0c3d35;
     font-style: normal;
     font-weight: 700;
     font-size: 2rem;
     line-height: 2.5rem;
-    letter-spacing: -0.02em;
+    letter-spacing: -.02em
+}
+
+.header {
+    padding-bottom: 10rem
 }
 
 .section-header {
-    color: #69A573;
+    color: #69a573;
     font-size: 1.2em;
-    padding-bottom: 2.5rem;
-}
-
-
-nav {
-    /*background-image: url("../images/background_header.png");*/
-    background-size: cover;
-    height: 6rem;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
+    padding-bottom: 2.5rem
 }
 
 .nav-link {
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #0c3d35;
+}
+
+.publish-button {
+    background: #69a573;
+}
+
+.header-button {
+    background: #0D4A40;
+}
+
+.publish-button, .header-button {
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.publish-button, .header-button a {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
     letter-spacing: -0.014em;
-    color: #0D4A40;
+    color: #FFFFFF;
 }
 
 #home {
-    background-image: linear-gradient(180deg, rgba(234, 240, 235, 0) 82%, #EDF3EE 90%), url("../images/background_header.png");
+    position: relative;
+    background: linear-gradient(180deg, rgba(234, 240, 235, 0) 82%, #edf3ee 90%), url(../images/background_header.webp), no-repeat, center, center, fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 78vh;
+    height: 80svh;
     line-height: 3rem;
-    font-size: x-large;
+    overflow: hidden
 }
 
 .introduction {
-    padding: 2rem 0 0 2rem;
     animation: fadeUpAnimation ease 3s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards
 }
 
 #services {
-    background: #EDF3EE;
+    background: #edf3ee
 }
 
 #services h4 {
-    color: #0C3D35;
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
     font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.019em;
+    color: #0c3d35;
 }
 
-.service-desc {
+.about-statements p, .service-desc {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.375rem;
     line-height: 2.188rem;
     letter-spacing: -0.017em;
-    color: #0C3D35;
+    color: #0c3d35
 }
 
 .service-desc span {
-    font-weight: 700;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 700
 }
 
 #testimonials {
-    background: #CFDDD2;
-    padding: 2rem;
+    background: #cfddd2;
+    padding: 11.5rem 20.688rem 16.688rem 20.688rem
 }
 
-.carousel-item p {
-    font-weight: bolder;
-    font-size: 1.2rem;
+.testimonial-row {
+    gap: 12rem
+}
+
+#testimonials p {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    letter-spacing: -.017em;
+    color: #0d4a40
+}
+
+#testimonials p span {
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 120px;
+    text-align: center;
+    letter-spacing: -.02em;
+    color: #69a573
+}
+
+#testimonials h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    align-items: center;
+    letter-spacing: -.02em;
+    color: #0d4a40
+}
+
+#testimonials sub, .carousel-item span {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -.238195px;
+    color: #69a573
+}
+
+.carousel {
+    width: 100%;
+    height: 150%
+}
+
+.carousel-indicators {
+    z-index: 1;
+}
+
+.carousel .carousel-indicators button {
+    background-size: cover;
+    width: 27px;
+    height: 27px;
+    margin-right: 15px;
+    border-radius: 100%;
+    opacity: .25;
+    background-color: #69a573
+}
+
+.carousel .carousel-indicators button.active {
+    opacity: 1;
+    width: 60px;
+    height: 60px
+}
+
+.carousel .carousel-indicators button.active.slide-0 {
+    background-image: url(../images/testimonial_1.png)
+}
+
+.carousel .carousel-indicators button.active.slide-1 {
+    background-image: url(../images/placeholder.webp)
+}
+
+.carousel .carousel-indicators button.active.slide-2 {
+    background-image: url(../images/placeholder.webp)
+}
+
+.carousel-inner {
+    padding-bottom: 6rem
 }
 
 #carouselTestimonials {
-    background: #CFDDD2;
+    background: #cfddd2;
     height: auto;
-    padding: 2rem;
+    padding: 2rem
 }
 
 #about {
-    background: #EDF3EE;
+    background: #edf3ee
 }
 
 .about {
-    place-content: center;
+    place-content: center
 }
 
 .about-header {
-    padding-bottom: 8rem;
+    padding-bottom: 8rem
 }
 
 #about img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover
+}
+
+.about-statements sub {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 19px;
+    letter-spacing: -0.017em;
+    display: inline-block;
+    color: #69a573;
 }
 
 .about-statements h2 {
-    color: #0C3D35;
+    color: #0c3d35;
     font-style: normal;
     font-weight: 700;
     font-size: 2.25rem;
     line-height: 2.8rem;
     align-items: center;
-    letter-spacing: -0.02em;
-}
-
-.about-statements p {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.375rem;
-    line-height: 2.188rem;
-    letter-spacing: -0.017em;
-    color: #0C3D35;
+    letter-spacing: -.02em
 }
 
 #our-team {
-    background: #D0DFD4;
+    background: #d0dfd4
 }
 
-#our-team sub {
-    font-family: 'Inter', sans-serif;
+#our-team p, #our-team sub, .contact-header p {
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 2rem;
-    letter-spacing: -0.017em;
-    color: #69A573;
+    letter-spacing: -.017em;
+    color: #69a573
 }
 
 #our-team p {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    letter-spacing: -0.017em;
-    color: #0C3D35;
+    color: #0c3d35
 }
 
 .team {
-    gap: 5rem;
+    gap: 5rem
 }
 
 .team-img {
     width: fit-content;
-    -moz-fit-content: fit-content;
+    -moz-fit-content: fit-content
 }
 
 .team-img img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: cover
 }
 
 .team-name {
-    color: #0c4128;
+    font-style: normal;
+    font-weight: 700;
+    color: #0c4128
 }
 
 .team-title {
-    font-size: 1rem;
+    font-size: 1rem
 }
 
 #contact {
-    background: #E8F0E8;
-    caret-color: #0D4A40;
+    background: #e8f0e8;
+    caret-color: #0d4a40
 }
 
 .contact-header {
-    text-align: center;
+    text-align: center
 }
 
 .contact-header p {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    letter-spacing: -0.017em;
-    color: #0C3D35;
+    color: #0c3d35
 }
 
 .contact-form form {
-    gap: 1rem;
+    gap: 3.5rem
 }
 
 .contact-form input::placeholder {
     text-align: center;
     line-height: 3.125rem;
-    color: #69A573;
+    color: #8B9C87;
+}
+
+.contact-form input:focus::placeholder {
+    color: #69a573;
+}
+
+.contact-form input {
+    border-color: #8B9C87 !important;
+}
+
+.contact-form input:focus {
+    border-color: #69a573 !important;
 }
 
 .contact sub {
-    font-family: 'Inter', sans-serif;
+    font-family: Inter, sans-serif;
     font-style: normal;
+    font-size: 13px;
     font-weight: 400;
-    line-height: 1.125rem;
-    letter-spacing: -0.017em;
-    color: #0C3D35;
+    line-height: 1.8rem;
+    letter-spacing: -.017em;
+    color: #0c3d35
 }
-
-.input {
-    border-color: #69A573 !important;
-}
-
-/*.error {*/
-/*    color: #A56969;*/
-/*}*/
 
 footer {
-    background: #0D4A40;
-    color: #69A573;
+    position: relative;
+    background: #0d4a40;
+    color: #69a573;
+    z-index: 3
+}
+
+.contact-us-row, .legal-row, .social-row {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -.014em
 }
 
 .footer-logo img {
-    width: 287px;
-    height: 100px;
+    width: 17.938rem;
+    height: 6.25rem
 }
 
-footer .footer-text {
-
+footer .footer-text-header {
+    font-family: 'Source Serif Pro', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 20px;
-    letter-spacing: -0.009em;
-    color: #ECEDEE;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    letter-spacing: -.009em;
+    color: #ecedee
 }
 
 .footer-index {
-    font-family: 'Inter', sans-serif;
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.011em;
-    color: #E8F0E8;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -.011em;
+    color: #e8f0e8
 }
 
 .footer-logo {
-    filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1)
 }
 
 @keyframes fadeUpAnimation {
     0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(20px)
     }
     75% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0)
     }
 }
-
-/*
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
+ .service-items {
+        gap: 6rem;
+    }
 @media (min-width: 1281px) {
-
-    /* CSS */
     h1 {
         font-style: normal;
         font-weight: 700;
@@ -295,32 +410,25 @@ footer .footer-text {
         line-height: 5rem
     }
 
-    .nav-container {
-        padding: .5rem 7.5rem;
-        z-index: 9;
-        gap: 1.25rem;
-    }
-
-    .nav-container.scrolled {
-        background-color: #fff !important;
-        transition: background-color 200ms linear;
-    }
-
-    .navbar-nav {
-        gap: 1.25rem;
-    }
-
-    .header {
-        padding-bottom: 10rem;
+    .nav-link {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        letter-spacing: -.014em;
+        color: #0d4a40
     }
 
     #home {
-        height: 95vh;
+        height: 95svh
     }
 
     .introduction {
+        position: absolute;
         place-content: start;
-        padding: 8rem 0 0 19.5rem;
+        top: 18rem;
+        left: 16.438rem
     }
 
     .introduction h1 {
@@ -328,91 +436,99 @@ footer .footer-text {
         font-size: 8rem;
         line-height: 9.375rem;
         text-align: left;
-        letter-spacing: -0.021em;
+        letter-spacing: -.021em
     }
 
     #services {
-        padding: 8rem 12rem 10rem;
+        padding: 8rem 12rem 10rem
     }
 
     #services h1 {
-        padding-bottom: 5rem;
+        padding-bottom: 5rem
     }
 
     .service-icon {
         width: 6rem;
         height: auto;
-        gap: 2rem;
+        gap: 2rem
     }
 
-    .service-items {
-        gap: 6rem;
-    }
-
-    /*#testimonials {*/
-    /*    padding: 8rem 7.5rem;*/
-    /*}*/
-    .carousel-item p {
-        font-size: 2rem;
-    }
 
     #about {
-        padding: 8rem 16.313rem;
+        padding: 8rem 16.313rem
     }
 
-    .about-statements {
-        gap: 12.5rem;
+    .statement-1, .statement-2, .statement-3 {
+        padding-bottom: 17rem;
     }
 
     #our-team {
-        padding: 8rem 16.313rem;
+        padding: 8rem 16.313rem
+    }
+
+    .team {
+        gap: 9.75rem
     }
 
     .team-header {
         text-align: center;
-        padding-bottom: 10rem;
+        padding-bottom: 10rem
     }
 
-    .brooks, .david {
-        gap: 7.875rem;
+    .team-name {
+        font-size: 2.25rem;
+        line-height: 2.563rem;
+        letter-spacing: -.017rem
     }
 
     .team-img img {
         max-width: fit-content;
         height: auto;
-        object-fit: cover;
+        object-fit: cover
     }
 
     .contact {
-        padding: 8rem 35rem;
+        padding: 8rem 35rem
     }
 
     .contact-header {
-        padding-bottom: 7.5rem;
+        padding-bottom: 7.5rem
     }
 
     .footer-contact {
-        justify-self: end;
-    }
-
-    .credits {
-        justify-self: end;
+        justify-self: end
     }
 
     footer {
-        padding: 6.313rem 7.563rem;
+        padding: 6.313rem 6.813rem 6.313rem 7.5rem
     }
 
+    .footer-row-1 {
+        margin-bottom: 9.688rem
+    }
+
+    .footer-contact-row {
+        column-gap: 6rem
+    }
+
+    .contact-content, .legal-content, .social-content {
+        max-width: max-content
+    }
+
+    @media screen and (prefers-reduced-motion: no-preference) {
+        html {
+            scroll-snap-type: y proximity;
+        }
+
+        #about, .statement-1, .statement-2, .statement-3 {
+            scroll-snap-align: start;
+            scroll-snap-stop: normal;
+            scroll-margin: 10.223642172523961svh;
+        }
+    }
 }
 
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
 @media (min-width: 1025px) and (max-width: 1280px) {
-
-    /* CSS */
     h1 {
         font-style: normal;
         font-weight: 700;
@@ -420,274 +536,281 @@ footer .footer-text {
         line-height: 5rem
     }
 
-    .nav-container {
-        padding: .5rem 7.5rem;
-        z-index: 9;
-        gap: 1.25rem;
-    }
-
-    .nav-container.scrolled {
-        background-color: #fff !important;
-        transition: background-color 200ms linear;
-    }
-
-    .navbar-nav {
-        gap: 1.25rem;
-    }
-
-    .header {
-        padding-bottom: 10rem;
+    .nav-link {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        letter-spacing: -.014em;
+        color: #0d4a40
     }
 
     #home {
-        height: 95vh;
+        height: 95svh
     }
 
     .introduction {
+        position: absolute;
         place-content: start;
-        padding: 8rem 0 0 14rem;
+        top: 12rem;
+        left: 16.438rem
     }
 
     .introduction h1 {
         font-weight: 700;
         font-size: 6rem;
         line-height: 9.375rem;
-        text-align: left;
-        letter-spacing: -0.021em;
+        letter-spacing: -.021em
     }
 
     #services {
-        padding: 8rem 8rem 10rem;
+        padding: 8rem 6.8rem 10rem
     }
 
     #services h1 {
-        padding-bottom: 5rem;
-    }
-
-    .service-items {
-        gap: 6.313rem;
+        padding-bottom: 5rem
     }
 
     .service-icon {
         width: 5.8rem;
         height: auto;
-        gap: 2rem;
+        gap: 2rem
     }
 
-    /*#testimonials {*/
-    /*    padding: 8rem 7.5rem;*/
-    /*}*/
-    .carousel-item p {
-        font-size: 2rem;
+    #testimonials {
+        background: #cfddd2;
+        padding: 11.5rem 8rem 12rem 8rem
+    }
+
+    .testimonial-row {
+        gap: 5rem
     }
 
     #about {
-        padding: 8rem;
+        padding: 8rem
     }
 
-    .about-statements {
-        gap: 12.5rem;
+    .statement-1, .statement-2 {
+        padding-bottom: 17rem;
+    }
+
+    .statement-3 {
+        padding-bottom: 10rem;
     }
 
     #our-team {
-        padding: 8rem 12rem;
+        padding: 8rem 12rem
+    }
+
+    .team {
+        gap: 9.75rem
     }
 
     .team-header {
         text-align: center;
-        padding-bottom: 10rem;
+        padding-bottom: 10rem
     }
 
-    .brooks, .david {
-        gap: 5rem;
+    .team-name {
+        font-size: 2.25rem;
+        line-height: 2.563rem;
+        letter-spacing: -.017rem
     }
 
     .team-img img {
         max-width: fit-content;
         height: auto;
-        object-fit: cover;
+        object-fit: cover
     }
 
     .contact {
-        padding: 8rem 20rem;
+        padding: 8rem 20rem
     }
 
     .contact-header {
-        padding-bottom: 7.5rem;
+        padding-bottom: 7.5rem
     }
 
     footer {
-        padding: 6.313rem 7.563rem;
+        padding: 6rem 3rem 6rem 5rem
     }
 
-}
+    .footer-row-1 {
+        margin-bottom: 9.688rem
+    }
 
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
+    .footer-contact-row {
+        column-gap: 3rem
+    }
+
+    .contact-content, .legal-content, .social-content {
+        max-width: max-content
+    }
+
+    @media screen and (prefers-reduced-motion: no-preference) {
+        html {
+            scroll-snap-type: y proximity;
+        }
+
+        #about, .statement-1, .statement-2, .statement-3 {
+            scroll-snap-align: start;
+            scroll-snap-stop: normal;
+            scroll-margin: 10.223642172523961svh;
+        }
+    }
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-    /* CSS */
+    .header {
+        padding-bottom: 6.875rem;
+    }
+
     .introduction {
+        position: absolute;
+        top: 9rem;
         text-align: center;
-        place-content: center;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
     }
 
     .introduction h1 {
         font-weight: 700;
         font-size: 6rem;
         line-height: 9.375rem;
-        text-align: center;
-        letter-spacing: -0.021em;
+        letter-spacing: -.021em
     }
 
     #services {
-        padding: 4rem;
+        padding: 4rem
     }
 
     .service-icon {
         width: 6rem;
         height: auto;
-        gap: 2rem;
+        gap: 2rem
+    }
+
+    #testimonials {
+        background: #cfddd2;
+        padding: 4.25rem 3rem 6.125rem 3rem;
+        text-align: center
+    }
+
+    .testimonial-row {
+        gap: 5rem
+    }
+
+    #testimonials p {
+        font-size: 16px;
+        line-height: 26px
+    }
+
+    #testimonials h4 {
+        font-size: 24px;
+        line-height: 30px;
+        align-items: center
+    }
+
+    #testimonials sub {
+        font-size: 15px;
     }
 
     #about {
-        padding: 8rem;
+        padding: 8rem
     }
 
-    .about-statements {
-        gap: 6rem;
-    }
-
-    #our-team {
-        /*text-align: center;*/
-        padding: 8rem 6.5rem;
-    }
-
-    .team {
-        justify-content: center;
-    }
-
-    .team-img {
-        width: 225px;
-        height: 216px;
-    }
-
-    .team-header {
-        text-align: center;
-        padding-bottom: 6rem;
-    }
-
-    .brooks, .david {
-        gap: 3rem;
-    }
-
-    .contact {
-        padding: 8rem 12rem;
-    }
-
-    .contact-header {
-        padding-bottom: 7.5rem;
-    }
-
-    footer {
-        padding: 6rem 4.25rem 3.563rem;
-    }
-
-    .footer-contact {
-        justify-content: end;
-    }
-}
-
-/*
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-    /* CSS */
-    .introduction {
-        text-align: center;
-        place-content: center;
-    }
-
-    .introduction h1 {
-        font-weight: 700;
-        font-size: 6rem;
-        line-height: 9.375rem;
-        text-align: center;
-        letter-spacing: -0.021em;
-    }
-
-    #services {
-        padding: 4rem;
-    }
-
-    .service-icon {
-        width: 6rem;
-        height: auto;
-        gap: 2rem;
-    }
-
-    #about {
-        padding: 8rem;
-    }
-
-    .about-statements {
-        gap: 6rem;
-    }
-
-    #our-team {
-        padding: 8rem 6.5rem;
-    }
-
-    .team-header {
-        text-align: center;
+    .statement-1, .statement-2 {
         padding-bottom: 8rem;
     }
 
-    .team-img {
-        width: 225px;
-        height: 216px;
-    }
-
-    .brooks, .david {
-        gap: 3rem;
-    }
-
-    .contact {
-        padding: 8rem 12rem;
-    }
-
-    .contact-header {
+    .statement-3 {
         padding-bottom: 5rem;
     }
 
-    footer {
-        padding: 6rem 4.25rem 3.563rem;
+    .about-statements p, #our-team p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        letter-spacing: -0.017em;
     }
 
-}
+    #our-team {
+        padding: 8rem 6.5rem
+    }
 
-/*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
+    .team {
+        gap: 9rem
+    }
+
+    .team-img {
+        width: 15rem;
+        height: 15rem
+    }
+
+    .team-name {
+        font-size: 2.25rem;
+        line-height: 2.563rem;
+        letter-spacing: -.017rem
+    }
+
+    .team-header {
+        text-align: center;
+        padding-bottom: 8rem
+    }
+
+    .contact {
+        padding: 8rem 12rem
+    }
+
+    .contact-header {
+        padding-bottom: 7.5rem
+    }
+
+    footer {
+        height: 78dvh;
+        padding: 4.8rem 4rem 4.8rem 5rem
+    }
+
+    .footer-row-1 {
+        gap: 3.5rem;
+        margin-bottom: 5rem
+    }
+
+    .footer-logo img {
+        width: 14.188rem;
+        height: 4.813rem
+    }
+
+    .footer-contact-row {
+        column-gap: 1.8rem
+    }
+
+    .contact-content, .legal-content, .social-content {
+        max-width: max-content
+    }
+}
 
 @media (min-width: 481px) and (max-width: 767px) {
 
-    /* CSS */
+    .header {
+        padding-bottom: 4rem;
+    }
+
     #home {
+        height: 100vh;
         background-position: center;
+        background-repeat: no-repeat
     }
 
     .introduction {
-        padding-top: 9rem;
+        position: absolute;
+        top: 13.375rem;
         text-align: center;
-        place-content: center;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
     }
 
     .introduction h1 {
@@ -695,104 +818,193 @@ footer .footer-text {
         font-size: 5rem;
         line-height: 7rem;
         text-align: center;
-        letter-spacing: -0.021em;
+        letter-spacing: -.021em
     }
 
     #services {
         padding: 4rem;
+        text-align: center;
+    }
+
+    #services h4 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .service-items {
+        gap: 3rem;
+    }
+
+    .item-1, .item-2 {
+        padding-bottom: 4rem;
     }
 
     .service-icon {
         width: 6rem;
         height: auto;
-        gap: 2rem;
+        gap: 2rem
+    }
+
+    .service-desc {
+        font-size: 1rem;
+        line-height: 1.625rem;
+        letter-spacing: -0.017em;
+    }
+
+    #testimonials {
+        background: #cfddd2;
+        padding: 4.25rem 1.375rem 6.125rem 1.375rem;
+        text-align: center
+    }
+
+    #testimonials p {
+        font-size: 16px;
+        line-height: 26px
+    }
+
+    #testimonials h4 {
+        font-size: 24px;
+        line-height: 30px;
+        align-items: center
+    }
+
+    #testimonials sub, .carousel-item span {
+        font-size: 15px;
     }
 
     #about {
         text-align: center;
-        padding: 5rem;
+        padding: 5rem
     }
 
-    .about-header {
+    .about-statements sub {
+        font-size: 14px;
+        line-height: 32px;
+        padding-bottom: 19px;
+        display: inline-block;
+        text-align: center;
+        letter-spacing: -0.017em;
+    }
+
+    .statement-1, .statement-2 {
+        padding-bottom: 8rem;
+    }
+
+    .statement-3 {
         padding-bottom: 5rem;
     }
 
-    .about-header {
-        padding-bottom: 5rem;
-    }
-
-    .about-statements {
-        gap: 3rem;
+    .about-statements p, #our-team p {
+        font-size: 1rem;
+        line-height: 2rem;
+        letter-spacing: -0.017em;
     }
 
     #our-team {
         text-align: center;
-        padding: 5rem;
+        padding: 4rem 2rem 4.5rem
     }
 
     .team-header {
         text-align: center;
-        padding-bottom: 6rem;
+        padding-bottom: 6rem
     }
 
     .team-img {
-        width: 225px;
-        height: 216px;
+        width: 15rem;
+        height: 15rem
     }
 
-    .brooks, .david {
-        gap: 4rem;
+    .team {
+        gap: 7rem
+    }
+
+    .team-name {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+        align-items: center;
+        letter-spacing: -.02em
     }
 
     .contact {
-        padding: 8rem 8rem;
+        padding: 8rem 8rem
     }
 
     .contact-header {
-        padding-bottom: 4rem;
+        padding-bottom: 4rem
     }
 
     footer {
         text-align: center;
-        padding: 7.188rem 4.25rem 3.563rem;
+        padding: 7.188rem 2.75rem 3.563rem
+    }
+
+    .footer-row-1 {
+        gap: 6.25rem;
+        margin-bottom: 2.75rem
+    }
+
+    .footer-contact-row {
+        row-gap: 3rem;
+        column-gap: 2.8rem
     }
 
     .footer-logo img {
-        width: 227px;
-        height: 77px;
+        width: 14.188rem;
+        height: 4.813rem
     }
 
+    .icon {
+        width: 1.25rem;
+        height: 1.25rem
+    }
 }
-
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-    /* CSS */
+    .header {
+        padding-bottom: 4rem;
+    }
+
     #home {
+        height: 100vh;
         background-position: center;
+        background-repeat: no-repeat;
     }
 
     .introduction {
-        padding-top: 9rem;
+        position: absolute;
+        top: 13.375rem;
         text-align: center;
-        place-content: center;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
     }
 
     .introduction h1 {
         font-style: normal;
         font-weight: 700;
-        font-size: 48px;
-        line-height: 56px;
-        text-align: center;
-        letter-spacing: -0.021em;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        letter-spacing: -.021em;
+    }
+
+    .publish-button {
+        padding: 13.4496px 20.1744px;
+    }
+
+    .publish-button, .header-button a {
+        font-size: 16px;
     }
 
     #services {
         padding: 3rem 2rem;
+        text-align: center;
+    }
+
+    #services h4 {
+        font-size: 24px;
+        line-height: 30px;
     }
 
     .service-icon {
@@ -801,58 +1013,124 @@ footer .footer-text {
         gap: 2rem;
     }
 
-    #about {
-        text-align: center;
-        padding: 5rem 2rem;
+    .service-desc {
+        font-size: 1rem;
+        line-height: 1.625rem;
+        letter-spacing: -0.017em;
     }
 
-    .about-header {
+    .item-1, .item-2 {
+        padding-bottom: 4rem;
+    }
+
+    #testimonials {
+        background: #cfddd2;
+        padding: 4.25rem 1.375rem 6.125rem 1.375rem;
+        text-align: center;
+    }
+
+    #testimonials p {
+        font-size: 16px;
+        line-height: 26px
+    }
+
+    #testimonials h4 {
+        font-size: 24px;
+        line-height: 30px;
+        align-items: center
+    }
+
+    #testimonials sub, .carousel-item span {
+        font-size: 15px;
+    }
+
+    #about {
+        text-align: center;
+        padding: 5rem 2rem
+    }
+
+    .about-statements sub {
+        font-size: 14px;
+        line-height: 32px;
+        padding-bottom: 19px;
+        display: inline-block;
+        text-align: center;
+        letter-spacing: -0.017em;
+    }
+
+    .statement-1, .statement-2 {
+        padding-bottom: 8rem;
+    }
+
+    .statement-3 {
         padding-bottom: 5rem;
     }
 
-    .about-statements {
-        gap: 3rem;
+    .about-statements p, #our-team p {
+        font-size: 1rem;
+        line-height: 2rem;
+        letter-spacing: -0.017em;
     }
 
     #our-team {
         text-align: center;
-        padding: 5rem 2rem;
+        padding: 4rem 2rem 4.5rem
     }
 
     .team-header {
         text-align: center;
-        padding-bottom: 3rem;
+        padding-bottom: 3rem
     }
 
     .team-img {
-        width: 225px;
-        height: 216px;
+        width: 15rem;
+        height: 15rem
     }
 
-    .brooks, .david {
-        gap: 3rem;
+    .team-name {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+        align-items: center;
+        letter-spacing: -.02em
+    }
+
+    .team {
+        gap: 7rem
     }
 
     .contact {
-        padding: 8rem 2rem;
+        padding: 8rem 2rem
     }
 
     .contact-header {
-        padding-bottom: 4rem;
+        padding-bottom: 4rem
     }
 
     footer {
         text-align: center;
-        padding: 7.188rem 4.25rem 3.563rem;
+        padding: 7.188rem 2.75rem 3.563rem
+    }
+
+    .footer-row-1 {
+        gap: 6.25rem;
+        margin-bottom: 2.75rem
+    }
+
+    .footer-contact-row {
+        row-gap: 6.25rem
     }
 
     .footer-logo img {
-        width: 227px;
-        height: 77px;
+        width: 14.188rem;
+        height: 4.813rem
     }
 
-    .footer-contact-content {
-        justify-content: center;
+    .contact-us-row, .legal-row, .social-row {
+        font-size: .875rem
     }
 
+    .icon {
+        width: 1.25rem;
+        height: 1.25rem
+    }
 }

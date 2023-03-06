@@ -7,93 +7,73 @@
     <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
-    <link rel="manifest" href="static/favicon/site.webmanifest">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="manifest" href="static/favicon/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap"
+          rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="static/css/navbar.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/icon.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
-
 <body>
 
 <div class="layout">
-
-    <nav class="navbar navbar-scroll sticky-top navbar-expand-lg border-bottom border-light">
-        <div class="nav-container py-3 container-fluid">
-            <a class="navbar-brand col" href="#">
-                <img src="static/images/logo.png" alt="Logo" width="158" height="56"
-                     class="d-inline-block align-text-top">
+    <nav class="nav-bar">
+        <div class="logox">
+            <img src="static/images/logo.webp" width="158" height="56" alt=""/>
+        </div>
+        <input type="checkbox" id="check">
+        <label id="nav-icon" for="check" class="collapsed checkbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="nav-items pt-5 pt-lg-0">
+            <a class="nav-link" href="#services">Our services</a>
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#our-team">Our Team</a>
+            <a class="nav-link" href="#contact">Contact</a>
+            <a class="btn header-button text-light"
+               href="mailto:hello@tzipporipress.com?subject=Hi, let's talk about my sefer"
+               role="button">Get a Quote
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.83342 0C1.37319 0 1.00009 0.3731 1.00009 0.833333C1.00009 1.29357 1.37319 1.66667 1.83342 1.66667V0ZM10.1668 0.833333H11.0001C11.0001 0.3731 10.627 0 10.1668 0V0.833333ZM9.33342 9.16667C9.33342 9.6269 9.70652 10 10.1668 10C10.627 10 11.0001 9.6269 11.0001 9.16667H9.33342ZM0.410836 9.41075C0.0853855 9.73618 0.0853855 10.2638 0.410836 10.5893C0.736269 10.9147 1.2639 10.9147 1.58934 10.5893L0.410836 9.41075ZM1.83342 1.66667H10.1668V0H1.83342V1.66667ZM9.33342 0.833333V9.16667H11.0001V0.833333H9.33342ZM9.5775 0.244083L0.410836 9.41075L1.58934 10.5893L10.756 1.42258L9.5775 0.244083Z"
+                          fill="white"/>
+                </svg>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav col justify-content-start fw-bold justify-content-end">
-                    <a class="nav-link" href="#services">Our services</a>
-                    <a class="nav-link" href="#testimonials">Testimonials</a>
-                    <a class="nav-link" href="#about">About</a>
-                    <a class="nav-link" href="#our-team">Our Team</a>
-                    <a class="nav-link" href="#contact">Contact</a>
-                    <a class="btn rounded-pill d-block d-lg-none p-0 w-auto text-light"
-                       href="mailto:hello@tzipporipress.com?subject=Hi, let's talk about my sefer"
-                       role="button"
-                       style="background-color: #0D4A40; font-size: medium;">Get a Quote
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                  d="M6 8h5.293L5 14.293l1.414 1.414 6.293-6.293V15h2V6H6v2z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="d-none d-lg-block">
-                <a class="btn rounded-pill text-light"
-                   href="mailto:hello@tzipporipress.com?subject=Hi, let's talk about my sefer"
-                   role="button"
-                   style="background-color: #0D4A40; padding: 10px 24px;">
-                    <div>
-                        Get a Quote
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                  d="M6 8h5.293L5 14.293l1.414 1.414 6.293-6.293V15h2V6H6v2z"/>
-                        </svg>
-                    </div>
-
-                </a>
-            </div>
         </div>
     </nav>
 
     <section id="home">
-        <div class="home container-fluid">
-            <div class="introduction row">
-                <div class="col">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1>Self Publishing <br> Redefined.</h1>
+        <div class="home container">
+            <div class="introduction">
+                <div>
+                    <h1>Self Publishing <br> Redefined.</h1>
+                </div>
+                <div class="container-fluid">
+                    <div class="row row-cols-lg-auto gy-4">
+                        <div class="ps-0">
+                            <button class="btn publish-button" href="#contact" type="button" title="Publish Your Sefer">
+                                Publish Your Sefer
+                            </button>
                         </div>
-                        <div class="col-12">
-                            <div class="row gy-2 align-items-center justify-content-center justify-content-lg-start">
-                                <div class="col-12 col-lg-6 w-auto">
-                                    <a class="btn text-light rounded-pill w-auto" role="button" href="#contact"
-                                       style="background-color: #69A573; padding: 10px 24px; gap: 9px;">Publish Your
-                                        Sefer</a>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <a href="#" class="text-decoration-none w-auto"
-                                       style="color: #0D4A40; font-family: 'Inter', sans-serif; font-style: normal; font-weight: 500; font-size: 18px; line-height: 24px; letter-spacing: -0.014em">Why
-                                        Tzippori?
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                             fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd"
-                                                  d="M6 8h5.293L5 14.293l1.414 1.414 6.293-6.293V15h2V6H6v2z"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
+                        <div>
+                            <a href="#" class="text-decoration-none"
+                               style="color: #0D4A40; font-family: 'Inter', sans-serif; font-style: normal; font-weight: 500; font-size: 1.125rem; line-height: 1.5rem; letter-spacing: -0.014em">
+                                Why Tzippori?
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.8333 0C1.37306 0 0.999964 0.3731 0.999964 0.833333C0.999964 1.29357 1.37306 1.66667 1.8333 1.66667V0ZM10.1666 0.833333H11C11 0.3731 10.6269 0 10.1666 0V0.833333ZM9.3333 9.16667C9.3333 9.6269 9.7064 10 10.1666 10C10.6269 10 11 9.6269 11 9.16667H9.3333ZM0.410714 9.41075C0.0852634 9.73618 0.0852634 10.2638 0.410714 10.5893C0.736147 10.9147 1.26378 10.9147 1.58921 10.5893L0.410714 9.41075ZM1.8333 1.66667H10.1666V0H1.8333V1.66667ZM9.3333 0.833333V9.16667H11V0.833333H9.3333ZM9.57738 0.244083L0.410714 9.41075L1.58921 10.5893L10.7559 1.42258L9.57738 0.244083Z"
+                                          fill="#0D4A40"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -102,83 +82,126 @@
     </section>
 
     <section id="services">
-        <div class="container-fluid">
-            <div class="row gy-3 gy-lg-0">
-                <div class="col-auto col-md-12 col-lg-12">
-                    <div class="service-header header text-center">
-                        <h2 class="section-header">Our Services</h2>
-                        <h1>Professional Grade Publishing,<br> for a Fraction of the Cost.</h1>
+        <div class="container">
+            <div class="service-header header text-center">
+                <h2 class="section-header">Our Services</h2>
+                <h1>Professional Grade Publishing,<br> for a Fraction of the Cost.</h1>
+            </div>
+            <div class="container-fluid">
+                <div class="service-items row  row-cols-lg-4 justify-content-center">
+                    <div class="item-1">
+                        <div class="service-header row row-cols-2 justify-content-center justify-content-md-start pb-4">
+                            <img class="service-icon" src="static/images/icon_1.svg" alt="image">
+                            <h4>Manuscript<br>Editing</h4>
+                        </div>
+                        <p class="service-desc">
+                            Our team of professional editors will work with you to ensure
+                            <span>high quality</span>
+                            and <span>readability</span> for your masterpiece.
+                        </p>
                     </div>
-                </div>
-                <div class="col-auto col-md-12 col-lg-12">
-                    <div class="service-items row row-cols-md-12 row-cols-lg-3 row-cols-xl-4 justify-content-center">
-                        <div class="item-1">
-                            <div class="service-header row align-items-center pb-4">
-                                <img class="service-icon" src="static/images/icon_1.svg" alt="image">
-                                <h4 class="col">Manuscript<br>Editing</h4>
-                            </div>
-                            <p class="service-desc">
-                                Our team of professional editors will work with you to ensure <span
-                                    class="">high quality</span> and <span class="">readability</span> for your
-                                masterpiece.
-                            </p>
+                    <div class="item-2">
+                        <div class="service-header row row-cols-2 justify-content-center justify-content-md-start pb-4">
+                            <img class="service-icon" src="static/images/icon_2.svg" alt="image">
+                            <h4>Professional<br>Proofreads</h4>
                         </div>
-                        <div class="item-2">
-                            <div class="service-header row align-items-center pb-4">
-                                <img class="service-icon" src="static/images/icon_2.svg" alt="image">
-                                <h4 class="col">Professional<br>Proofreads</h4>
+                        <p class="service-desc">
+                            Feel secure knowing your sefer has been <span>thoroughly reviewed</span> before it
+                            hits the shelves.</p>
+                    </div>
+                    <div class="item-3 ">
+                        <div class="service-header row row-cols-2 justify-content-center justify-content-md-start pb-4">
+                            <img class="service-icon" src="static/images/icon_3.svg" alt="image">
+                            <div class="col">
+                                <h4>Typeset and <br>Cover Design</h4>
                             </div>
-                            <p class="service-desc">
-                                Feel secure knowing your sefer has been <span>thoroughly reviewed</span> before it hits
-                                the
-                                shelves.</p>
                         </div>
-                        <div class="item-3">
-                            <div class="service-header row align-items-center pb-4">
-                                <img class="service-icon" src="static/images/icon_3.svg" alt="image">
-                                <h4 class="col">Typeset and <br>Cover Design</h4>
-                            </div>
-                            <p class="service-desc">Your sefer will have an attractive typeset and interior layout,
-                                creating <span>shelf appeal</span> and <span>accessibility</span> to readers</p>
-                        </div>
+                        <p class="service-desc">Your sefer will have an attractive typeset and interior layout,
+                            creating <span>shelf appeal</span> and <span>accessibility</span> to readers</p>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
     <section id="testimonials">
-        <div class="text-center">
-            <div class="header"><h2 class="section-header">Testimonials</h2>
-                <h1>What Are They Saying?</h1></div>
+        <div class="container">
+            <div class="testimonials-header header text-center">
+                <h2 class="section-header">Testimonials</h2>
+                <h1>What Are They Saying?</h1>
+            </div>
+            <div class="d-none d-lg-block">
+                <div class="container-fluid">
+                    <div class="testimonial-row row">
+                        <div class="col">
+                            <p>
+                                <span>“</span><br>Tzippori Press took my manuscript and produced a clear and
+                                professional book. Rabbi
+                                David had the keen insight to figure out my theme on each subject and present it to the
+                                reader in an erudite manner. A superb job!
+                            </p>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="static/images/testimonial_1.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <h4>Rabbi Chananya Berzon</h4>
+                                    <sub>Author of “Drashot on Parshot”</sub>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p>
+                                <span>“</span><br>Tzippori Press took my manuscript and produced a clear and
+                                professional book. Rabbi
+                                David had the keen insight to figure out my theme on each subject and present it to the
+                                reader in an erudite manner. A superb job!
+                            </p>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="static/images/testimonial_1.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <h4>Rabbi Chananya Berzon</h4>
+                                    <sub>Author of “Drashot on Parshot”</sub>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!–– carousel -->
-            <div id="carouselTestimonials" class="carousel slide" data-bs-ride="true">
+            <div id="carouselTestimonials" class="carousel slide d-block d-lg-none" data-bs-ride="true">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="0"
-                            class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
+                            aria-current="true"
+                            aria-label="Slide 1" class="active slide-0"></button>
                     <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
+                            aria-label="Slide 2" class="slide-1"></button>
                     <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+                            aria-label="Slide 3" class="slide-2"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <p>Tzippori Press undertook the project of bringing my sefer Rachem Bechasdecha from its
-                            beginning
-                            to its fruition editing to publishing. He produced a clear and professional book. Tzippori
-                            Press had the keen insight to figure out my theme on the subject and present it to the
-                            reader in an erudite
-                            manner, and surmounted the difficulty of ideas presented in audio format into printed
-                            material. A superb accomplishment.
+                        <p>
+                            <span>“</span><br>Tzippori Press took my manuscript and produced a clear and professional
+                            book. Rabbi David had
+                            the keen insight to figure out my theme on each subject and present it to the reader in an
+                            erudite manner. A superb job!
                         </p>
-                        <span class="fw-bolder fs-4 lh-sm">Rabbi Berzon<br>
-                            <span class="fw-normal fs-6"> Yeshivat Mevaseret Tzion</span>
-                        </span>
-
+                        <h4>Rabbi Chananya Berzon</h4>
+                        <span>Author of “Drashot on Parshot”</span>
                     </div>
                     <div class="carousel-item">
-                        <p>Hello</p>
+                        <p>
+                            <span>“</span><br>Tzippori Press took my manuscript and produced a clear and professional
+                            book. Rabbi David had
+                            the keen insight to figure out my theme on each subject and present it to the reader in an
+                            erudite manner. A superb job!
+                        </p>
+                        <h4>Rabbi Chananya Berzon</h4>
+                        <span>Author of “Drashot on Parshot”</span>
                     </div>
                     <div class="carousel-item">
                         <p></p>
@@ -189,68 +212,64 @@
     </section>
 
     <section id="about">
-        <div class="about container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="about-header header text-center">
-                        <h2 class="section-header">About</h2>
-                        <h1>Professional Grade Publishing, <br>for a Fraction of the Cost.</h1>
+        <div class="about container">
+            <div class="about-header header text-center">
+                <h2 class="section-header">About</h2>
+                <h1>Professional Grade Publishing, <br>for a Fraction of the Cost.</h1>
+            </div>
+        </div>
+        <div class="about-statements">
+            <div class="statement-1">
+                <div class="row">
+                    <div class="order-1 order-lg-0 col-12 col-lg-6 align-self-center">
+                        <sub>01</sub>
+                        <h2>What is Tzippori Press?</h2>
+                        <p>Tzippori press is named for the legendary town of Tzippori, the birthplace of the
+                            Mishnah. Here at Tzippori, we believe that YOUR voice
+                            deserves to be heard. If you have quality ideas, we want
+                            the world to know.</p>
+                    </div>
+                    <div class="order-0 order-lg-1 col-12 col-lg-6">
+                        <img src="static/images/image_1.webp" alt="">
                     </div>
                 </div>
-                <div class="about-statements col-12">
-                    <div class="row gy-4">
-                        <div class="statement-1 col-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                    <sub style="color: #69A573">01</sub>
-                                    <h2>What is Tzippori Press?</h2>
-                                    <p>Tzippori press is named for the legendary town of Tzippori, the birthplace of the
-                                        Mishnah. Here at Tzippori, we believe that YOUR voice
-                                        deserves to be heard. If you have quality ideas, we want
-                                        the world to know.</p>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                    <img src="static/images/image_1.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="statement-2 col-12 justify-content-end">
-                            <div class="row">
-                                <div class="order-lg-1 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                    <sub style="color: #69A573">02</sub>
-                                    <h2>The Problem</h2>
-                                    <p>Traditional Jewish publishing can cost upwards of $25,000 for one book.
-                                        Oftentimes, this
-                                        price reflects the brand name of the company and not the quality or amount of
-                                        work invested
-                                        into the sefer. On the other hand, many 'do it yourself' websites leave room for
-                                        all sorts of silly and unnecessary errors.</p>
-                                </div>
-                                <div class="order-lg-0 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                    <img src="static/images/image_2.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="statement-3 col-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                    <sub style="color: #69A573">03</sub>
-                                    <h2>Our Mission</h2>
-                                    <p>We view ourselves as a happy middle ground. High quality, professional feel,
-                                        while allowing you the freedom of a full self-publish.
-
-                                        Our mission at Tzippori is to make quality publishing available to everyone (for
-                                        a fraction
-                                        of the price!) With direct experience in mainstream publishing houses of the
-                                        Jewish world, Tzippori
-                                        press brings you the highest caliber quality along with peace of mind knowing
-                                        you're in good hands. Now that's self-publishing, re-imagined!</p>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                    <img src="static/images/image_3.png" alt="">
-                                </div>
-                            </div>
-                        </div>
+            </div>
+            <div class="statement-2 justify-content-end">
+                <div class="row">
+                    <div class="order-1 col-12 col-lg-6 align-self-center">
+                        <sub>02</sub>
+                        <h2>The Problem</h2>
+                        <p>Traditional Jewish publishing can cost upwards of $25,000 for one book.
+                            Oftentimes, this
+                            price reflects the brand name of the company and not the quality or amount of
+                            work invested
+                            into the sefer. On the other hand, many 'do it yourself' websites leave room for
+                            all sorts of silly and unnecessary errors.</p>
+                    </div>
+                    <div class="order-0 col-12 col-lg-6">
+                        <img src="static/images/image_2.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="statement-3">
+                <div class="row">
+                    <div class="order-1 order-lg-0 col-12 col-lg-6 align-self-center">
+                        <sub>03</sub>
+                        <h2>Our Mission</h2>
+                        <p>We view ourselves as a happy middle ground. High quality, professional feel,
+                            while allowing you the freedom of a full self-publish.
+                        </p>
+                        <p>
+                            Our mission at Tzippori is to make quality publishing available to everyone (for
+                            a fraction
+                            of the price!) With direct experience in mainstream publishing houses of the
+                            Jewish world, Tzippori
+                            press brings you the highest caliber quality along with peace of mind knowing
+                            you're in good hands. Now that's self-publishing, re-imagined!
+                        </p>
+                    </div>
+                    <div class="order-0 order-lg-1 col-12 col-lg-6">
+                        <img src="static/images/image_3.webp" alt="">
                     </div>
                 </div>
             </div>
@@ -259,50 +278,47 @@
 
     <section id="our-team">
         <div class="our-team container">
-            <div class="row">
-                <div class="team-header col">
-                    <h2 class="section-header">Our Team</h2>
-                    <h1>Meet the team</h1>
-                </div>
-                <div class="container-fluid">
-                    <div class="team row">
-                        <div class="col-12">
-                            <div class="david row">
-                                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 team-img d-block d-lg-inline mx-auto mx-lg-0">
-                                    <img class="david-img" src="static/images/david.png" alt="image">
+            <div class="team-header">
+                <h2 class="section-header">Our Team</h2>
+                <h1>Meet the team</h1>
+            </div>
+            <div class="container-fluid">
+                <div class="team">
+                    <div class="david pb-5">
+                        <div class="row gap-4">
+                            <div class="col-sm-12 col-lg-6 team-img d-block d-lg-inline mx-auto mx-lg-0">
+                                <img class="david-img" src="static/images/david.webp" alt="image">
+                            </div>
+                            <div class="col-sm-12 col-lg-6 align-self-center">
+                                <div class="pb-4">
+                                    <h1 class="team-name mb-0">Rabbi Shlomo David</h1>
+                                    <sub>Co-Founder of Tzippori Press</sub>
                                 </div>
-                                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                    <div class="">
-                                        <h1 class="team-name">Rabbi Shlomo David</h1>
-                                        <sub>Co-Founder of Tzippori Press</sub>
-                                    </div>
-                                    <!--                            <a class="linkedin-link" href="https://www.linkedin.com/in/shlomo-david/"><img-->
-                                    <!--                                    src="static/images/linkedin_no_circle.svg" alt="linkedin"></a>-->
-                                    <p class="">A published and noted author in his own right, Rabbi Shlomo David
+                                <div>
+                                    <p>A published and noted author in his own right, Rabbi Shlomo David
                                         Co-Founded Tzippori
-                                        Press to bring unprecedented opportunities to the thinkers and storytellers of
-                                        Klal
-                                        Yisrael. With extensive logistical knowledge of the publishing process, Rabbi
-                                        David
-                                        brings his warmth, finesse and years of experience to the future authors of the
-                                        Jewish people.</p>
-                                </div>
+                                        Press to bring unprecedented opportunities to the thinkers and
+                                        storytellers of Klal
+                                        Yisrael. With extensive logistical knowledge of the publishing process,
+                                        Rabbi David
+                                        brings his warmth, finesse and years of experience to the future authors
+                                        of the Jewish people.</p></div>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="brooks row">
-                                <div class="col-auto col-md-12 col-lg-6 col-xl-6 team-img d-block mx-auto mx-lg-0">
-                                    <img class="brooks-img" src="static/images/brooks.png" alt="image">
+                    </div>
+                    <div class="brooks pt-5">
+                        <div class="row gap-4">
+                            <div class="col-auto col-md-12 col-lg-6 team-img d-block mx-auto mx-lg-0">
+                                <img class="brooks-img" src="static/images/brooks.webp" alt="image">
+                            </div>
+                            <div class="col-auto col-md-12 col-lg-6 align-self-center">
+                                <div class="pb-4">
+                                    <h1 class="team-name mb-0">Asher Brooks</h1>
+                                    <sub>Co-Founder of Tzippori Press</sub>
                                 </div>
-                                <div class="col-auto col-md-12 col-lg-6 col-xl-6">
-                                    <div class="">
-                                        <h1 class="team-name">Asher Brooks</h1>
-                                        <sub>Co-Founder of Tzippori Press</sub>
-                                    </div>
-                                    <!--                            <a class="linkedin-link" href="https://www.linkedin.com/in/aaron-a-brooks/"><img-->
-                                    <!--                                    src="static/images/linkedin_no_circle.svg" alt="linkedin"></a>-->
-                                    <p class="">Traditional Jewish publishing can cost upwards of $25,000 for one book.
-                                        Oftentimes, this price reflects the brand name of</p>
+                                <div>
+                                    <p>Traditional Jewish publishing can cost upwards of $25,000 for one
+                                        book. Oftentimes, this price reflects the brand name of</p>
                                 </div>
                             </div>
                         </div>
@@ -310,148 +326,142 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <section id="contact">
-        <div class="contact container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="contact-header">
-                        <h2 class="section-header">Contact Form</h2>
-                        <h1>Let’s Work Together</h1>
-                        <p>Enter your email to begin your publishing journey!</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="contact-form">
-                        <form class="row" action="https://formsubmit.co/hello@tzipporipress.com" method="post">
-                            <label class="form-label">
-                                <input type="text" name="name"
-                                       class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
-                                       placeholder="Type your name" required>
+        <div class="contact">
+            <div class="contact-header">
+                <h2 class="section-header">Contact Form</h2>
+                <h1>Let’s Work Together</h1>
+                <p>Enter your email to begin your publishing journey!</p>
+            </div>
+            <div class="contact-form container-fluid">
+                <form class="row row-cols-1" action="https://formsubmit.co/hello@tzipporipress.com" method="post"
+                      autocomplete="off">
+                    <label class="form-label">
+                        <input type="text" name="name"
+                               class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
+                               placeholder="Type your name" required>
 
-                            </label>
-                            <label class="form-label">
-                                <input type="email" name="email"
-                                       class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
-                                       placeholder="Email" required>
+                    </label>
+                    <label class="form-label">
+                        <input type="email" name="email"
+                               class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
+                               placeholder="Email" required>
 
-                            </label>
-                            <input type="hidden" name="_subject" value="New submission!">
-                            <label class="form-label">
-                                <input name="number"
-                                       class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
-                                       placeholder="Phone Number" required>
-                            </label>
-                            <label>
-                                <input type="text" name="_honey" style="display:none">
-                            </label>
-                            <button class="btn rounded-pill px-5 py-2"
-                                    style="background-color: #69A573; color: white;" type="submit">Get a Quote
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                     class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                          d="M6 8h5.293L5 14.293l1.414 1.414 6.293-6.293V15h2V6H6v2z"/>
-                                </svg>
-                            </button>
-                        </form>
-                        <sub>By clicking “Get a Quote,” I agree to provide the contact information listed above for the
-                            purpose of receiving communications regarding publishing opportunities.</sub>
-                    </div>
+                    </label>
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <label class="form-label">
+                        <input name="number"
+                               class="input form-control bg-transparent rounded-0 border border-top-0 border-start-0 border-end-0 border-2 shadow-none ps-0 pb-3"
+                               placeholder="Phone Number" required>
+                    </label>
+                    <label>
+                        <input type="text" name="_honey" style="display:none">
+                    </label>
+                    <button class="btn header-button"
+                            style="background-color: #69A573; color: white;" type="submit">Get a Quote
+                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.83342 0C1.37319 0 1.00009 0.3731 1.00009 0.833333C1.00009 1.29357 1.37319 1.66667 1.83342 1.66667V0ZM10.1668 0.833333H11.0001C11.0001 0.3731 10.627 0 10.1668 0V0.833333ZM9.33342 9.16667C9.33342 9.6269 9.70652 10 10.1668 10C10.627 10 11.0001 9.6269 11.0001 9.16667H9.33342ZM0.410836 9.41075C0.0853855 9.73618 0.0853855 10.2638 0.410836 10.5893C0.736269 10.9147 1.2639 10.9147 1.58934 10.5893L0.410836 9.41075ZM1.83342 1.66667H10.1668V0H1.83342V1.66667ZM9.33342 0.833333V9.16667H11.0001V0.833333H9.33342ZM9.5775 0.244083L0.410836 9.41075L1.58934 10.5893L10.756 1.42258L9.5775 0.244083Z"
+                                  fill="white"/>
+                        </svg>
+                    </button>
+                </form>
+
+                <div class="text-center pt-3">
+                    <sub>By clicking “Get a Quote,” I agree to provide the contact information listed above for the
+                        purpose of receiving communications regarding publishing opportunities.</sub>
                 </div>
             </div>
         </div>
     </section>
 
-    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
     <script src="static/js/index.js"></script>
 </div>
 </body>
 <footer>
-    <div class="footer container-fluid">
-        <div class="row pb-4">
-            <div class="footer-logo col-12 col-lg-6 order-1 order-lg-0">
-                <img src="static/images/logo.png" alt="Logo"
-                     class="">
-            </div>
-            <div class="footer-contact col-12 col-lg-6 order-0 order-lg-1 pb-3">
-                <div class="footer-contact-content row gy-4">
-                    <div class="contact-content col-12 col-md-4 col-lg-4">
-                        <div class="row gy-2">
-                            <h4 class="footer-text col-12">Contact Us</h4>
-                            <div class="col-12">
-                                <div class="row gy-3">
-                                    <div class="col-12">
-                                        <a href="mailto:hello@tzipporipress.com" class="text-decoration-none"
-                                           style="color: #69A573;">
-                                            <i class="bi bi-envelope-fill"></i> hello@tzipporipress.com</a>
-                                    </div>
-                                    <div class="col-12">
-                                        <a href="tel:+1 908 992 2134" class="text-decoration-none"
-                                           style="color: #69A573;"><i class="bi bi-telephone-fill"></i> US Tel: +1 908
-                                            992 2134</a>
-                                    </div>
-                                    <div class="col-12"><a href="tel:+972 53 277 5522" class="text-decoration-none"
-                                                           style="color: #69A573;"><i class="bi bi-telephone-fill"></i>
-                                        IL Tel: +972 53
-                                        277 5522</a>
-                                    </div>
+    <div id="footer">
+        <div class="footer-grid container-fluid">
+            <div class="footer-row-1 row">
+                <div class="footer-logo col-12 col-lg-4 order-1 order-lg-0 p-0">
+                    <img src="static/images/logo.webp" alt="Logo">
+                </div>
+                <div class="footer-contact col-12 col-lg-8 order-0 order-lg-1 pb-3">
+                    <div class="footer-contact-row row justify-content-center justify-content-lg-end">
+                        <div class="contact-content col-12 col-lg-4">
+                            <div class="contact-us-row">
+                                <h4 class="footer-text-header mb-4">Contact Us</h4>
+                                <div class="mb-2">
+                                    <span class="icon mail me-2"></span>
+                                    <a href="mailto:hello@tzipporipress.com" class="text-decoration-none"
+                                       style="color: #69A573;">hello@tzipporipress</a>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="icon US-phone me-2"></span>
+                                    <a href="tel:+1 908 992 2134" class="text-decoration-none"
+                                       style="color: #69A573;">+1 908 992 2134</a>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="icon IL-phone me-2"></span>
+                                    <a href="tel:+972 53 277 5522" class="text-decoration-none"
+                                       style="color: #69A573;">+972 53 277 5522</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="social-content col-12 col-md-4 col-lg-4">
-                        <div class="row gy-2">
-                            <h4 class="footer-text col-12">Our Socials</h4>
-                            <div class="col-12">
-                                <div class="row gy-3">
-                                    <div class="col-12"><a class="whatsapp-link text-decoration-none"
-                                                           href="https://api.whatsapp.com/send/?phone=9089922134"
-                                                           style="color: #69A573;"><i class="bi bi-whatsapp"></i>
-                                        Whatsapp</a>
-                                    </div>
-                                    <div class="col-12">
-                                        <a class="linkedin-link text-decoration-none"
-                                           href="https://www.linkedin.com/company/tzippori-press/about/"
-                                           style="color: #69A573;"><i class="bi bi-linkedin"></i> Linkedin</a>
-                                    </div>
+                        <div class="social-content col-12 col-lg-4">
+                            <div class="social-row">
+                                <h4 class="footer-text-header mb-4">Our Socials</h4>
+                                <div class="mb-2">
+                                    <span class="icon linkedin me-2"></span>
+                                    <a class="linkedin-link text-decoration-none"
+                                       href="https://www.linkedin.com/company/tzippori-press/about/"
+                                       style="color: #69A573;">Linkedin</a>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="icon whatsapp me-2"></span>
+                                    <a class="whatsapp-link text-decoration-none"
+                                       href="https://api.whatsapp.com/send/?phone=9089922134"
+                                       style="color: #69A573;">Whatsapp</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="legal-content col-12 col-md-4 col-lg-4">
-                        <div class="row gy-2">
-                            <h4 class="footer-text col-12">Legal</h4>
-                            <div class="col-12">
-                                <div class="row gy-3">
-                                    <div class="col-12">
-                                        <a href="#" class="col-12 text-decoration-none"
-                                           style="color: #69A573;"><i class="bi bi-shield-fill-exclamation"></i> Privacy</a>
-                                    </div>
-                                    <div class="col-12">
-                                        <a href="#" class="text-decoration-none"
-                                           style="color: #69A573;"><i class="bi bi-journal-plus"></i> Terms</a>
-                                    </div>
-                                    <div class="col-12">
-                                        <a href="#" class="text-decoration-none" style="color: #69A573;"><i
-                                                class="bi bi-gear-fill"></i> Preference</a>
-                                    </div>
-
+                        <div class="legal-content col-12 col-lg-4">
+                            <div class="legal-row">
+                                <h4 class="footer-text-header mb-4">Legal</h4>
+                                <div class="mb-2">
+                                    <span class="icon privacy me-2"></span>
+                                    <a href="#" class="text-decoration-none"
+                                       style="color: #69A573;">Privacy</a>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="icon terms me-2"></span>
+                                    <a href="#" class="text-decoration-none"
+                                       style="color: #69A573;">
+                                        Terms</a>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="icon settings me-2"></span>
+                                    <a href="#" class="text-decoration-none"
+                                       style="color: #69A573;">Preference</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <p class="footer-index">ⓒ 2023 Tzippori Press. All rights reserved.</p>
-            </div>
-            <div class="col-12 col-lg-6">
-                <p class="credits"><span class="footer-index">Made by</span> Chaim Malek, <span class="footer-index">Designed by</span>
-                    Theorist Agency</p>
+            <div class="container-fluid">
+                <div class="footer-row-2 row">
+                    <div class="col-12 col-lg-6 p-0">
+                        <p class="footer-index">ⓒ 2023 Tzippori Press. All rights reserved.</p>
+                    </div>
+                    <div class="col-12 col-lg-6 p-0">
+                        <p class="float-lg-end"><span class="footer-index">Made by</span> Chaim Malek, <span
+                                class="footer-index">Designed by</span>
+                            Theorist Agency</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
