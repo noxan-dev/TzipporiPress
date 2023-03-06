@@ -10,6 +10,8 @@
 body {
     font-family: 'Source Serif Pro', serif;
     overflow-x: hidden;
+    background-color: #f4f4f4;
+    transition: background-color 1s ease;
 }
 
 html {
@@ -72,8 +74,9 @@ h1 {
 }
 
 #home {
+    /*linear-gradient(180deg, rgba(234, 240, 235, 0) 82%, #edf3ee 90%),*/
     position: relative;
-    background: linear-gradient(180deg, rgba(234, 240, 235, 0) 82%, #edf3ee 90%), url(../images/background_header.webp), no-repeat, center, center, fixed;
+    background:  url(../images/background_header.webp), no-repeat, center, center, fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -91,7 +94,7 @@ h1 {
 }
 
 #services {
-    background: #edf3ee
+    /*background: #edf3ee*/
 }
 
 #services h4 {
@@ -120,7 +123,7 @@ h1 {
 }
 
 #testimonials {
-    background: #cfddd2;
+    /*background: #cfddd2;*/
     padding: 11.5rem 20.688rem 16.688rem 20.688rem
 }
 
@@ -211,13 +214,12 @@ h1 {
 }
 
 #carouselTestimonials {
-    background: #cfddd2;
     height: auto;
     padding: 2rem
 }
 
 #about {
-    background: #edf3ee
+    /*background: #edf3ee*/
 }
 
 .about {
@@ -257,7 +259,7 @@ h1 {
 }
 
 #our-team {
-    background: #d0dfd4
+    /*background: #d0dfd4*/
 }
 
 #our-team p, #our-team sub, .contact-header p {
@@ -300,7 +302,7 @@ h1 {
 }
 
 #contact {
-    background: #e8f0e8;
+    /*background: #e8f0e8;*/
     caret-color: #0d4a40
 }
 
@@ -579,7 +581,6 @@ footer .footer-text-header {
     }
 
     #testimonials {
-        background: #cfddd2;
         padding: 11.5rem 8rem 12rem 8rem
     }
 
@@ -694,7 +695,6 @@ footer .footer-text-header {
     }
 
     #testimonials {
-        background: #cfddd2;
         padding: 4.25rem 3rem 6.125rem 3rem;
         text-align: center
     }
@@ -852,7 +852,6 @@ footer .footer-text-header {
     }
 
     #testimonials {
-        background: #cfddd2;
         padding: 4.25rem 1.375rem 6.125rem 1.375rem;
         text-align: center
     }
@@ -1024,7 +1023,6 @@ footer .footer-text-header {
     }
 
     #testimonials {
-        background: #cfddd2;
         padding: 4.25rem 1.375rem 6.125rem 1.375rem;
         text-align: center;
     }
@@ -1134,3 +1132,16 @@ footer .footer-text-header {
         height: 1.25rem
     }
 }
+
+.panel {
+    min-height: 100vh;
+}
+
+.color-lgreen {
+    background-color: #EDF3EE;
+}
+
+.color-green {
+    background-color: #CFDDD2;
+}
+
