@@ -32,6 +32,7 @@ h1 {
 }
 
 .section-header {
+    font-family: 'Inter', sans-serif;
     color: #69a573;
     font-size: 1.2em;
     padding-bottom: 2.5rem
@@ -63,7 +64,7 @@ h1 {
     border-radius: 50px;
 }
 
-.publish-button, .header-button a {
+.publish-button, .header-button {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -124,7 +125,7 @@ h1 {
 
 #testimonials {
     /*background: #cfddd2;*/
-    padding: 11.5rem 20.688rem 16.688rem 20.688rem
+    padding: 11.5rem 10rem 16.688rem 10rem
 }
 
 .testimonial-row {
@@ -319,6 +320,7 @@ h1 {
 }
 
 .contact-form input::placeholder {
+    font-family: Inter, sans-serif;
     text-align: center;
     line-height: 3.125rem;
     color: #8B9C87;
@@ -438,11 +440,12 @@ footer .footer-text-header {
         font-size: 8rem;
         line-height: 9.375rem;
         text-align: left;
-        letter-spacing: -.021em
+        letter-spacing: -.021em;
+        padding-bottom: 1rem;
     }
 
     #services {
-        padding: 8rem 12rem 10rem
+        padding: 10rem;
     }
 
     #services h1 {
@@ -455,9 +458,8 @@ footer .footer-text-header {
         gap: 2rem
     }
 
-
     #about {
-        padding: 8rem 16.313rem
+        padding: 5rem 10rem
     }
 
     .statement-1, .statement-2, .statement-3 {
@@ -563,7 +565,8 @@ footer .footer-text-header {
         font-weight: 700;
         font-size: 6rem;
         line-height: 9.375rem;
-        letter-spacing: -.021em
+        letter-spacing: -.021em;
+        padding-bottom: 1rem;
     }
 
     #services {
@@ -589,7 +592,7 @@ footer .footer-text-header {
     }
 
     #about {
-        padding: 8rem
+        padding: 5rem 10rem;
     }
 
     .statement-1, .statement-2 {
@@ -597,7 +600,7 @@ footer .footer-text-header {
     }
 
     .statement-3 {
-        padding-bottom: 10rem;
+        padding-bottom: 8rem;
     }
 
     #our-team {
@@ -668,6 +671,11 @@ footer .footer-text-header {
         padding-bottom: 6.875rem;
     }
 
+    .header-button {
+        font-family: 'Source Serif Pro', serif;
+        background-color: #69A573;
+    }
+
     .introduction {
         position: absolute;
         top: 9rem;
@@ -681,7 +689,8 @@ footer .footer-text-header {
         font-weight: 700;
         font-size: 6rem;
         line-height: 9.375rem;
-        letter-spacing: -.021em
+        letter-spacing: -.021em;
+        padding-bottom: 1rem;
     }
 
     #services {
@@ -719,7 +728,7 @@ footer .footer-text-header {
     }
 
     #about {
-        padding: 8rem
+        padding: 5rem;
     }
 
     .statement-1, .statement-2 {
@@ -761,7 +770,7 @@ footer .footer-text-header {
     }
 
     .contact {
-        padding: 8rem 12rem
+        padding: 5rem 12rem
     }
 
     .contact-header {
@@ -798,6 +807,11 @@ footer .footer-text-header {
         padding-bottom: 4rem;
     }
 
+    .header-button {
+        font-family: 'Source Serif Pro', serif;
+        background-color: #69A573;
+    }
+
     #home {
         height: 100vh;
         background-position: center;
@@ -818,12 +832,12 @@ footer .footer-text-header {
         font-size: 5rem;
         line-height: 7rem;
         text-align: center;
-        letter-spacing: -.021em
+        letter-spacing: -.021em;
+        padding-bottom: 1rem;
     }
 
     #services {
-        padding: 4rem;
-        text-align: center;
+        padding: 5rem;
     }
 
     #services h4 {
@@ -846,6 +860,7 @@ footer .footer-text-header {
     }
 
     .service-desc {
+        text-align: center;
         font-size: 1rem;
         line-height: 1.625rem;
         letter-spacing: -0.017em;
@@ -873,7 +888,7 @@ footer .footer-text-header {
 
     #about {
         text-align: center;
-        padding: 5rem
+        padding: 5rem;
     }
 
     .about-statements sub {
@@ -926,7 +941,7 @@ footer .footer-text-header {
     }
 
     .contact {
-        padding: 8rem 8rem
+        padding: 5rem;
     }
 
     .contact-header {
@@ -965,6 +980,19 @@ footer .footer-text-header {
         padding-bottom: 4rem;
     }
 
+    .publish-button {
+        padding: 13.4496px 20.1744px;
+    }
+
+    .header-button {
+        font-family: 'Source Serif Pro', serif;
+        background-color: #69A573;
+    }
+
+    .publish-button, .header-button {
+        font-size: 16px;
+    }
+
     #home {
         height: 100vh;
         background-position: center;
@@ -986,19 +1014,11 @@ footer .footer-text-header {
         font-size: 3rem;
         line-height: 3.5rem;
         letter-spacing: -.021em;
-    }
-
-    .publish-button {
-        padding: 13.4496px 20.1744px;
-    }
-
-    .publish-button, .header-button a {
-        font-size: 16px;
+        padding-bottom: 1rem;
     }
 
     #services {
         padding: 3rem 2rem;
-        text-align: center;
     }
 
     #services h4 {
@@ -1013,6 +1033,7 @@ footer .footer-text-header {
     }
 
     .service-desc {
+        text-align: center;
         font-size: 1rem;
         line-height: 1.625rem;
         letter-spacing: -0.017em;
@@ -1044,7 +1065,7 @@ footer .footer-text-header {
 
     #about {
         text-align: center;
-        padding: 5rem 2rem
+        padding: 5rem 2rem;
     }
 
     .about-statements sub {
@@ -1097,7 +1118,7 @@ footer .footer-text-header {
     }
 
     .contact {
-        padding: 8rem 2rem
+        padding: 5rem 2rem
     }
 
     .contact-header {
