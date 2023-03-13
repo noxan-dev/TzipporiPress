@@ -74,10 +74,18 @@ h1 {
     color: #FFFFFF;
 }
 
+.publish-button:hover {
+    background: #0D4A40;
+}
+
+.header-button:hover {
+    background: #69a573;
+}
+
 #home {
     /*linear-gradient(180deg, rgba(234, 240, 235, 0) 82%, #edf3ee 90%),*/
     position: relative;
-    background:  url(../images/background_header.webp), no-repeat, center, center, fixed;
+    background: url(../images/background_header.webp), no-repeat, center, center, fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -106,6 +114,10 @@ h1 {
     line-height: 44px;
     letter-spacing: -0.019em;
     color: #0c3d35;
+}
+
+.service-items {
+    gap: 6rem;
 }
 
 .about-statements p, .service-desc {
@@ -403,9 +415,21 @@ footer .footer-text-header {
         transform: translateY(0)
     }
 }
- .service-items {
-        gap: 6rem;
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    @media (min-width: 768px) {
+        html {
+            scroll-snap-type: y proximity;
+        }
+
+        #about, .statement-1, .statement-2, .statement-3 {
+            scroll-snap-align: start;
+            scroll-snap-stop: normal;
+            scroll-margin: 10.223642172523961svh;
+        }
     }
+}
+
 @media (min-width: 1281px) {
     h1 {
         font-style: normal;
@@ -496,7 +520,7 @@ footer .footer-text-header {
     }
 
     .contact-header {
-        padding-bottom: 7.5rem
+        padding-bottom: 5rem
     }
 
     .footer-contact {
@@ -517,18 +541,6 @@ footer .footer-text-header {
 
     .contact-content, .legal-content, .social-content {
         max-width: max-content
-    }
-
-    @media screen and (prefers-reduced-motion: no-preference) {
-        html {
-            scroll-snap-type: y proximity;
-        }
-
-        #about, .statement-1, .statement-2, .statement-3 {
-            scroll-snap-align: start;
-            scroll-snap-stop: normal;
-            scroll-margin: 10.223642172523961svh;
-        }
     }
 }
 
@@ -633,7 +645,7 @@ footer .footer-text-header {
     }
 
     .contact-header {
-        padding-bottom: 7.5rem
+        padding-bottom: 5rem
     }
 
     footer {
@@ -694,7 +706,7 @@ footer .footer-text-header {
     }
 
     #services {
-        padding: 4rem
+        padding: 0 4rem 4rem;
     }
 
     .service-icon {
@@ -704,7 +716,7 @@ footer .footer-text-header {
     }
 
     #testimonials {
-        padding: 4.25rem 3rem 6.125rem 3rem;
+        padding: 4.25rem 3rem 2rem 3rem;
         text-align: center
     }
 
@@ -732,7 +744,7 @@ footer .footer-text-header {
     }
 
     .statement-1, .statement-2 {
-        padding-bottom: 8rem;
+        padding-bottom: 7rem;
     }
 
     .statement-3 {
@@ -774,7 +786,7 @@ footer .footer-text-header {
     }
 
     .contact-header {
-        padding-bottom: 7.5rem
+        padding-bottom: 5rem
     }
 
     footer {
@@ -804,7 +816,7 @@ footer .footer-text-header {
 @media (min-width: 481px) and (max-width: 767px) {
 
     .header {
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
     }
 
     .header-button {
@@ -837,7 +849,7 @@ footer .footer-text-header {
     }
 
     #services {
-        padding: 5rem;
+        padding: 2rem
     }
 
     #services h4 {
@@ -867,7 +879,7 @@ footer .footer-text-header {
     }
 
     #testimonials {
-        padding: 4.25rem 1.375rem 6.125rem 1.375rem;
+        padding: 4rem 1.375rem 2rem 1.375rem;
         text-align: center
     }
 
@@ -901,11 +913,7 @@ footer .footer-text-header {
     }
 
     .statement-1, .statement-2 {
-        padding-bottom: 8rem;
-    }
-
-    .statement-3 {
-        padding-bottom: 5rem;
+        padding-bottom: 4rem;
     }
 
     .about-statements p, #our-team p {
@@ -941,11 +949,7 @@ footer .footer-text-header {
     }
 
     .contact {
-        padding: 5rem;
-    }
-
-    .contact-header {
-        padding-bottom: 4rem
+        padding: 5rem 3rem;
     }
 
     footer {
@@ -977,7 +981,7 @@ footer .footer-text-header {
 @media (min-width: 320px) and (max-width: 480px) {
 
     .header {
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
     }
 
     .publish-button {
@@ -1018,12 +1022,16 @@ footer .footer-text-header {
     }
 
     #services {
-        padding: 3rem 2rem;
+        padding: 2rem;
     }
 
     #services h4 {
         font-size: 24px;
         line-height: 30px;
+    }
+
+    .service-items {
+        gap: 3rem;
     }
 
     .service-icon {
@@ -1044,7 +1052,7 @@ footer .footer-text-header {
     }
 
     #testimonials {
-        padding: 4.25rem 1.375rem 6.125rem 1.375rem;
+        padding: 4rem 1.375rem 2rem 1.375rem;
         text-align: center;
     }
 
@@ -1065,7 +1073,7 @@ footer .footer-text-header {
 
     #about {
         text-align: center;
-        padding: 5rem 2rem;
+        padding: 4rem 2rem 2rem;
     }
 
     .about-statements sub {
@@ -1078,11 +1086,7 @@ footer .footer-text-header {
     }
 
     .statement-1, .statement-2 {
-        padding-bottom: 8rem;
-    }
-
-    .statement-3 {
-        padding-bottom: 5rem;
+        padding-bottom: 4rem;
     }
 
     .about-statements p, #our-team p {
@@ -1093,7 +1097,7 @@ footer .footer-text-header {
 
     #our-team {
         text-align: center;
-        padding: 4rem 2rem 4.5rem
+        padding: 4rem 2rem 2rem;
     }
 
     .team-header {
@@ -1118,11 +1122,8 @@ footer .footer-text-header {
     }
 
     .contact {
+        min-height: 100vh;
         padding: 5rem 2rem
-    }
-
-    .contact-header {
-        padding-bottom: 4rem
     }
 
     footer {
@@ -1164,5 +1165,9 @@ footer .footer-text-header {
 
 .color-green {
     background-color: #CFDDD2;
+}
+
+.color-dgreen {
+    background-color: #0d4a40;
 }
 
