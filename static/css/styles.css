@@ -28,7 +28,7 @@ h1 {
 }
 
 .header {
-    padding-bottom: 10rem
+    padding-bottom: 8rem;
 }
 
 .section-header {
@@ -117,7 +117,7 @@ h1 {
 }
 
 .service-items {
-    gap: 6rem;
+    gap: 5.2rem;
 }
 
 .about-statements p, .service-desc {
@@ -469,7 +469,7 @@ footer .footer-text-header {
     }
 
     #services {
-        padding: 10rem;
+        padding: 5rem 10rem;
     }
 
     #services h1 {
@@ -486,8 +486,12 @@ footer .footer-text-header {
         padding: 5rem 10rem
     }
 
-    .statement-1, .statement-2, .statement-3 {
+    .statement-1, .statement-2 {
         padding-bottom: 17rem;
+    }
+
+    .statement-3 {
+        padding-bottom: 8rem;
     }
 
     #our-team {
@@ -582,7 +586,7 @@ footer .footer-text-header {
     }
 
     #services {
-        padding: 8rem 6.8rem 10rem
+        padding: 8rem 5rem;
     }
 
     #services h1 {
@@ -678,6 +682,12 @@ footer .footer-text-header {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+     h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 5rem
+    }
 
     .header {
         padding-bottom: 6.875rem;
@@ -816,7 +826,7 @@ footer .footer-text-header {
 @media (min-width: 481px) and (max-width: 767px) {
 
     .header {
-        padding-bottom: 2rem;
+        padding-bottom: 4rem;
     }
 
     .header-button {
@@ -981,7 +991,7 @@ footer .footer-text-header {
 @media (min-width: 320px) and (max-width: 480px) {
 
     .header {
-        padding-bottom: 2rem;
+        padding-bottom: 4rem;
     }
 
     .publish-button {
