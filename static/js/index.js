@@ -49,13 +49,3 @@ $(window).scroll(function () {
         }
     });
 }).scroll();
-
-
-// remove class when page loads
-const bodyTag = document.querySelector('body');
-
-bodyTag.classList.add('preload');
-
-window.addEventListener('load', function() {
-  bodyTag.classList.remove('preload');
-});

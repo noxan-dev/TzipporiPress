@@ -81,41 +81,17 @@ nav .nav-items a {
         overflow: hidden;
     }
 
-    nav:has(#check:checked) {
-        transition: background-position 0.2s linear;
-        -webkit-transition: background-color 0.2s linear;
-        -moz-transition: background-color 0.2s linear;
-        -o-transition: background-color 0.2s linear;
-        background: linear-gradient(to right, #CFDDD2 50%, transparent 0) 0;
-        background-size: 200% 100%;
-        animation: makeItfadeIn 0.5s;
-    }
-
     nav:has(#check:not(:checked)) {
-        transition: background-position 0.2s linear;
-        -webkit-transition: background-color 0.2s linear;
-        -moz-transition: background-color 0.2s linear;
-        -o-transition: background-color 0.2s linear;
+        transition: all 0.5s;
         background: linear-gradient(to right, #CFDDD2 50%, transparent 0) 100%;
         background-size: 200% 100%;
-        animation: makeItfadeOut 0.5s;
     }
-}
 
-@keyframes makeItfadeIn {
-    0% {
-        background-position: 100%;
+    nav:has(#check:checked) {
+        transition: all 0.5s;
+        background: linear-gradient(to right, #CFDDD2 50%, transparent 0) 0;
+        background-size: 200% 100%;
     }
-}
-
-@keyframes makeItfadeOut {
-    0% {
-        background-position: 0;
-    }
-}
-
-.preload * {
-    animation: none !important;
 }
 
 #nav-icon {
