@@ -417,17 +417,17 @@ footer .footer-text-header {
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-    @media (min-width: 768px) {
+    /*@media (min-width: 768px) {*/
         html {
-            scroll-snap-type: y proximity;
+            scroll-snap-type: y mandatory;
         }
 
-        #about, .statement-1, .statement-2, .statement-3 {
+        section, footer, .statement-1, .statement-2, .statement-3 {
             scroll-snap-align: start;
             scroll-snap-stop: normal;
             scroll-margin: 10.223642172523961svh;
         }
-    }
+    /*}*/
 }
 
 @media (min-width: 1281px) {
