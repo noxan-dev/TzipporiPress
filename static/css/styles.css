@@ -35,7 +35,8 @@ h1 {
     font-family: 'Inter', sans-serif;
     color: #69a573;
     font-size: 1.2em;
-    padding-bottom: 2.5rem
+    padding-bottom: 2.5rem;
+    margin-bottom: 0;
 }
 
 .nav-link {
@@ -159,7 +160,7 @@ h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 96px;
-    line-height: 120px;
+    line-height: 90px;
     text-align: center;
     letter-spacing: -.02em;
     color: #69a573
@@ -422,7 +423,7 @@ footer .footer-text-header {
         section, footer, .statement-1, .statement-2, .statement-3, .team {
             scroll-snap-align: start;
             scroll-snap-stop: normal;
-            scroll-margin: 10.223642172523961svh;
+            scroll-margin: 10vh;
         }
     }
 }
@@ -467,10 +468,6 @@ footer .footer-text-header {
 
     #services {
         padding: 2rem 10rem 5rem;
-    }
-
-    #services h1 {
-        padding-bottom: 5rem
     }
 
     .service-icon {
@@ -582,10 +579,6 @@ footer .footer-text-header {
         padding: 2rem 5rem;
     }
 
-    #services h1 {
-        padding-bottom: 5rem;
-    }
-
     .service-icon {
         width: 5.8rem;
         height: auto;
@@ -593,7 +586,7 @@ footer .footer-text-header {
     }
 
     #testimonials {
-        padding: 2rem 8rem 10rem 8rem;
+        padding: 2rem 8rem 6rem 8rem;
     }
 
     .testimonial-row {
@@ -601,15 +594,20 @@ footer .footer-text-header {
     }
 
     #about {
-        padding: 2rem 0;
+        padding: 2rem 5rem 8rem;
     }
 
-    .statement-1, .statement-3 {
-        padding: 5rem;
+     .statement-1 {
+
+            padding: 8rem 2rem 8rem 2rem;
     }
 
-    .statement-2 {
-        padding: 8rem;
+     .statement-2 {
+        padding: 10rem 2rem 10rem 2rem;
+    }
+
+    .statement-3 {
+        padding: 5rem 5rem 5rem;
     }
 
     #our-team {
