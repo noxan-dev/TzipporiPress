@@ -1,25 +1,14 @@
-// Select element function
-const selectElement = (element) =>
-    document.querySelector(element);
-const getAllWithClass = (className) =>
-    document.getElementsByClassName(className);
+const navLinks = $('.nav-link');
 
-const
-    body = selectElement('body'),
-    // Converts the returned collection to a proper Array
-    navLinks = Array.from(getAllWithClass("nav-link"));
-
-// Close menu on .nav-link click
-navLinks.forEach(link => { // The Array method `forEach` loops through
-    link.addEventListener('click', function () {
-        document.getElementById("check").checked = false;
-    });
+navLinks.on('click', function () {
+    $('#check').prop('checked', false);
+    $('#nav-icon').removeClass('open');
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const navIcon = document.getElementById("nav-icon");
-    navIcon.addEventListener("click", function () {
-        navIcon.classList.toggle("open");
+$(document).ready(function () {
+    const navIcon = $('#nav-icon');
+    navIcon.on('click', function () {
+        navIcon.toggleClass('open');
     });
 });
 

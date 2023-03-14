@@ -414,7 +414,7 @@ footer .footer-text-header {
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
         html {
             scroll-snap-type: y mandatory;
         }
@@ -492,7 +492,7 @@ footer .footer-text-header {
     }
 
     #our-team {
-        padding: 2rem 10rem
+        padding: 2rem 10rem;
     }
 
     .team {
@@ -517,11 +517,11 @@ footer .footer-text-header {
     }
 
     .contact {
-        padding: 2rem 35rem
+        padding: 2rem 35rem;
     }
 
     .footer-contact {
-        justify-self: end
+        justify-self: end;
     }
 
     footer {
@@ -529,15 +529,15 @@ footer .footer-text-header {
     }
 
     .footer-row-1 {
-        margin-bottom: 9.688rem
+        margin-bottom: 9.688rem;
     }
 
     .footer-contact-row {
-        column-gap: 6rem
+        column-gap: 6rem;
     }
 
     .contact-content, .legal-content, .social-content {
-        max-width: max-content
+        max-width: max-content;
     }
 }
 
@@ -546,7 +546,7 @@ footer .footer-text-header {
         font-style: normal;
         font-weight: 700;
         font-size: 4rem;
-        line-height: 5rem
+        line-height: 5rem;
     }
 
     .nav-link {
@@ -556,18 +556,18 @@ footer .footer-text-header {
         font-size: 1.125rem;
         line-height: 1.5rem;
         letter-spacing: -.014em;
-        color: #0d4a40
+        color: #0d4a40;
     }
 
     #home {
-        height: 95svh
+        height: 95svh;
     }
 
     .introduction {
         position: absolute;
         place-content: start;
         top: 12rem;
-        left: 16.438rem
+        left: 16.438rem;
     }
 
     .introduction h1 {
@@ -583,17 +583,17 @@ footer .footer-text-header {
     }
 
     #services h1 {
-        padding-bottom: 5rem
+        padding-bottom: 5rem;
     }
 
     .service-icon {
         width: 5.8rem;
         height: auto;
-        gap: 2rem
+        gap: 2rem;
     }
 
     #testimonials {
-        padding: 2rem 8rem 12rem 8rem
+        padding: 2rem 8rem 10rem 8rem;
     }
 
     .testimonial-row {
@@ -613,16 +613,16 @@ footer .footer-text-header {
     }
 
     #our-team {
-        padding: 2rem 5rem
+        padding: 2rem 5rem;
     }
 
     .team {
         padding: 5rem;
-        gap: 9.75rem
+        gap: 9.75rem;
     }
 
     .team {
-        gap: 9.75rem
+        gap: 9.75rem;
     }
 
     .team-header {
@@ -632,17 +632,17 @@ footer .footer-text-header {
     .team-name {
         font-size: 2.25rem;
         line-height: 2.563rem;
-        letter-spacing: -.017rem
+        letter-spacing: -.017rem;
     }
 
     .team-img img {
         max-width: fit-content;
         height: auto;
-        object-fit: cover
+        object-fit: cover;
     }
 
     .contact {
-        padding: 2rem 20rem
+        padding: 2rem 20rem;
     }
 
     footer {
