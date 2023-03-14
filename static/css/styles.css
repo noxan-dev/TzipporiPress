@@ -28,7 +28,7 @@ h1 {
 }
 
 .header {
-    padding-bottom: 8rem;
+    padding-bottom: 5rem;
 }
 
 .section-header {
@@ -137,7 +137,7 @@ h1 {
 
 #testimonials {
     /*background: #cfddd2;*/
-    padding: 11.5rem 10rem 16.688rem 10rem
+    padding: 2rem 10rem 16.688rem 10rem
 }
 
 .testimonial-row {
@@ -239,10 +239,6 @@ h1 {
     place-content: center
 }
 
-.about-header {
-    padding-bottom: 8rem
-}
-
 #about img {
     width: 100%;
     height: 100%;
@@ -320,15 +316,16 @@ h1 {
 }
 
 .contact-header {
-    text-align: center
+    text-align: center;
+    padding-bottom: 2rem;
 }
 
 .contact-header p {
-    color: #0c3d35
+    color: #0c3d35;
 }
 
 .contact-form form {
-    gap: 3.5rem
+    gap: 3.5rem;
 }
 
 .contact-form input::placeholder {
@@ -357,14 +354,14 @@ h1 {
     font-weight: 400;
     line-height: 1.8rem;
     letter-spacing: -.017em;
-    color: #0c3d35
+    color: #0c3d35;
 }
 
 footer {
     position: relative;
     background: #0d4a40;
     color: #69a573;
-    z-index: 3
+    z-index: 3;
 }
 
 .contact-us-row, .legal-row, .social-row {
@@ -373,12 +370,12 @@ footer {
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.5rem;
-    letter-spacing: -.014em
+    letter-spacing: -.014em;
 }
 
 .footer-logo img {
     width: 17.938rem;
-    height: 6.25rem
+    height: 6.25rem;
 }
 
 footer .footer-text-header {
@@ -388,7 +385,7 @@ footer .footer-text-header {
     font-size: 1.5rem;
     line-height: 1.25rem;
     letter-spacing: -.009em;
-    color: #ecedee
+    color: #ecedee;
 }
 
 .footer-index {
@@ -422,7 +419,7 @@ footer .footer-text-header {
             scroll-snap-type: y mandatory;
         }
 
-        section, footer, .statement-1, .statement-2, .statement-3 {
+        section, footer, .statement-1, .statement-2, .statement-3, .team {
             scroll-snap-align: start;
             scroll-snap-stop: normal;
             scroll-margin: 10.223642172523961svh;
@@ -469,7 +466,7 @@ footer .footer-text-header {
     }
 
     #services {
-        padding: 5rem 10rem;
+        padding: 2rem 10rem 5rem;
     }
 
     #services h1 {
@@ -483,28 +480,28 @@ footer .footer-text-header {
     }
 
     #about {
-        padding: 5rem 10rem
+        padding: 2rem 10rem 8rem;
     }
 
-    .statement-1, .statement-2 {
-        padding-bottom: 17rem;
+    .statement-1, .statement-3 {
+        padding: 8rem;
     }
 
-    .statement-3 {
-        padding-bottom: 8rem;
+    .statement-2 {
+        padding: 10rem;
     }
 
     #our-team {
-        padding: 8rem 16.313rem
+        padding: 2rem 10rem
     }
 
     .team {
+        padding: 5rem;
         gap: 9.75rem
     }
 
     .team-header {
         text-align: center;
-        padding-bottom: 10rem
     }
 
     .team-name {
@@ -520,11 +517,7 @@ footer .footer-text-header {
     }
 
     .contact {
-        padding: 8rem 35rem
-    }
-
-    .contact-header {
-        padding-bottom: 5rem
+        padding: 2rem 35rem
     }
 
     .footer-contact {
@@ -586,7 +579,7 @@ footer .footer-text-header {
     }
 
     #services {
-        padding: 8rem 5rem;
+        padding: 2rem 5rem;
     }
 
     #services h1 {
@@ -600,7 +593,7 @@ footer .footer-text-header {
     }
 
     #testimonials {
-        padding: 11.5rem 8rem 12rem 8rem
+        padding: 2rem 8rem 12rem 8rem
     }
 
     .testimonial-row {
@@ -608,19 +601,24 @@ footer .footer-text-header {
     }
 
     #about {
-        padding: 5rem 10rem;
+        padding: 2rem 0;
     }
 
-    .statement-1, .statement-2 {
-        padding-bottom: 17rem;
+    .statement-1, .statement-3 {
+        padding: 5rem;
     }
 
-    .statement-3 {
-        padding-bottom: 8rem;
+    .statement-2 {
+        padding: 8rem;
     }
 
     #our-team {
-        padding: 8rem 12rem
+        padding: 2rem 5rem
+    }
+
+    .team {
+        padding: 5rem;
+        gap: 9.75rem
     }
 
     .team {
@@ -629,7 +627,6 @@ footer .footer-text-header {
 
     .team-header {
         text-align: center;
-        padding-bottom: 10rem
     }
 
     .team-name {
@@ -645,11 +642,7 @@ footer .footer-text-header {
     }
 
     .contact {
-        padding: 8rem 20rem
-    }
-
-    .contact-header {
-        padding-bottom: 5rem
+        padding: 2rem 20rem
     }
 
     footer {
@@ -788,15 +781,10 @@ footer .footer-text-header {
 
     .team-header {
         text-align: center;
-        padding-bottom: 8rem
     }
 
     .contact {
         padding: 5rem 12rem
-    }
-
-    .contact-header {
-        padding-bottom: 5rem
     }
 
     footer {
@@ -939,7 +927,6 @@ footer .footer-text-header {
 
     .team-header {
         text-align: center;
-        padding-bottom: 6rem
     }
 
     .team-img {
@@ -1112,7 +1099,6 @@ footer .footer-text-header {
 
     .team-header {
         text-align: center;
-        padding-bottom: 3rem
     }
 
     .team-img {
