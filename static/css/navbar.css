@@ -2,7 +2,7 @@ nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 0 5rem;
+    padding: 0 1rem;
     top: 0;
     left: 0;
     height: 6rem;
@@ -29,6 +29,17 @@ nav .nav-items a {
     align-self: center;
 }
 
+.nav-link {
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #0c3d35;
+}
+
 .checkbtn {
     font-size: 30px;
     color: white;
@@ -42,7 +53,7 @@ nav .nav-items a {
     display: none;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     nav {
         padding: 0 2rem;
     }
@@ -64,9 +75,23 @@ nav .nav-items a {
         transition: all .5s;
     }
 
+    .nav-link {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        letter-spacing: -.014em;
+        color: #0d4a40
+    }
+
     nav .nav-items a {
         display: block;
+    }
 
+    .header-button {
+        font-family: 'Source Serif Pro', serif;
+        background-color: #69A573;
     }
 
     a:hover, a.activex {
