@@ -2,7 +2,7 @@ nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0 clamp(1.5rem, 5vw, 5rem);
     top: 0;
     left: 0;
     height: 6rem;
@@ -20,7 +20,7 @@ nav {
 
 nav .nav-items {
     display: flex;
-    column-gap: 3rem;
+    column-gap: clamp(1rem, 3.5vw, 3rem);
     align-self: center;
 }
 
@@ -33,7 +33,7 @@ nav .nav-items a {
     font-family: 'Source Serif Pro', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     line-height: 30px;
     text-align: center;
     letter-spacing: -0.02em;

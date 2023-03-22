@@ -98,7 +98,8 @@ h1 {
     font-family: 'Source Serif Pro', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    /*clamp the font size*/
+    font-size: clamp(1.2rem, 3vw, 2.25rem);
     line-height: 44px;
     letter-spacing: -0.019em;
     color: #0c3d35;
@@ -112,7 +113,7 @@ h1 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.375rem;
+    font-size: clamp(1rem, 2.5vw, 1.375rem);
     line-height: 2.188rem;
     letter-spacing: -0.017em;
     color: #0c3d35
@@ -564,12 +565,12 @@ footer .footer-text-header {
         padding: 2rem 5rem 8rem;
     }
 
-     .statement-1 {
+    .statement-1 {
 
-            padding: 8rem 2rem 8rem 2rem;
+        padding: 8rem 2rem 8rem 2rem;
     }
 
-     .statement-2 {
+    .statement-2 {
         padding: 10rem 2rem 10rem 2rem;
     }
 
@@ -794,7 +795,6 @@ footer .footer-text-header {
     }
 
     #services h4 {
-        font-size: 24px;
         line-height: 30px;
     }
 
@@ -961,7 +961,6 @@ footer .footer-text-header {
     }
 
     #services h4 {
-        font-size: 24px;
         line-height: 30px;
     }
 
