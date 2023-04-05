@@ -455,16 +455,15 @@ footer .footer-text-header {
     }
 
     #about {
-        padding: 2rem 10rem 8rem;
+        padding: 2rem 10rem 0 8rem;
     }
 
-    .statement-1, .statement-3 {
-        padding: 8rem;
+    .about-panel {
+        min-height: 90svh;
+        display: flex;
+        align-items: center;
     }
 
-    .statement-2 {
-        padding: 10rem;
-    }
 
     #our-team {
         padding: 2rem 10rem;
@@ -692,19 +691,21 @@ footer .footer-text-header {
     }
 
     .about-panel {
-        min-height: 100svh;
+        min-height: 90svh;
+        display: flex;
+        align-items: center;
     }
 
     .statement-1 {
-        padding: 5rem;
+        padding: 0 5rem;;
     }
 
     .statement-2 {
-        padding: 5rem ;
+        padding: 5rem;
     }
 
     .statement-3 {
-       padding: 5rem 5rem 0 5rem;
+       padding: 0 5rem;
     }
 
     @media screen and (max-width: 992px) {
