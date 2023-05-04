@@ -20,11 +20,17 @@ html {
 
 h1 {
     color: #0c3d35;
+}
+
+h2 {
+    font-family: 'Source Serif Pro', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    letter-spacing: -.02em
+    font-size: 65px;
+    line-height: 81px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #0C3D35;
 }
 
 .header {
@@ -71,27 +77,27 @@ h1 {
 }
 
 #home {
-    /*linear-gradient(180deg, rgba(234, 240, 235, 0) 82%, #edf3ee 90%),*/
-    position: relative;
-    background: url(../images/background_header.webp), no-repeat, center, center, fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 100%;
-    height: 80svh;
-    line-height: 3rem;
-    overflow: hidden
+    display: flex;
+    min-height: 100vh;
+}
+
+.home {
+    margin: auto;
+    text-align: center;
+}
+
+.background-home {
+    background: url(../images/background_header.png) no-repeat;
+    width: 637px;
+    height: 637px;
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 2s infinite alternate;
 }
 
 .introduction {
     animation: fadeUpAnimation ease 3s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards
-}
-
-#services {
-    /*background: #edf3ee*/
+    animation-fill-mode: forwards;
 }
 
 #services h4 {
@@ -99,8 +105,8 @@ h1 {
     font-style: normal;
     font-weight: 700;
     /*clamp the font size*/
-    font-size: clamp(1.2rem, 3vw, 2.25rem);
-    line-height: 44px;
+    font-size: clamp(1.2rem, 3vw, 1.83rem);
+    line-height: 32.35px;
     letter-spacing: -0.019em;
     color: #0c3d35;
 }
@@ -125,7 +131,6 @@ h1 {
 }
 
 #testimonials {
-    /*background: #cfddd2;*/
     padding: 2rem 10rem 16.688rem 10rem
 }
 
@@ -221,7 +226,7 @@ h1 {
 }
 
 #about {
-    /*background: #edf3ee*/
+    background: #CFDDD2;
 }
 
 .about {
@@ -246,18 +251,8 @@ h1 {
     color: #69a573;
 }
 
-.about-statements h2 {
-    color: #0c3d35;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.25rem;
-    line-height: 2.8rem;
-    align-items: center;
-    letter-spacing: -.02em
-}
-
 #our-team {
-    /*background: #d0dfd4*/
+    background: #D0DFD4;
 }
 
 #our-team p, #our-team sub, .contact-header p {
@@ -284,8 +279,9 @@ h1 {
 }
 
 .team-img img {
-    width: 100%;
-    height: auto;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
     object-fit: cover
 }
 
@@ -299,72 +295,9 @@ h1 {
     font-size: 1rem
 }
 
-#contact {
-    /*background: #e8f0e8;*/
-    caret-color: #0d4a40
-}
-
-.contact-header {
-    text-align: center;
-    padding-bottom: 2rem;
-}
-
-.contact-header p {
-    color: #0c3d35;
-}
-
-.contact-form form {
-    gap: 3.5rem;
-}
-
-.contact-form input::placeholder {
-    font-family: Inter, sans-serif;
-    text-align: center;
-    line-height: 3.125rem;
-    color: #8B9C87;
-}
-
-.contact-form input:focus::placeholder {
-    color: #69a573;
-}
-
-.contact-form input {
-    border-color: #8B9C87 !important;
-}
-
-.contact-form input:focus {
-    border-color: #69a573 !important;
-}
-
-.contact sub {
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 1.8rem;
-    letter-spacing: -.017em;
-    color: #0c3d35;
-}
-
 footer {
-    position: relative;
-    background: #0d4a40;
-    color: #69a573;
+    color: #0d4a40;
     z-index: 3;
-}
-
-.contact-us-row, .legal-row, .social-row {
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: -.014em;
-}
-
-.footer-logo img {
-    width: 17.938rem;
-    height: 6.25rem;
 }
 
 footer .footer-text-header {
@@ -387,10 +320,6 @@ footer .footer-text-header {
     color: #e8f0e8
 }
 
-.footer-logo {
-    filter: brightness(0) invert(1)
-}
-
 @keyframes fadeUpAnimation {
     0% {
         opacity: 0;
@@ -402,17 +331,30 @@ footer .footer-text-header {
     }
 }
 
-@media screen and (prefers-reduced-motion: no-preference) {
-    @media (min-width: 992px) {
-        html {
-            scroll-snap-type: y mandatory;
-        }
+@-webkit-keyframes mover {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -10px;
+    }
+}
 
-        section, footer, .statement, .team {
-            scroll-snap-align: start;
-            scroll-snap-stop: always;
-            scroll-margin: 10vh;
-        }
+@-moz-keyframes mover {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -10px;
+    }
+}
+
+@keyframes mover {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -10px;
     }
 }
 
@@ -428,18 +370,10 @@ footer .footer-text-header {
         height: 95svh
     }
 
-    .introduction {
-        position: absolute;
-        place-content: start;
-        top: 18rem;
-        left: 16.438rem
-    }
-
     .introduction h1 {
         font-weight: 700;
         font-size: 8rem;
         line-height: 9.375rem;
-        text-align: left;
         letter-spacing: -.021em;
         padding-bottom: 1rem;
     }
@@ -449,7 +383,7 @@ footer .footer-text-header {
     }
 
     .service-icon {
-        width: 6rem;
+        width: 68px;
         height: auto;
         gap: 2rem
     }
@@ -485,13 +419,9 @@ footer .footer-text-header {
     }
 
     .team-img img {
-        max-width: fit-content;
-        height: auto;
+        width: 300px;
+        height: 300px;
         object-fit: cover
-    }
-
-    .contact {
-        padding: 2rem 35rem;
     }
 
     .footer-contact {
@@ -527,13 +457,6 @@ footer .footer-text-header {
         height: 95svh;
     }
 
-    .introduction {
-        position: absolute;
-        place-content: start;
-        top: 12rem;
-        left: 16.438rem;
-    }
-
     .introduction h1 {
         font-weight: 700;
         font-size: 6rem;
@@ -547,9 +470,9 @@ footer .footer-text-header {
     }
 
     .service-icon {
-        width: 5.8rem;
+        width: 65px;
         height: auto;
-        gap: 2rem;
+        gap: 2rem
     }
 
     #testimonials {
@@ -597,8 +520,8 @@ footer .footer-text-header {
     }
 
     .team-img img {
-        max-width: fit-content;
-        height: auto;
+        width: 300px;
+        height: 300px;
         object-fit: cover;
     }
 
@@ -624,20 +547,11 @@ footer .footer-text-header {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-     h1 {
+    h1 {
         font-style: normal;
         font-weight: 700;
         font-size: 4rem;
         line-height: 5rem
-    }
-
-    .introduction {
-        position: absolute;
-        top: 9rem;
-        text-align: center;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
     }
 
     .introduction h1 {
@@ -646,10 +560,6 @@ footer .footer-text-header {
         line-height: 9.375rem;
         letter-spacing: -.021em;
         padding-bottom: 1rem;
-    }
-
-    .intro-lnks {
-        justify-content: center;
     }
 
     #services {
@@ -705,7 +615,7 @@ footer .footer-text-header {
     }
 
     .statement-3 {
-       padding: 0 5rem;
+        padding: 0 5rem;
     }
 
     @media screen and (max-width: 992px) {
@@ -749,10 +659,6 @@ footer .footer-text-header {
         text-align: center;
     }
 
-    .contact {
-        padding: 5rem 12rem
-    }
-
     footer {
         height: 78dvh;
         padding: 4.8rem 4rem 4.8rem 5rem
@@ -778,7 +684,6 @@ footer .footer-text-header {
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-
     .header {
         padding-bottom: 4rem;
     }
@@ -787,15 +692,6 @@ footer .footer-text-header {
         height: 100vh;
         background-position: center;
         background-repeat: no-repeat
-    }
-
-    .introduction {
-        position: absolute;
-        top: 13.375rem;
-        text-align: center;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
     }
 
     .introduction h1 {
@@ -905,10 +801,6 @@ footer .footer-text-header {
         letter-spacing: -.02em
     }
 
-    .contact {
-        padding: 5rem 3rem;
-    }
-
     footer {
         text-align: center;
         padding: 7.188rem 2.75rem 3.563rem
@@ -953,15 +845,6 @@ footer .footer-text-header {
         height: 100vh;
         background-position: center;
         background-repeat: no-repeat;
-    }
-
-    .introduction {
-        position: absolute;
-        top: 13.375rem;
-        text-align: center;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
     }
 
     .introduction h1 {
@@ -1071,11 +954,6 @@ footer .footer-text-header {
         gap: 7rem
     }
 
-    .contact {
-        min-height: 100vh;
-        padding: 5rem 2rem
-    }
-
     footer {
         text-align: center;
         padding: 7.188rem 2.75rem 3.563rem
@@ -1103,16 +981,4 @@ footer .footer-text-header {
         width: 1.25rem;
         height: 1.25rem
     }
-}
-
-.panel {
-    min-height: 100vh;
-}
-
-.color-lgreen {
-    background-color: #EDF3EE;
-}
-
-.color-green {
-    background-color: #CFDDD2;
 }

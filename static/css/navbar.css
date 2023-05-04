@@ -2,15 +2,14 @@ nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 0 clamp(1.5rem, 5vw, 5rem);
+    padding: clamp(1.5rem, 5vw, 5rem);
     top: 0;
     left: 0;
     height: 6rem;
     width: 100%;
-    border-bottom: #FFFFFF solid 1px;
-    background: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px) saturate(125%);
-    -webkit-backdrop-filter: blur(5px) saturate(125%);
+    /*background: rgba(255, 255, 255, .15);*/
+    /*backdrop-filter: blur(5px) saturate(125%);*/
+    /*-webkit-backdrop-filter: blur(5px) saturate(125%);*/
     z-index: 2;
 }
 
@@ -18,26 +17,22 @@ nav {
     place-self: center;
 }
 
+.logox a {
+    opacity: 1 !important;
+}
+
+nav:has(#check:checked) .logox {
+    filter: brightness(0) invert(1);
+}
+
 nav .nav-items {
     display: flex;
-    column-gap: clamp(1rem, 3.5vw, 3rem);
     align-self: center;
 }
 
 nav .nav-items a {
     display: inline-block;
     align-self: center;
-}
-
-.nav-link {
-    font-family: 'Source Serif Pro', serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: #0c3d35;
 }
 
 .checkbtn {
@@ -53,7 +48,7 @@ nav .nav-items a {
     display: none;
 }
 
-@media screen and (max-width: 992px) {
+@media screen {
     nav {
         padding: 0 2rem;
     }
@@ -68,7 +63,7 @@ nav .nav-items a {
         position: fixed;
         width: 100%;
         height: 100svh;
-        background: #CFDDD2;
+        background: #0C3D35;
         top: 80px;
         left: -100%;
         text-align: center;
@@ -76,13 +71,15 @@ nav .nav-items a {
     }
 
     .nav-link {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Source Serif Pro', serif;
         font-style: normal;
-        font-weight: 500;
-        font-size: 1.125rem;
-        line-height: 1.5rem;
-        letter-spacing: -.014em;
-        color: #0d4a40
+        font-weight: 700;
+        font-size: clamp(2rem, 5vw, 5rem);
+        line-height: 81px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #E8F0E8;
+        opacity: 0.5;
     }
 
     nav .nav-items a {
@@ -108,13 +105,13 @@ nav .nav-items a {
 
     nav:has(#check:not(:checked)) {
         transition: all 0.5s;
-        background: linear-gradient(to right, #CFDDD2 50%, transparent 0) 100%;
+        background: linear-gradient(to right, #0C3D35 50%, transparent 0) 100%;
         background-size: 200% 100%;
     }
 
     nav:has(#check:checked) {
         transition: all 0.5s;
-        background: linear-gradient(to right, #CFDDD2 50%, transparent 0) 0;
+        background: linear-gradient(to right, #0C3D35 50%, transparent 0) 0;
         background-size: 200% 100%;
     }
 }
@@ -137,7 +134,7 @@ nav .nav-items a {
 #nav-icon span {
     display: block;
     position: absolute;
-    height: 4px;
+    height: 2px;
     width: 100%;
     background: #0C3D35;
     border-radius: 200px;
@@ -150,6 +147,10 @@ nav .nav-items a {
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
+}
+
+nav:has(#check:checked) #nav-icon span {
+    background: #E8F0E8;
 }
 
 #nav-icon span:nth-child(1) {
