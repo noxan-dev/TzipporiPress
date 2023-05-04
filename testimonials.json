@@ -1,14 +1,20 @@
 {
-  "testimonial-1": {
+  "0": {
+    "author": "Rabbi Chananya Berzon",
+    "title": "Author of “Drashot on Parshot”",
+    "image": "static/images/testimonial-images/testimonial-1.png",
+    "text": "Tzippori Press took my manuscript and produced a clear and professional book. Rabbi David had the keen insight to figure out my theme on each subject and present it to the reader in an erudite manner. A superb job!"
+  },
+  "1": {
     "author": "John Doe",
     "title": "CEO, Company Inc.",
-    "image": "./images/testimonial_1.png",
+    "image": "static/images/testimonial-images/testimonial-1.png",
     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis."
   },
-  "testimonial-2": {
+  "2": {
     "author": "John Doe",
     "title": "CEO, Company Inc.",
-    "image": "./images/testimonial_2.png",
+    "image": "static/images/testimonial-images/testimonial-1.png",
     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis."
   }
 }

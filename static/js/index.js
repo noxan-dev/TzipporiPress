@@ -12,11 +12,28 @@ $(document).ready(function () {
     });
 });
 
+let carouselindicators = $('.carousel-indicators');
+let carouselinner = $('.carousel-inner');
+
 $.getJSON('../testimonials.json', function (data) {
-    const testimonials = data.testimonials;
-    const testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
-    $('#testimonial').html(testimonial.text);
-    $('#author').html(testimonial.author);
-    $('#author').attr('href', testimonial.url);
-}
-);
+    var i= 0;
+    $.each(data, function (key, val) {
+        carouselindicators.append(
+            `<button type="button" 
+                    data-bs-target="#carouselTestimonials" 
+                    data-bs-slide-to="${i}" 
+                    aria-label="Slide ${i}"
+                    class="slide-${i} ${key == 0 ? 'active' : ''}"
+                    ${key == 0 ? 'aria-current="true"': ''} 
+                    style="background-image: url('${val.image}')"></button>`
+        );
+        i++;
+        carouselinner.append(
+            `<div class="carousel-item ${key == 0 ? 'active' : ''}">
+                <p>${val.text}</p>
+                <h4>${val.author}</h4>
+                <span>${val.title}</span>
+            </div>`
+        );
+    });
+});
