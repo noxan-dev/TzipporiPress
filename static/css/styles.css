@@ -26,9 +26,8 @@ h2 {
     font-family: 'Source Serif Pro', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 65px;
-    line-height: 81px;
-    text-align: center;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: clamp(2.5rem, 5vw, 5rem);
     letter-spacing: -0.02em;
     color: #0C3D35;
 }
@@ -100,6 +99,14 @@ h2 {
     animation-fill-mode: forwards;
 }
 
+.introduction h1 {
+    font-weight: 700;
+    font-size: 8rem;
+    line-height: 9.375rem;
+    letter-spacing: -.021em;
+    padding-bottom: 1rem;
+}
+
 #services h4 {
     font-family: 'Source Serif Pro', serif;
     font-style: normal;
@@ -131,11 +138,8 @@ h2 {
 }
 
 #testimonials {
-    padding: 2rem 10rem 16.688rem 10rem
-}
-
-.testimonial-row {
-    gap: 12rem
+    padding: 2rem 10rem 16.688rem 10rem;
+    text-align: center;
 }
 
 #testimonials p {
@@ -154,9 +158,8 @@ h2 {
     font-weight: 700;
     font-size: 96px;
     line-height: 90px;
-    text-align: center;
     letter-spacing: -.02em;
-    color: #69a573
+    color: #69a573;
 }
 
 #testimonials h4 {
@@ -239,18 +242,6 @@ h2 {
     object-fit: cover
 }
 
-.about-statements sub {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 32px;
-    padding-bottom: 19px;
-    letter-spacing: -0.017em;
-    display: inline-block;
-    color: #69a573;
-}
-
 #our-team {
     background: #D0DFD4;
 }
@@ -274,8 +265,7 @@ h2 {
 }
 
 .team-img {
-    width: fit-content;
-    -moz-fit-content: fit-content
+    place-items: center;
 }
 
 .team-img img {
@@ -286,9 +276,13 @@ h2 {
 }
 
 .team-name {
+    font-family: 'Source Serif Pro', serif;
     font-style: normal;
     font-weight: 700;
-    color: #0c4128
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: -0.272px;
+    color: #0d4a40;
 }
 
 .team-title {
@@ -296,7 +290,6 @@ h2 {
 }
 
 footer {
-    color: #0d4a40;
     z-index: 3;
 }
 
@@ -359,23 +352,8 @@ footer .footer-text-header {
 }
 
 @media (min-width: 1281px) {
-    h1 {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 4rem;
-        line-height: 5rem
-    }
-
     #home {
         height: 95svh
-    }
-
-    .introduction h1 {
-        font-weight: 700;
-        font-size: 8rem;
-        line-height: 9.375rem;
-        letter-spacing: -.021em;
-        padding-bottom: 1rem;
     }
 
     #services {
@@ -398,30 +376,17 @@ footer .footer-text-header {
         align-items: center;
     }
 
-
     #our-team {
         padding: 2rem 10rem;
     }
 
     .team {
         padding: 5rem;
-        gap: 9.75rem
+        gap: 12rem;
     }
 
     .team-header {
         text-align: center;
-    }
-
-    .team-name {
-        font-size: 2.25rem;
-        line-height: 2.563rem;
-        letter-spacing: -.017rem
-    }
-
-    .team-img img {
-        width: 300px;
-        height: 300px;
-        object-fit: cover
     }
 
     .footer-contact {
@@ -435,14 +400,6 @@ footer .footer-text-header {
     .footer-row-1 {
         margin-bottom: 9.688rem;
     }
-
-    .footer-contact-row {
-        column-gap: 6rem;
-    }
-
-    .contact-content, .legal-content, .social-content {
-        max-width: max-content;
-    }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -455,14 +412,6 @@ footer .footer-text-header {
 
     #home {
         height: 95svh;
-    }
-
-    .introduction h1 {
-        font-weight: 700;
-        font-size: 6rem;
-        line-height: 9.375rem;
-        letter-spacing: -.021em;
-        padding-bottom: 1rem;
     }
 
     #services {
@@ -479,16 +428,11 @@ footer .footer-text-header {
         padding: 2rem 8rem 4rem 8rem;
     }
 
-    .testimonial-row {
-        gap: 5rem
-    }
-
     #about {
         padding: 2rem 5rem 8rem;
     }
 
     .statement-1 {
-
         padding: 8rem 2rem 8rem 2rem;
     }
 
@@ -506,27 +450,11 @@ footer .footer-text-header {
 
     .team {
         padding-top: 2rem;
-        gap: 9.75rem;
+        gap: 12rem;
     }
 
     .team-header {
         text-align: center;
-    }
-
-    .team-name {
-        font-size: 2.25rem;
-        line-height: 2.563rem;
-        letter-spacing: -.017rem;
-    }
-
-    .team-img img {
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-    }
-
-    .contact {
-        padding: 2rem 20rem;
     }
 
     footer {
@@ -536,32 +464,9 @@ footer .footer-text-header {
     .footer-row-1 {
         margin-bottom: 9.688rem
     }
-
-    .footer-contact-row {
-        column-gap: 3rem
-    }
-
-    .contact-content, .legal-content, .social-content {
-        max-width: max-content
-    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    h1 {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 4rem;
-        line-height: 5rem
-    }
-
-    .introduction h1 {
-        font-weight: 700;
-        font-size: 6rem;
-        line-height: 9.375rem;
-        letter-spacing: -.021em;
-        padding-bottom: 1rem;
-    }
-
     #services {
         padding: 2rem 4rem 4rem;
     }
@@ -574,11 +479,6 @@ footer .footer-text-header {
 
     #testimonials {
         padding: 2rem 4rem 4rem;
-        text-align: center
-    }
-
-    .testimonial-row {
-        gap: 5rem
     }
 
     #testimonials p {
@@ -644,15 +544,9 @@ footer .footer-text-header {
         gap: 9rem
     }
 
-    .team-img {
+    .team-img img {
         width: 15rem;
         height: 15rem
-    }
-
-    .team-name {
-        font-size: 2.25rem;
-        line-height: 2.563rem;
-        letter-spacing: -.017rem
     }
 
     .team-header {
@@ -663,24 +557,6 @@ footer .footer-text-header {
         height: 78dvh;
         padding: 4.8rem 4rem 4.8rem 5rem
     }
-
-    .footer-row-1 {
-        gap: 3.5rem;
-        margin-bottom: 5rem
-    }
-
-    .footer-logo img {
-        width: 14.188rem;
-        height: 4.813rem
-    }
-
-    .footer-contact-row {
-        column-gap: 1.8rem
-    }
-
-    .contact-content, .legal-content, .social-content {
-        max-width: max-content
-    }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -688,17 +564,10 @@ footer .footer-text-header {
         padding-bottom: 4rem;
     }
 
-    #home {
-        height: 100vh;
-        background-position: center;
-        background-repeat: no-repeat
-    }
-
     .introduction h1 {
         font-weight: 700;
         font-size: 5rem;
         line-height: 7rem;
-        text-align: center;
         letter-spacing: -.021em;
         padding-bottom: 1rem;
     }
@@ -734,7 +603,6 @@ footer .footer-text-header {
 
     #testimonials {
         padding: 4rem 1.375rem 2rem 1.375rem;
-        text-align: center
     }
 
     #testimonials p {
@@ -757,15 +625,6 @@ footer .footer-text-header {
         padding: 5rem;
     }
 
-    .about-statements sub {
-        font-size: 14px;
-        line-height: 32px;
-        padding-bottom: 19px;
-        display: inline-block;
-        text-align: center;
-        letter-spacing: -0.017em;
-    }
-
     .statement-1, .statement-2 {
         padding-bottom: 4rem;
     }
@@ -785,7 +644,7 @@ footer .footer-text-header {
         text-align: center;
     }
 
-    .team-img {
+    .team-img img {
         width: 15rem;
         height: 15rem
     }
@@ -805,30 +664,9 @@ footer .footer-text-header {
         text-align: center;
         padding: 7.188rem 2.75rem 3.563rem
     }
-
-    .footer-row-1 {
-        gap: 6.25rem;
-        margin-bottom: 2.75rem
-    }
-
-    .footer-contact-row {
-        row-gap: 3rem;
-        column-gap: 2.8rem
-    }
-
-    .footer-logo img {
-        width: 14.188rem;
-        height: 4.813rem
-    }
-
-    .icon {
-        width: 1.25rem;
-        height: 1.25rem
-    }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
     .header {
         padding-bottom: 4rem;
     }
@@ -841,10 +679,10 @@ footer .footer-text-header {
         font-size: 16px;
     }
 
-    #home {
-        height: 100vh;
-        background-position: center;
-        background-repeat: no-repeat;
+    .background-home {
+        background-size: 315px 315px;
+        width: 315px;
+        height: 315px;
     }
 
     .introduction h1 {
@@ -887,7 +725,6 @@ footer .footer-text-header {
 
     #testimonials {
         padding: 4rem 1.375rem 2rem 1.375rem;
-        text-align: center;
     }
 
     #testimonials p {
@@ -910,15 +747,6 @@ footer .footer-text-header {
         padding: 4rem 2rem 2rem;
     }
 
-    .about-statements sub {
-        font-size: 14px;
-        line-height: 32px;
-        padding-bottom: 19px;
-        display: inline-block;
-        text-align: center;
-        letter-spacing: -0.017em;
-    }
-
     .statement-1, .statement-2 {
         padding-bottom: 4rem;
     }
@@ -938,7 +766,7 @@ footer .footer-text-header {
         text-align: center;
     }
 
-    .team-img {
+    .team-img img {
         width: 15rem;
         height: 15rem
     }
@@ -957,28 +785,5 @@ footer .footer-text-header {
     footer {
         text-align: center;
         padding: 7.188rem 2.75rem 3.563rem
-    }
-
-    .footer-row-1 {
-        gap: 6.25rem;
-        margin-bottom: 2.75rem
-    }
-
-    .footer-contact-row {
-        row-gap: 6.25rem
-    }
-
-    .footer-logo img {
-        width: 14.188rem;
-        height: 4.813rem
-    }
-
-    .contact-us-row, .legal-row, .social-row {
-        font-size: .875rem
-    }
-
-    .icon {
-        width: 1.25rem;
-        height: 1.25rem
     }
 }

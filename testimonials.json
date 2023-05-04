@@ -1,0 +1,14 @@
+{
+  "testimonial-1": {
+    "author": "John Doe",
+    "title": "CEO, Company Inc.",
+    "image": "./images/testimonial_1.png",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis."
+  },
+  "testimonial-2": {
+    "author": "John Doe",
+    "title": "CEO, Company Inc.",
+    "image": "./images/testimonial_2.png",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis."
+  }
+}
