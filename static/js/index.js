@@ -30,7 +30,7 @@ $.getJSON('../testimonials.json', function (data) {
         i++;
         carouselinner.append(
             `<div class="carousel-item ${key == 0 ? 'active' : ''}">
-                <p>${val.text}</p>
+                <p><span class="quote">“</span><br>${val.text}</p>
                 <h4>${val.author}</h4>
                 <span>${val.title}</span>
             </div>`

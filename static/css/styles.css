@@ -33,7 +33,7 @@ h2 {
 }
 
 .header {
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
 }
 
 .section-header {
@@ -111,23 +111,25 @@ h2 {
     font-family: 'Source Serif Pro', serif;
     font-style: normal;
     font-weight: 700;
-    /*clamp the font size*/
-    font-size: clamp(1.2rem, 3vw, 1.83rem);
-    line-height: 32.35px;
+    font-size: clamp(1.2rem, 3vw, 1.813rem);
+    line-height: 32px;
     letter-spacing: -0.019em;
     color: #0c3d35;
 }
 
-.service-items {
-    gap: 5.2rem;
+.service-icon {
+    /* clamp the width with the biggest being 4rem*/
+    width: clamp(3.8rem, 4vw, 4rem);
+    height: auto;
+    gap: 2rem
 }
 
 .about-statements p, .service-desc {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(1rem, 2.5vw, 1.375rem);
-    line-height: 2.188rem;
+    font-size: clamp(1rem, 2.5vw, 1.188rem);
+    line-height: 2.125rem;
     letter-spacing: -0.017em;
     color: #0c3d35
 }
@@ -138,8 +140,18 @@ h2 {
 }
 
 #testimonials {
-    padding: 2rem 10rem 16.688rem 10rem;
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    min-height: auto;
     text-align: center;
+}
+
+.testimonial-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #testimonials p {
@@ -182,23 +194,20 @@ h2 {
     color: #69a573
 }
 
-.carousel {
-    width: 100%;
-    height: 150%
-}
-
 .carousel-indicators {
     z-index: 1;
+    max-width: 25vw;
+    justify-content: space-around;
+    margin: 0 auto;
 }
 
 .carousel .carousel-indicators button {
     background-size: cover;
     width: 27px;
     height: 27px;
-    margin-right: 15px;
-    border-radius: 100%;
+    margin: 0;
+    border-radius: 50%;
     opacity: .25;
-    background-color: #69a573
 }
 
 .carousel .carousel-indicators button.active {
@@ -213,7 +222,6 @@ h2 {
 
 #carouselTestimonials {
     height: auto;
-    padding: 2rem
 }
 
 #about {
@@ -253,6 +261,7 @@ h2 {
 }
 
 .team-img {
+    max-width: fit-content;
     place-items: center;
 }
 
@@ -345,23 +354,22 @@ footer .footer-text-header {
     }
 
     #services {
-        padding: 2rem 10rem 5rem;
+        padding: 15rem 10rem 19rem;
     }
 
-    .service-icon {
-        width: 68px;
-        height: auto;
-        gap: 2rem
-    }
-
-    #about {
-        padding: 2rem 10rem 0 8rem;
-    }
-
-    .about-panel {
-        min-height: 90svh;
+    .about-statements {
+        padding: 4.25rem 16.5rem 8.5rem 16.5rem;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        gap: 3.15rem;
+    }
+
+    .about-panel div {
+        max-width: fit-content;
+    }
+
+    .statement-1 p {
+        max-width: 55ch;
     }
 
     #our-team {
@@ -369,7 +377,6 @@ footer .footer-text-header {
     }
 
     .team {
-        padding: 5rem;
         gap: 12rem;
     }
 
@@ -377,16 +384,8 @@ footer .footer-text-header {
         text-align: center;
     }
 
-    .footer-contact {
-        justify-self: end;
-    }
-
     footer {
         padding: 6.313rem 6.813rem 6.313rem 7.5rem
-    }
-
-    .footer-row-1 {
-        margin-bottom: 9.688rem;
     }
 }
 
@@ -404,16 +403,6 @@ footer .footer-text-header {
 
     #services {
         padding: 2rem 5rem;
-    }
-
-    .service-icon {
-        width: 65px;
-        height: auto;
-        gap: 2rem
-    }
-
-    #testimonials {
-        padding: 2rem 8rem 4rem 8rem;
     }
 
     #about {
@@ -449,23 +438,10 @@ footer .footer-text-header {
         padding: 6rem 3rem 6rem 5rem
     }
 
-    .footer-row-1 {
-        margin-bottom: 9.688rem
-    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     #services {
-        padding: 2rem 4rem 4rem;
-    }
-
-    .service-icon {
-        width: 6rem;
-        height: auto;
-        gap: 2rem
-    }
-
-    #testimonials {
         padding: 2rem 4rem 4rem;
     }
 
@@ -542,7 +518,6 @@ footer .footer-text-header {
     }
 
     footer {
-        height: 78dvh;
         padding: 4.8rem 4rem 4.8rem 5rem
     }
 }
@@ -576,21 +551,11 @@ footer .footer-text-header {
         padding-bottom: 4rem;
     }
 
-    .service-icon {
-        width: 6rem;
-        height: auto;
-        gap: 2rem
-    }
-
     .service-desc {
         text-align: center;
         font-size: 1rem;
         line-height: 1.625rem;
         letter-spacing: -0.017em;
-    }
-
-    #testimonials {
-        padding: 4rem 1.375rem 2rem 1.375rem;
     }
 
     #testimonials p {
@@ -628,6 +593,10 @@ footer .footer-text-header {
         padding: 4rem 2rem 4.5rem
     }
 
+    .team {
+        gap: 7rem
+    }
+
     .team-header {
         text-align: center;
     }
@@ -635,10 +604,6 @@ footer .footer-text-header {
     .team-img img {
         width: 15rem;
         height: 15rem
-    }
-
-    .team {
-        gap: 7rem
     }
 
     .team-name {
@@ -649,7 +614,6 @@ footer .footer-text-header {
     }
 
     footer {
-        text-align: center;
         padding: 7.188rem 2.75rem 3.563rem
     }
 }
@@ -694,12 +658,6 @@ footer .footer-text-header {
         gap: 3rem;
     }
 
-    .service-icon {
-        width: 5.2rem;
-        height: auto;
-        gap: 2rem;
-    }
-
     .service-desc {
         text-align: center;
         font-size: 1rem;
@@ -709,10 +667,6 @@ footer .footer-text-header {
 
     .item-1, .item-2 {
         padding-bottom: 4rem;
-    }
-
-    #testimonials {
-        padding: 4rem 1.375rem 2rem 1.375rem;
     }
 
     #testimonials p {
@@ -750,6 +704,10 @@ footer .footer-text-header {
         padding: 4rem 2rem 2rem;
     }
 
+    .team {
+        gap: 7rem
+    }
+
     .team-header {
         text-align: center;
     }
@@ -766,12 +724,7 @@ footer .footer-text-header {
         letter-spacing: -.02em
     }
 
-    .team {
-        gap: 7rem
-    }
-
     footer {
-        text-align: center;
         padding: 7.188rem 2.75rem 3.563rem
     }
 }
