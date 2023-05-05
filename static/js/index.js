@@ -15,7 +15,7 @@ $(document).ready(function () {
 let carouselindicators = $('.carousel-indicators');
 let carouselinner = $('.carousel-inner');
 
-$.getJSON('../testimonials.json', function (data) {
+$.getJSON('https://noxan-dev.github.io/TzipporiPress/testimonials.json', function (data) {
     var i= 0;
     $.each(data, function (key, val) {
         carouselindicators.append(
