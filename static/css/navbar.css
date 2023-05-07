@@ -2,14 +2,14 @@ nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: clamp(1.5rem, 5vw, 5rem);
+    padding: 3rem 16.4375rem;
     top: 0;
     left: 0;
     height: 6rem;
     width: 100%;
-    /*background: rgba(255, 255, 255, .15);*/
-    /*backdrop-filter: blur(5px) saturate(125%);*/
-    /*-webkit-backdrop-filter: blur(5px) saturate(125%);*/
+    background: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px) saturate(125%);
+    -webkit-backdrop-filter: blur(5px) saturate(125%);
     z-index: 2;
 }
 
@@ -48,71 +48,71 @@ nav .nav-items a {
     display: none;
 }
 
-@media screen {
+.checkbtn {
+    display: block;
+}
+
+.nav-items {
+    flex-direction: column;
+    row-gap: 3rem;
+    position: fixed;
+    width: 100%;
+    height: 100svh;
+    background: #0C3D35;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-link {
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 5rem);
+    line-height: 81px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #E8F0E8;
+    opacity: 0.5;
+}
+
+nav .nav-items a {
+    display: block;
+}
+
+.header-button {
+    font-family: 'Source Serif Pro', serif;
+    background-color: #69A573;
+}
+
+a:hover, a.activex {
+    background: none;
+}
+
+#check:checked ~ .nav-items {
+    left: 0;
+}
+
+body:has(#check:checked) {
+    overflow: hidden;
+}
+
+nav:has(#check:not(:checked)) {
+    transition: all 0.5s;
+    background: linear-gradient(to right, #0C3D35 50%, transparent 0) 100%;
+    background-size: 200% 100%;
+}
+
+nav:has(#check:checked) {
+    transition: all 0.5s;
+    background: linear-gradient(to right, #0C3D35 50%, transparent 0) 0;
+    background-size: 200% 100%;
+}
+
+@media screen and (max-width: 1024px) {
     nav {
-        padding: 0 2rem;
-    }
-
-    .checkbtn {
-        display: block;
-    }
-
-    .nav-items {
-        flex-direction: column;
-        row-gap: 3rem;
-        position: fixed;
-        width: 100%;
-        height: 100svh;
-        background: #0C3D35;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-
-    .nav-link {
-        font-family: 'Source Serif Pro', serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: clamp(2rem, 5vw, 5rem);
-        line-height: 81px;
-        text-align: center;
-        letter-spacing: -0.02em;
-        color: #E8F0E8;
-        opacity: 0.5;
-    }
-
-    nav .nav-items a {
-        display: block;
-    }
-
-    .header-button {
-        font-family: 'Source Serif Pro', serif;
-        background-color: #69A573;
-    }
-
-    a:hover, a.activex {
-        background: none;
-    }
-
-    #check:checked ~ .nav-items {
-        left: 0;
-    }
-
-    body:has(#check:checked) {
-        overflow: hidden;
-    }
-
-    nav:has(#check:not(:checked)) {
-        transition: all 0.5s;
-        background: linear-gradient(to right, #0C3D35 50%, transparent 0) 100%;
-        background-size: 200% 100%;
-    }
-
-    nav:has(#check:checked) {
-        transition: all 0.5s;
-        background: linear-gradient(to right, #0C3D35 50%, transparent 0) 0;
-        background-size: 200% 100%;
+        padding: 3rem 2rem;
     }
 }
 
