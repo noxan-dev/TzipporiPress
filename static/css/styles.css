@@ -26,8 +26,8 @@ h2 {
     font-family: 'Source Serif Pro', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(2.5rem, 4.5vw, 4.0625rem);
-    line-height: 5.125rem;
+    font-size: clamp(2.25rem, 4.5vw, 4.0625rem);
+    line-height: clamp(2.8125rem, 4.5vw, 5.0625rem);
     letter-spacing: -0.02em;
     color: #0C3D35;
 }
