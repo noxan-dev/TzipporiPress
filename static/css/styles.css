@@ -33,7 +33,8 @@ h2 {
 }
 
 .header {
-    padding-bottom: 8.75rem /* 140/16 */;
+    padding-bottom: 8.75rem;
+    text-align: center;
 }
 
 .section-header {
@@ -73,6 +74,14 @@ h2 {
 
 .header-button:hover {
     background: #69a573;
+}
+
+.wrapper {
+  width: clamp(16rem, 90vw, 70rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 #home {
@@ -127,7 +136,7 @@ h2 {
 }
 
 .service-items {
-    gap: 4.8125rem /* 77/16 */;
+    gap: 6rem;
 }
 
 .about-statements p, .service-desc {
@@ -227,26 +236,28 @@ h2 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.25rem /* 20/16 */;
-    line-height: 1.5rem /* 24/16 */;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     letter-spacing: -0.015rem;
     color: #69a573
 }
 
 .carousel-indicators {
     z-index: 1;
-    max-width: 25vw;
+    min-width: 50%;
+    max-width: 200px;
     justify-content: space-around;
     margin: 0 auto;
 }
 
 .carousel .carousel-indicators button {
+    background-color: #E8F0E8;
     background-size: cover;
-    width: 27px;
-    height: 27px;
+    width: 30px;
+    height: 30px;
     margin: 0;
-    border-radius: 50%;
-    opacity: .25;
+    border-radius: 50px;
+    opacity: .50;
 }
 
 .carousel .carousel-indicators button.active {
@@ -255,12 +266,17 @@ h2 {
     height: 60px;
 }
 
+.author-info {
+    top: 200px;
+}
+
 .carousel-inner {
     padding-bottom: 6rem;
+    overflow: visible;
 }
 
 #our-team {
-    padding: 9.4375rem 20rem 13.8125rem 20rem;
+    padding: 10rem 0;
     background: #D0DFD4;
 }
 
@@ -279,15 +295,8 @@ h2 {
     max-width: 66ch;
 }
 
-.team {
-    gap: 5rem;
-}
-
-.team-header {
-    text-align: center;
-}
-
 .team-img {
+    width: fit-content;
     place-items: center;
 }
 
@@ -376,15 +385,11 @@ footer .footer-text-header {
 
 @media (min-width: 1281px) {
     #services {
-        padding: 15rem 10rem 19rem;
+        padding: 15rem 0 19rem;
     }
 
     .about-panel div {
         max-width: fit-content;
-    }
-
-    .team {
-        gap: 12rem;
     }
 
     footer {
@@ -395,10 +400,6 @@ footer .footer-text-header {
 @media (min-width: 1025px) and (max-width: 1280px) {
     #services {
         padding: 2rem 5rem;
-    }
-
-    #about {
-        padding: 2rem 5rem 8rem;
     }
 
     footer {
@@ -427,7 +428,7 @@ footer .footer-text-header {
     }
 
     #our-team {
-        padding: 2rem 4rem 4rem;
+        padding: 4rem 0;
     }
 
     .team {
@@ -496,7 +497,6 @@ footer .footer-text-header {
     }
 
     #our-team {
-        text-align: center;
         padding: 4rem 2rem 4.5rem
     }
 
@@ -587,12 +587,7 @@ footer .footer-text-header {
     }
 
     #our-team {
-        text-align: center;
-        padding: 4rem 2rem 2rem;
-    }
-
-    .team {
-        gap: 7rem
+        padding: 4rem 0;
     }
 
     .team-name {

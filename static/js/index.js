@@ -12,29 +12,34 @@ $(document).ready(function () {
     });
 });
 
-let carouselindicators = $('.carousel-indicators');
-let carouselinner = $('.carousel-inner');
+$(document).ready(function () {
+    let carouselIndicators = $('.carousel-indicators');
+    let carouselInner = $('.carousel-inner');
 
-$.getJSON('https://noxan-dev.github.io/TzipporiPress/testimonials.json', function (data) {
-    var i= 0;
-    $.each(data, function (key, val) {
-        carouselinner.append(
-            `<div class="carousel-item ${key == 0 ? 'active' : ''}">
-                <p><span class="quote">“</span>${val.text}</p>
-                <h4>${val.author}</h4>
-                <span>${val.title}</span>
-            </div>`
-        );
+    $.getJSON('https://noxan-dev.github.io/TzipporiPress/testimonials.json', function (data) {
+        let i = 0;
+        $.each(data, function (key, val) {
+            carouselInner.append(
+                `<div class="carousel-item ${i === 0 ? 'active' : ''}">
+                    <p><span class="quote">“</span>${val.text}</p>
+                    <div class="author-info">
+                      <h4>${val.author}</h4>
+                      <span>${val.title}</span>
+                    </div>
+                  </div>`
+            );
 
-        carouselindicators.append(
-            `<button type="button" 
+            carouselIndicators.append(
+                `<button type="button" 
                     data-bs-target="#carouselTestimonials" 
                     data-bs-slide-to="${i}" 
                     aria-label="Slide ${i}"
-                    class="slide-${i} ${key == 0 ? 'active' : ''}"
-                    ${key == 0 ? 'aria-current="true"': ''} 
-                    style="background-image: url('${val.image}')"></button>`,
-        );
-        i++;
+                    class="slide-${i} ${i === 0 ? 'active' : ''}"
+                    ${i === 0 ? 'aria-current="true"' : ''} 
+                    style="background-image: url('${val.image}')"></button>`
+            );
+            i++;
+        });
+        $('.carousel').carousel();
     });
 });
