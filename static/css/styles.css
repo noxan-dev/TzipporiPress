@@ -32,6 +32,16 @@ h2 {
     color: #0C3D35;
 }
 
+p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1875rem;
+    line-height: 2rem;
+    letter-spacing: -.017em;
+    color: #0c3d35;
+}
+
 .header {
     padding-bottom: 8.75rem;
     text-align: center;
@@ -111,7 +121,7 @@ h2 {
     animation-fill-mode: forwards;
 }
 
-.introduction h1 {
+.introduction h1, footer h1 {
     font-weight: 700;
     font-size: clamp(4rem, 8vw, 11.361875rem);
     line-height: clamp(4rem, 15vw, 11rem);
@@ -137,16 +147,6 @@ h2 {
 
 .service-items {
     gap: 6rem;
-}
-
-.about-statements p, .service-desc {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(1rem, 2.5vw, 1.188rem);
-    line-height: 2.125rem;
-    letter-spacing: -0.017em;
-    color: #0c3d35
 }
 
 .service-desc span {
@@ -193,7 +193,7 @@ h2 {
 #testimonials {
     position: relative;
     min-height: 100vh;
-    height: 1000px;
+    height: 1200px;
     text-align: center;
 }
 
@@ -206,16 +206,6 @@ h2 {
 
 .testimonials-header {
     padding-bottom: 4rem;
-}
-
-#testimonials p {
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.375rem /* 22/16 */;
-    line-height: 2.1875rem /* 35/16 */;
-    letter-spacing: -.017em;
-    color: #0d4a40
 }
 
 #testimonials p span {
@@ -288,19 +278,14 @@ h2 {
     background: #D0DFD4;
 }
 
-#our-team p, #our-team sub {
+#our-team sub {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 2.1875rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
     letter-spacing: -.017em;
     color: #69a573
-}
-
-#our-team p {
-    color: #0c3d35;
-    max-width: 66ch;
 }
 
 .team-img {
@@ -331,26 +316,35 @@ h2 {
 
 footer {
     z-index: 3;
+    color: #0D4A40;
 }
 
-footer .footer-text-header {
-    font-family: 'Source Serif Pro', serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.25rem;
-    letter-spacing: -.009em;
-    color: #ecedee;
+footer h1 {
+    padding-bottom: 0;
 }
 
-.footer-index {
-    font-family: Inter, sans-serif;
+footer h3 {
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: -.011em;
-    color: #e8f0e8
+    font-size: 1.9375rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.017em;
+}
+
+footer a {
+    font-size: clamp(1.5rem, 2vw, 1.9375rem);
+    color: inherit;
+    text-decoration: none;
+}
+
+footer h5 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: -0.017em;
+    padding-top: 14.0625rem;
 }
 
 @keyframes fadeUpAnimation {
@@ -395,6 +389,7 @@ footer .footer-text-header {
     #services {
         padding: 15rem 0 19rem;
     }
+
     .statement-1 {
         padding-bottom: 15.5625rem;
     }
@@ -420,17 +415,13 @@ footer .footer-text-header {
     .statement-2 {
         padding-bottom: 13rem;
     }
+
     footer {
         padding: 6rem 3rem 6rem 5rem
     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    #testimonials p {
-        font-size: 16px;
-        line-height: 26px
-    }
-
     #testimonials h4 {
         font-size: 24px;
         line-height: 30px;
@@ -484,18 +475,6 @@ footer .footer-text-header {
         padding-bottom: 4rem;
     }
 
-    .service-desc {
-        text-align: center;
-        font-size: 1rem;
-        line-height: 1.625rem;
-        letter-spacing: -0.017em;
-    }
-
-    #testimonials p {
-        font-size: 16px;
-        line-height: 26px
-    }
-
     #testimonials h4 {
         font-size: 24px;
         line-height: 30px;
@@ -504,10 +483,6 @@ footer .footer-text-header {
 
     #testimonials sub, .carousel-item span {
         font-size: 15px;
-    }
-
-    #about {
-        text-align: center;
     }
 
     #our-team {
@@ -536,7 +511,7 @@ footer .footer-text-header {
     }
 
     .publish-button {
-        padding: 13.4496px 20.1744px;
+        padding: 13px 20px;
     }
 
     .publish-button, .header-button {
@@ -570,34 +545,14 @@ footer .footer-text-header {
         gap: 3rem;
     }
 
-    .service-desc {
-        text-align: center;
-        font-size: 1rem;
-        line-height: 1.625rem;
-        letter-spacing: -0.017em;
-    }
-
     .item-1, .item-2 {
         padding-bottom: 4rem;
-    }
-
-    #testimonials p {
-        font-size: 16px;
-        line-height: 26px
     }
 
     #testimonials h4 {
         font-size: 24px;
         line-height: 30px;
         align-items: center
-    }
-
-    #testimonials sub, .carousel-item span {
-        font-size: 15px;
-    }
-
-    #about {
-        text-align: center;
     }
 
     #our-team {
@@ -612,6 +567,10 @@ footer .footer-text-header {
     }
 
     footer {
-        padding: 7.188rem 2.75rem 3.563rem
+        padding: 7.188rem 1.75rem 3.563rem
+    }
+
+    footer h5 {
+        padding-top: 5rem;
     }
 }
