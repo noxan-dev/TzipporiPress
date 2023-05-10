@@ -213,18 +213,18 @@ p {
     font-family: 'Source Serif Pro', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 6rem /* 96/16 */;
+    font-size: 6rem;
     line-height: 5.625rem;
     letter-spacing: -.02em;
     color: #69a573;
-    padding-bottom: 5rem /* 80/16 */;
+    padding-bottom: 4rem;
 }
 
 #testimonials h4 {
     font-style: normal;
     font-weight: 700;
-    font-size: 2rem /* 32/16 */;
-    line-height: 2.5rem /* 40/16 */;
+    font-size: 2rem;
+    line-height: 2.5rem;
     align-items: center;
     letter-spacing: -.02em;
     color: #0d4a40
@@ -251,8 +251,8 @@ p {
 .carousel .carousel-indicators button {
     background-color: #E8F0E8;
     background-size: cover;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin: 0;
     border-radius: 50px;
     opacity: .50;
@@ -260,8 +260,8 @@ p {
 
 .carousel .carousel-indicators button.active {
     opacity: 1;
-    width: 60px;
-    height: 60px;
+    width: 96.72px;
+    height: 96.72px;
 }
 
 .author-info {
@@ -315,11 +315,14 @@ p {
 }
 
 footer {
+    padding-top: 12rem;
+    padding-bottom: 8rem;
     z-index: 3;
     color: #0D4A40;
 }
 
 footer h1 {
+    display: inline-block;
     padding-bottom: 0;
 }
 
@@ -338,13 +341,16 @@ footer a {
     text-decoration: none;
 }
 
+footer a:hover, footer h1:hover {
+    color: #69a573;
+}
+
 footer h5 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 2rem;
     letter-spacing: -0.017em;
-    padding-top: 14.0625rem;
 }
 
 @keyframes fadeUpAnimation {
@@ -397,10 +403,6 @@ footer h5 {
     .statement-2 {
         padding-bottom: 13rem;
     }
-
-    footer {
-        padding: 6.313rem 6.813rem 6.313rem 7.5rem
-    }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -414,10 +416,6 @@ footer h5 {
 
     .statement-2 {
         padding-bottom: 13rem;
-    }
-
-    footer {
-        padding: 6rem 3rem 6rem 5rem
     }
 }
 
@@ -439,10 +437,6 @@ footer h5 {
     .team {
         padding-top: 2rem;
         gap: 9rem
-    }
-
-    footer {
-        padding: 4.8rem 4rem 4.8rem 5rem
     }
 }
 
@@ -498,10 +492,6 @@ footer h5 {
         line-height: 1.875rem;
         align-items: center;
         letter-spacing: -.02em
-    }
-
-    footer {
-        padding: 7.188rem 2.75rem 3.563rem
     }
 }
 
@@ -564,13 +554,5 @@ footer h5 {
         line-height: 1.875rem;
         align-items: center;
         letter-spacing: -.02em
-    }
-
-    footer {
-        padding: 7.188rem 1.75rem 3.563rem
-    }
-
-    footer h5 {
-        padding-top: 5rem;
     }
 }

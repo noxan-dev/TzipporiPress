@@ -2,7 +2,7 @@ nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 3rem 16.4375rem;
+    padding: 3rem 12rem;
     top: 0;
     left: 0;
     height: 6rem;
@@ -65,16 +65,25 @@ nav .nav-items a {
     transition: all .5s;
 }
 
+.nav-items:hover, .socials a:hover {
+    color: #69a573;
+}
+
 .nav-link {
     font-family: 'Source Serif Pro', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(2rem, 5vw, 5rem);
+    font-size: clamp(2rem, 5vw, 4rem);
     line-height: 81px;
     text-align: center;
     letter-spacing: -0.02em;
     color: #E8F0E8;
-    opacity: 0.5;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #E8F0E8;
+
 }
 
 nav .nav-items a {
@@ -134,7 +143,7 @@ nav:has(#check:checked) {
 #nav-icon span {
     display: block;
     position: absolute;
-    height: 2px;
+    height: 2.5px;
     width: 100%;
     background: #0C3D35;
     border-radius: 200px;
