@@ -1,20 +1,26 @@
 {
-  "0": {
+    "0": {
     "author": "Rabbi Chananya Berzon",
     "title": "Author of “Drashot on Parshot”",
     "image": "static/images/testimonial-images/testimonial-1.png",
-    "text": "Tzippori Press took my manuscript and produced a clear and professional book. Rabbi David had the keen insight to figure out my theme on each subject and present it to the reader in an erudite manner. A superb job!"
+    "content": "Tzippori Press took my manuscript and produced a clear and professional book. Rabbi David had the keen insight to figure out my theme on each subject and present it to the reader in an erudite manner. A superb job!"
   },
-  "1": {
+  "1":{
+    "author": "John Doe",
+    "title": "CEO, Top Siddur.",
+    "image": "static/images/brooks.webp",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis."
+  },
+  "2":{
+    "author": "Aaron Baron",
+    "title": "Author of “The life of Moses”",
+    "image": "static/images/testimonial-images/testimonial-1.png",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendisLorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis"
+  },
+   "3": {
     "author": "John Doe",
     "title": "CEO, Company Inc.",
     "image": "static/images/testimonial-images/testimonial-1.png",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis."
-  },
-  "2": {
-    "author": "John Doe",
-    "title": "CEO, Company Inc.",
-    "image": "static/images/testimonial-images/testimonial-1.png",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendisLorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis"
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendisLorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis"
   }
 }
