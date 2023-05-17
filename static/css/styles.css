@@ -264,11 +264,8 @@ p {
     height: 96.72px;
 }
 
-.author-info {
-    padding-top: 20px;
-}
-
 .carousel-inner {
+    min-height: 350px;
     padding-bottom: 2rem;
     overflow: visible;
 }

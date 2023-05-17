@@ -14,13 +14,13 @@
   "2":{
     "author": "Aaron Baron",
     "title": "Author of “The life of Moses”",
-    "image": "static/images/testimonial-images/testimonial-1.png",
+    "image": "static/images/david.webp",
     "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendisLorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis"
   },
    "3": {
     "author": "John Doe",
     "title": "CEO, Company Inc.",
-    "image": "static/images/testimonial-images/testimonial-1.png",
+    "image": "static/images/testimonial-images/place1.jpg",
     "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendisLorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, perferendis. Quisquam, quod, perferendis"
   }
 }
