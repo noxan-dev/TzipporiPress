@@ -17,6 +17,7 @@ $(document).ready(function () {
     let carouselInner = $('.carousel-inner');
     let carouselAuthorInfo = $('.carousel-author-info');
     const IndicatorsInterval = 5000;
+    let moveIndicatorsInterval;
 
     // ./testimonials.json
     $.getJSON('https://noxan-dev.github.io/TzipporiPress/testimonials.json', function (data) {
@@ -56,17 +57,12 @@ $(document).ready(function () {
             let order = parseInt($(this).attr('data-order'));
 
             // Show only indicators with data-order values of 0, 1, and 2
-            if (order >= 0 && order <= 2) {
-                $(this).show();
-            } else {
-                $(this).hide();
-            }
+            $(this).toggle(order >= 0 && order <= 2);
         });
     }
 
     function moveIndicators(targetIndex) {
         let indicators = carouselIndicators.children();
-        let activeIndex = carouselIndicators.find('.active').index();
         let numIndicators = indicators.length;
 
         if (typeof targetIndex !== 'undefined') {
@@ -99,14 +95,13 @@ $(document).ready(function () {
         hideExtraIndicators();
     }
 
-    let moveIndicatorsInterval = setInterval(moveIndicators, IndicatorsInterval);
     const carousel = $('.carousel');
 
     // Stop the carousel from moving when the mouse is over it
     carousel.hover(function () {
         clearInterval(moveIndicatorsInterval);
     }, function () {
-        moveIndicatorsInterval = setInterval(moveIndicators, IndicatorsInterval);
+        moveIndicatorsInterval = setInterval(() => moveIndicators(), IndicatorsInterval);
     });
 
     // Move the indicators when the user clicks on one
