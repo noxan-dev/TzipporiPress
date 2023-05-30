@@ -17,6 +17,7 @@ $(document).ready(function () {
     let carouselInner = $('.carousel-inner');
     let carouselAuthorInfo = $('.carousel-author-info');
     const IndicatorsInterval = 5000;
+    const pauseDuration = 5000;
     let moveIndicatorsInterval;
 
     // ./testimonials.json
@@ -56,63 +57,69 @@ $(document).ready(function () {
         indicators.each(function () {
             let order = parseInt($(this).attr('data-order'));
 
-            // Show only indicators with data-order values of 0, 1, and 2
             $(this).toggle(order >= 0 && order <= 2);
         });
     }
 
-    function moveIndicators(targetIndex) {
-        let indicators = carouselIndicators.children();
-        let numIndicators = indicators.length;
+    function indicatorClicked(direction, targetIndex) {
+        clearInterval(moveIndicatorsInterval);
+        moveIndicators(direction, targetIndex);
 
-        if (typeof targetIndex !== 'undefined') {
-            return;
-        }
+        setTimeout(() => {
+            clearInterval(moveIndicatorsInterval);
+            moveIndicatorsInterval = setInterval(() => moveIndicators('right'), IndicatorsInterval);
+        }, pauseDuration);
+    }
 
-        // Update the order of the indicators
-        indicators.each(function () {
-            let order = parseInt($(this).attr('data-order'));
-            order--;
-            if (order < 0) {
-                order = numIndicators - 1;
-            }
-            $(this).attr('data-order', order);
-            $(this).css('order', order);
-        });
+    function moveIndicators(direction, targetIndex = 1) {
+        reorderIndicators(targetIndex, direction);
+
+        let newActiveIndex = carouselIndicators.find(`[data-order="${targetIndex}"]`).index();
 
         carouselIndicators.find('.active').removeClass('active');
-        carouselIndicators.find('[data-order="1"]').addClass('active');
-
-        let newActiveIndex = carouselIndicators.find('.active').index();
+        carouselIndicators.find(`[data-order="${targetIndex}"]`).addClass('active');
 
         carouselInner.find('.carousel-item').removeClass('active');
         carouselInner.find(`.carousel-item:nth-child(${newActiveIndex + 1})`).addClass('active');
 
-        // Update the active author info
         carouselAuthorInfo.find('.carousel-item').removeClass('active');
         carouselAuthorInfo.find(`.carousel-item:nth-child(${newActiveIndex + 1})`).addClass('active');
+    }
+
+    function reorderIndicators(steps, direction) {
+        let indicators = carouselIndicators.children();
+        let numIndicators = indicators.length;
+        indicators.each(function () {
+            let currentOrder = parseInt($(this).attr('data-order'));
+            let newOrder;
+
+            if (direction === 'right') {
+                newOrder = (currentOrder - steps + numIndicators) % numIndicators;
+            } else {
+                newOrder = (currentOrder + steps) % numIndicators;
+            }
+
+            $(this).attr('data-order', newOrder);
+            $(this).css('order', newOrder);
+        });
 
         hideExtraIndicators();
     }
 
+    carouselIndicators.on('click', 'button', function () {
+        // if ($(this).hasClass('active')) return;
+        let targetIndex = $(this).data('order');
+        let direction = targetIndex === 0 ? 'left' : 'right';
+        indicatorClicked(direction);
+    });
+
+    moveIndicatorsInterval = setInterval(() => moveIndicators('right'), IndicatorsInterval);
+
     const carousel = $('.carousel');
 
-    // Stop the carousel from moving when the mouse is over it
     carousel.hover(function () {
         clearInterval(moveIndicatorsInterval);
     }, function () {
-        moveIndicatorsInterval = setInterval(() => moveIndicators(), IndicatorsInterval);
-    });
-
-    // Move the indicators when the user clicks on one
-    carouselIndicators.on('click', 'button', function () {
-        let targetIndex = $(this).data('order');
-        let activeIndex = carouselIndicators.find('.active').index();
-
-        if (targetIndex !== activeIndex) {
-            clearInterval(moveIndicatorsInterval);
-            moveIndicators(targetIndex);
-            moveIndicatorsInterval = setInterval(moveIndicators, IndicatorsInterval);
-        }
+        moveIndicatorsInterval = setInterval(() => moveIndicators('right'), IndicatorsInterval);
     });
 });
