@@ -36,7 +36,7 @@ $(document).ready(function () {
                 data-bs-slide-to="${i}" 
                 aria-label="Slide ${i}"
                 class="rounded-circle slide-${i} ${i === 1 ? 'active' : ''}"
-                style="background-image: url('${val.image}')"
+                style="background-image: url('${val.image}');"
                 data-order="${i}"></button>`
             );
 

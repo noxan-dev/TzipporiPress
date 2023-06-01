@@ -10,7 +10,7 @@
 body {
     font-family: 'Source Serif Pro', serif;
     overflow-x: hidden;
-    background-color: #f4f4f4;
+    background-color: #EDF3EE;
     transition: background-color 1s ease;
 }
 
@@ -95,8 +95,9 @@ p {
 }
 
 #home {
+    position: relative;
     display: flex;
-    min-height: 100vh;
+    min-height: 100svh;
     align-items: center;
     justify-content: center;
 }
@@ -106,9 +107,10 @@ p {
     margin: auto;
     left: 0;
     right: 0;
+    top: 0;
+    bottom: 140px;
     max-width: 100%;
     height: auto;
-    text-align: center;
     -webkit-animation: mover 2s infinite alternate;
     animation: mover 2s infinite alternate;
 }
@@ -476,6 +478,21 @@ footer h5 {
         font-size: 15px;
     }
 
+    .carousel .carousel-indicators button {
+        background-color: #E8F0E8;
+        background-size: contain;
+        width: 42px;
+        height: 42px;
+        opacity: .50;
+        border: none;
+    }
+
+    .carousel .carousel-indicators button.active {
+        opacity: 1;
+        width: 82px;
+        height: 82px;
+    }
+
     #our-team {
         padding: 4rem 2rem 4.5rem
     }
@@ -540,6 +557,21 @@ footer h5 {
         font-size: 24px;
         line-height: 30px;
         align-items: center
+    }
+
+    .carousel .carousel-indicators button {
+        background-color: #E8F0E8;
+        background-size: contain;
+        width: 42px;
+        height: 42px;
+        opacity: .50;
+        border: none;
+    }
+
+    .carousel .carousel-indicators button.active {
+        opacity: 1;
+        width: 82px;
+        height: 82px;
     }
 
     #our-team {
