@@ -25,14 +25,8 @@ nav:has(#check:checked) .logox {
     filter: brightness(0) invert(1);
 }
 
-nav .nav-items {
-    display: flex;
-    align-self: center;
-}
-
 nav .nav-items a {
     display: inline-block;
-    align-self: center;
 }
 
 .checkbtn {
@@ -53,15 +47,16 @@ nav .nav-items a {
 }
 
 .nav-items {
+    display: flex;
+    place-content: center;
+    gap: 3rem;
     flex-direction: column;
-    row-gap: 3rem;
     position: fixed;
     width: 100%;
     height: 100svh;
     background: #0C3D35;
     top: 80px;
     left: -100%;
-    text-align: center;
     transition: all .5s;
 }
 
@@ -74,7 +69,7 @@ nav .nav-items a {
     font-style: normal;
     font-weight: 700;
     font-size: clamp(2rem, 5vw, 4rem);
-    line-height: 81px;
+    line-height: 65px;
     text-align: center;
     letter-spacing: -0.02em;
     color: #E8F0E8;
