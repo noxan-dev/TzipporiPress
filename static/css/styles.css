@@ -323,9 +323,9 @@ p {
 
 footer {
     padding-top: 12rem;
-    padding-bottom: 2rem;
     z-index: 3;
     color: #0D4A40;
+    height: 100svh;
 }
 
 footer h1 {
