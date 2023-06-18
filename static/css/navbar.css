@@ -9,10 +9,18 @@ nav {
     backdrop-filter: blur(5px) saturate(125%);
     -webkit-backdrop-filter: blur(5px) saturate(125%);
     z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: auto;
 }
 
 .logox {
     place-self: center;
+}
+
+.logox img {
+    width: clamp(109px, 20vw, 158px);
+    height: auto;
 }
 
 .logox a {
@@ -37,13 +45,9 @@ nav {
 
 .nav-items {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
     position: fixed;
     width: 100%;
-    max-height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
     background: #0C3D35;
     top: 80px;
     left: -100%;
@@ -51,7 +55,6 @@ nav {
 }
 
 .nav-link {
-    transform: translateY(-50%);
     display: inline-block;
     font-family: 'Source Serif Pro', serif;
     font-style: normal;
@@ -111,7 +114,7 @@ nav:has(#check:checked) {
 /* Nav Icon Styles */
 #nav-icon {
     width: 38px;
-    height: 40px;
+    height: 26px;
     position: relative;
     transform: rotate(0deg);
     transition: .5s ease-in-out;
@@ -122,7 +125,7 @@ nav:has(#check:checked) {
     display: block;
     position: absolute;
     height: 2.5px;
-    width: 100%;
+    width: 80%;
     background: #0C3D35;
     border-radius: 200px;
     left: 0;
@@ -135,11 +138,11 @@ nav:has(#check:checked) {
 }
 
 #nav-icon span:nth-child(2), #nav-icon span:nth-child(3) {
-    top: 12px;
+    top: 10px;
 }
 
 #nav-icon span:nth-child(4) {
-    top: 24px;
+    top: 20px;
 }
 
 nav:has(#check:checked) #nav-icon span {
