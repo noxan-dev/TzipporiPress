@@ -56,12 +56,11 @@ p {
 }
 
 .publish-button {
-    background: #69a573;
-}
-
-.publish-button {
-    padding: 16px 24px;
-    border-radius: 50px;
+    opacity: 0;
+    animation: fadeUpDelayAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
 }
 
 .publish-button {
@@ -71,7 +70,10 @@ p {
     font-size: 1.125rem;
     line-height: 1.5rem;
     letter-spacing: -0.014em;
+    background: #69a573;
     color: #FFFFFF;
+    padding: 16px 24px;
+    border-radius: 50px;
 }
 
 .publish-button:hover {
@@ -106,16 +108,21 @@ p {
     height: auto;
     padding: 30px;
     -webkit-animation: mover 2s infinite alternate;
-    animation: mover 2s infinite alternate;
+    animation: mover 2s infinite alternate, fadeSmallToBig ease 3s;
 }
 
 .introduction {
     text-align: center;
-    max-width: fit-content;
-    animation: fadeUpAnimation ease 3s;
+}
+
+.introduction h1 {
+    opacity: 0;
+    animation: fadeUpDelayAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-delay: 1s;
 }
+
 
 .introduction h1, footer h1 {
     font-weight: 700;
@@ -272,6 +279,15 @@ p {
     overflow: visible;
 }
 
+.carousel-item {
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+    transition: opacity 0s .4s;
+}
+
 #our-team {
     padding: 10rem 0;
     background: #D0DFD4;
@@ -361,14 +377,25 @@ footer h5 {
     letter-spacing: -0.017em;
 }
 
-@keyframes fadeUpAnimation {
+@keyframes fadeSmallToBig {
     0% {
         opacity: 0;
-        transform: translateY(20px)
+        transform: scale(0.5)
     }
-    75% {
+    50% {
         opacity: 1;
-        transform: translateY(0)
+        transform: scale(1)
+    }
+}
+
+@keyframes fadeUpDelayAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 

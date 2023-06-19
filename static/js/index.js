@@ -123,14 +123,3 @@ $(document).ready(function () {
         moveIndicatorsInterval = setInterval(() => moveIndicators('right'), IndicatorsInterval);
     });
 });
-
-// // Get the .nav-items element
-// var navItems = document.querySelector('.nav-items');
-//
-// // Set the height of the .nav-items element to the height of the viewport
-// navItems.style.height = window.innerHeight + 'px';
-//
-// // Update the height of the .nav-items element when the window is resized
-// window.addEventListener('resize', function() {
-//     navItems.style.height = window.innerHeight + 'px';
-// });
