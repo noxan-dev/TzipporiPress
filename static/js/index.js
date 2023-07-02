@@ -21,6 +21,7 @@ $(document).ready(function () {
     let moveIndicatorsInterval;
 
     // ./testimonials.json
+    // https://noxan-dev.github.io/TzipporiPress/testimonials.json
     $.getJSON('./testimonials.json', function (data) {
         let i = 0;
         $.each(data, function (key, val) {
@@ -79,10 +80,10 @@ $(document).ready(function () {
         carouselIndicators.find('.active').removeClass('active');
         carouselIndicators.find(`[data-order="${targetIndex}"]`).addClass('active');
 
-        carouselInner.find('.carousel-item').removeClass('active');
+        carouselInner.find('.carousel-item.active').removeClass('active');
         carouselInner.find(`.carousel-item:nth-child(${newActiveIndex + 1})`).addClass('active');
 
-        carouselAuthorInfo.find('.carousel-item').removeClass('active');
+        carouselAuthorInfo.find('.carousel-item.active').removeClass('active');
         carouselAuthorInfo.find(`.carousel-item:nth-child(${newActiveIndex + 1})`).addClass('active');
     }
 
@@ -107,7 +108,6 @@ $(document).ready(function () {
     }
 
     carouselIndicators.on('click', 'button', function () {
-        // if ($(this).hasClass('active')) return;
         let targetIndex = $(this).data('order');
         let direction = targetIndex === 0 ? 'left' : 'right';
         indicatorClicked(direction);

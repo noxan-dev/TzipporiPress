@@ -57,10 +57,10 @@ p {
 
 .publish-button {
     opacity: 0;
-    animation: fadeUpDelayAnimation ease 2s;
+    animation: fadeDownDelayAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 
 .publish-button {
@@ -117,12 +117,11 @@ p {
 
 .introduction h1 {
     opacity: 0;
-    animation: fadeUpDelayAnimation ease 2s;
+    animation: fadeUpDelayAnimation ease 2.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
-
 
 .introduction h1, footer h1 {
     font-weight: 700;
@@ -285,7 +284,7 @@ p {
 
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
-    transition: opacity 0s .4s;
+    transition: opacity 0s .3s;
 }
 
 #our-team {
@@ -392,6 +391,17 @@ footer h5 {
     from {
         opacity: 0;
         transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDownDelayAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
     }
     to {
         opacity: 1;
