@@ -346,6 +346,8 @@ footer h1 {
     display: inline-block;
     padding-bottom: 0;
     font-size: clamp(4.5rem, 10vw, 9rem);
+    width: fit-content;
+    place-self: center;
 }
 
 footer h3 {
