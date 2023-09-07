@@ -111,6 +111,14 @@ $(document).ready(function () {
     let targetIndex = $(this).data('order');
     let direction = targetIndex === 0 ? 'left' : 'right';
     indicatorClicked(direction);
+
+     // Disable clicking for a certain duration
+    carouselIndicators.find('button').prop('disabled', true);
+
+    setTimeout(function () {
+      // Re-enable clicking after the timeout
+      carouselIndicators.find('button').prop('disabled', false);
+    }, 500);
   });
 
   moveIndicatorsInterval = setInterval(() => moveIndicators('right'), IndicatorsInterval);

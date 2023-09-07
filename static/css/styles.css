@@ -57,7 +57,7 @@ p {
 
 .publish-button {
     opacity: 0;
-    animation: fadeDownDelayAnimation ease 4s;
+    animation: fadeDownDelayAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-delay: 2s;
