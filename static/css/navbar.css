@@ -1,0 +1,171 @@
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 12rem;
+    height: 4rem;
+    width: 100%;
+    background: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px) saturate(125%);
+    -webkit-backdrop-filter: blur(5px) saturate(125%);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: auto;
+}
+
+.logox {
+    place-self: center;
+}
+
+.logox img {
+    width: clamp(109px, 20vw, 158px);
+    height: auto;
+}
+
+.logox a {
+    opacity: 1 !important;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+    align-self: center;
+}
+
+#check {
+    display: none;
+}
+.checkbtn {
+    display: block;
+}
+
+.nav-items {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: calc(100svh - 80px);
+    background: #0C3D35;
+    top: 80px;
+    left: -100%;
+    transition: all .5s;
+}
+
+.nav-link {
+    display: inline-block;
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #E8F0E8;
+}
+
+/* Hover Styles */
+.nav-items:hover, .socials a:hover {
+    color: #69a573;
+}
+
+a:hover, a.activex {
+    background: none;
+}
+
+/* Checked Styles */
+nav:has(#check:checked) .logox {
+    filter: brightness(0) invert(1);
+}
+
+#check:checked ~ .nav-items {
+    left: 0;
+}
+
+body:has(#check:checked) {
+    overflow: hidden;
+}
+
+nav:has(#check:not(:checked)) {
+    transition: all 0.5s;
+    background: linear-gradient(to right, #0C3D35 50%, transparent 0) 100%;
+    background-size: 200% 100%;
+}
+
+nav:has(#check:checked) {
+    transition: all 0.5s;
+    background: linear-gradient(to right, #0C3D35 50%, transparent 0) 0;
+    background-size: 200% 100%;
+}
+
+/* Media Query */
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 3rem 2rem;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+}
+
+/* Nav Icon Styles */
+#nav-icon {
+    width: 38px;
+    height: 26px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon span {
+    display: block;
+    position: absolute;
+    height: 2.5px;
+    width: 80%;
+    background: #0C3D35;
+    border-radius: 200px;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+    top: 0;
+}
+
+#nav-icon span:nth-child(2), #nav-icon span:nth-child(3) {
+    top: 10px;
+}
+
+#nav-icon span:nth-child(4) {
+    top: 20px;
+}
+
+nav:has(#check:checked) #nav-icon span {
+    background: #E8F0E8;
+}
+
+/* Nav Icon Open Styles */
+#nav-icon.open span:nth-child(1) {
+    top: 18px;
+    width: 0;
+    left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+    top: 18px;
+    width: 0;
+    left: 50%;
+}
