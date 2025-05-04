@@ -279,7 +279,7 @@ p {
 }
 
 .carousel-item {
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease;
 }
 
 .carousel-fade .active.carousel-item-start,
