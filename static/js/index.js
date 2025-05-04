@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     // ./testimonials.json
     // https://noxan-dev.github.io/TzipporiPress/testimonials.json
-    $.getJSON('https://www.tzipporipress.com/testimonials.json', function (data) {
+    $.getJSON('https://noxan-dev.github.io/TzipporiPress/testimonials.json', function (data) {
         let i = 0;
         $.each(data, function (key, val) {
             carouselInner.append(
